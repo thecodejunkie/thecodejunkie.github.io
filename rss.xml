@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?><rss xmlns:a10="http://www.w3.org/2005/Atom" version="2.0"><channel><title>TheCodeJunkie</title><link>http://thecodejunkie.com/rss.xml</link><description>TheCodeJunkie</description><item><guid isPermaLink="true">http://thecodejunkie.com/2013/09/10/i-am-back-and-this-time-i-am-taking-control/</guid><link>http://thecodejunkie.com/2013/09/10/i-am-back-and-this-time-i-am-taking-control/</link><title>I am back and this time I am taking control</title><description>&lt;p&gt;When Posterous closed down on April 30th 2012, they took my blog with them. I made sure I downloaded my content before the service shut down but did not make any effort in relocating. Why? I had gotten to the point where I thought there was something inheritly wrong with the way that blogging services and blog engines work.&lt;/p&gt;
+
+&lt;p&gt;A blog, in its purest form, is nothing but information with a bit of formatting, added to make it look nice, yet each service (and engine) seem to have need to mangle the content. They do this by either converting your data into HTML, thus losing the initial separation of content and formatting, and/or store it in a proprietary format. Either way, as soon as you have handed over your post, you are no longer in control and that bugs me.&lt;/p&gt;
+
+&lt;p&gt;Looking around for options on how to solve this, I got more and more keen on the idea of using &lt;a href="http://pages.github.com/"&gt;GitHub Pages&lt;/a&gt;, that lets you write your posts using Markdown and then automatically convert them to static pages using &lt;a href="http://jekyllrb.com/"&gt;Jekyll&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The things that really appealed to me were&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;I would get write my content in a very neutral markup language&lt;/li&gt;
+&lt;li&gt;I could store my posts in a normal Git repository&lt;/li&gt;
+&lt;li&gt;The pages would be static and there would be no need for databases or other software to run it&lt;/li&gt;
+&lt;/ul&gt;
+
+</description><pubDate>Mon, 09 Sep 2013 22:00:00 Z</pubDate><a10:updated>2013-09-09T22:00:00Z</a10:updated><a10:content type="text">&lt;p&gt;When Posterous closed down on April 30th 2012, they took my blog with them. I made sure I downloaded my content before the service shut down but did not make any effort in relocating. Why? I had gotten to the point where I thought there was something inheritly wrong with the way that blogging services and blog engines work.&lt;/p&gt;
+
+&lt;p&gt;A blog, in its purest form, is nothing but information with a bit of formatting, added to make it look nice, yet each service (and engine) seem to have need to mangle the content. They do this by either converting your data into HTML, thus losing the initial separation of content and formatting, and/or store it in a proprietary format. Either way, as soon as you have handed over your post, you are no longer in control and that bugs me.&lt;/p&gt;
+
+&lt;p&gt;Looking around for options on how to solve this, I got more and more keen on the idea of using &lt;a href="http://pages.github.com/"&gt;GitHub Pages&lt;/a&gt;, that lets you write your posts using Markdown and then automatically convert them to static pages using &lt;a href="http://jekyllrb.com/"&gt;Jekyll&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The things that really appealed to me were&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;I would get write my content in a very neutral markup language&lt;/li&gt;
+&lt;li&gt;I could store my posts in a normal Git repository&lt;/li&gt;
+&lt;li&gt;The pages would be static and there would be no need for databases or other software to run it&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!--excerpt--&gt; 
+
+&lt;p&gt;While looking into this, I asked &lt;a href="http://philliphaydon.com"&gt;Phillip Haydon&lt;/a&gt;, whom at the time was using GitHub Pages and Jekyll, about some advice on how to get started. He gave me some pointers, but also told me he wanted to build his own version of Jekyll, with his opinions on how such a tool should work, using &lt;a href="http://nancyfx.org"&gt;Nancy&lt;/a&gt; - obviously this was something I had to use!&lt;/p&gt;
+
+&lt;p&gt;Phillip started hacking on his tool and with the help of &lt;a href="http://jonathanchannon.com"&gt;Jonathan Channon&lt;/a&gt; he ended up creating &lt;a href="https://github.com/sandra/sandra.snow"&gt;Sandra.Snow&lt;/a&gt;. &lt;/p&gt;
+
+&lt;p&gt;The ReadMe file, in the repository, describes Sandra.Snow as&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Sandra.Snow is a Jekyll inspired static site generation tool that can be run locally, as a CAAS(Compiler as a Service) or setup with Azure to build your site when your repository changes. It is built on top of NancyFX.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I have been working on building a blog, using Sandra.Snow, for a while now and you are looking at the result. The reason it took me a while was a combination of me wanting to create my own design (responsive, clean, semantic HTML and so on) and the lack of willpower to get it done with. Happy to say that I am at least happy enough to put it out now, even though I still have some finishing touches I would like to sort out in the coming weeks (hopefully you will not notice them the same way I do).&lt;/p&gt;
+
+&lt;p&gt;After much consideration, I have decided not to convert my entire backlog (I got a data backup from Posterous before they shutdown) to the new blog, but instead I will be cherry-picking posts that I'll convert. I simply see no point to convert post that I feel are out dates and that does not add any value any longer.&lt;/p&gt;
+</a10:content></item></channel></rss>

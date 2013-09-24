@@ -1,0 +1,16 @@
+/* line 2, ../../sass/pages/category.scss */
+.archive li {
+  margin: 2px;
+}
+/* line 5, ../../sass/pages/category.scss */
+.archive li a {
+  background-color: #f6f5f1;
+  color: #aaa28c;
+  display: inline-block;
+  padding: 5px;
+}
+/* line 11, ../../sass/pages/category.scss */
+.archive li a:hover {
+  background-color: #aaa28c;
+  color: #f6f5f1;
+}

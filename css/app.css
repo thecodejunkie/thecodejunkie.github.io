@@ -1,0 +1,748 @@
+/** * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/) * http://cssreset.com */
+/* line 1, ../sass/_reset.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 1, ../sass/_reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 1, ../sass/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 1, ../sass/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 1, ../sass/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 1, ../sass/_reset.scss */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 1, ../sass/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot");
+  src: url("../fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.svg#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+/* line 13, ../sass/_fonts.scss */
+[data-icon]:before {
+  font-family: 'icomoon';
+  content: attr(data-icon);
+  speak: none;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="icon-"] {
+*/
+/* line 31, ../sass/_fonts.scss */
+.icon-home, .icon-tag, .icon-github, .icon-twitter, .icon-github-2, .icon-feed, .icon-nancy, .icon-mail, .icon-category, .icon-post, .icon-archive, .icon-linkedin, .icon-heart {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 41, ../sass/_fonts.scss */
+.icon-home:before {
+  content: "\e008";
+}
+
+/* line 44, ../sass/_fonts.scss */
+.icon-tag:before {
+  content: "\e009";
+}
+
+/* line 47, ../sass/_fonts.scss */
+.icon-github:before {
+  content: "\e00a";
+}
+
+/* line 50, ../sass/_fonts.scss */
+.icon-twitter:before {
+  content: "\e00b";
+}
+
+/* line 53, ../sass/_fonts.scss */
+.icon-github-2:before {
+  content: "\e00e";
+}
+
+/* line 56, ../sass/_fonts.scss */
+.icon-feed:before {
+  content: "\e010";
+}
+
+/* line 59, ../sass/_fonts.scss */
+.icon-nancy:before {
+  content: "\e002";
+}
+
+/* line 62, ../sass/_fonts.scss */
+.icon-mail:before {
+  content: "\e011";
+}
+
+/* line 65, ../sass/_fonts.scss */
+.icon-category:before {
+  content: "\e000";
+}
+
+/* line 68, ../sass/_fonts.scss */
+.icon-post:before {
+  content: "\e001";
+}
+
+/* line 71, ../sass/_fonts.scss */
+.icon-archive:before {
+  content: "\e003";
+}
+
+/* line 74, ../sass/_fonts.scss */
+.icon-linkedin:before {
+  content: "\e004";
+}
+
+/* line 77, ../sass/_fonts.scss */
+.icon-heart:before {
+  content: "\e005";
+}
+
+/*
+
+github.com style (c) Vasily Polovnyov <vast@whiteants.net>
+
+*/
+/* line 7, ../sass/_github.scss */
+pre code {
+  display: block;
+  padding: 0.5em;
+  color: #333;
+  background: #fff;
+  line-height: 20px;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+/* line 20, ../sass/_github.scss */
+pre .comment,
+pre .template_comment,
+pre .diff .header,
+pre .javadoc {
+  color: #998;
+  font-style: italic;
+}
+
+/* line 32, ../sass/_github.scss */
+pre .keyword,
+pre .css .rule .keyword,
+pre .winutils,
+pre .javascript .title,
+pre .nginx .title,
+pre .subst,
+pre .request,
+pre .status {
+  color: #333;
+  font-weight: bold;
+}
+
+/* line 39, ../sass/_github.scss */
+pre .number,
+pre .hexcolor,
+pre .ruby .constant {
+  color: #099;
+}
+
+/* line 46, ../sass/_github.scss */
+pre .string,
+pre .tag .value,
+pre .phpdoc,
+pre .tex .formula {
+  color: #dd1144;
+}
+
+/* line 53, ../sass/_github.scss */
+pre .title,
+pre .id,
+pre .coffeescript .params,
+pre .scss .preprocessor {
+  color: #900;
+  font-weight: bold;
+}
+
+/* line 61, ../sass/_github.scss */
+pre .javascript .title,
+pre .lisp .title,
+pre .clojure .title,
+pre .subst {
+  font-weight: normal;
+}
+
+/* line 68, ../sass/_github.scss */
+pre .class .title,
+pre .haskell .type,
+pre .vhdl .literal,
+pre .tex .command {
+  color: #458;
+  font-weight: bold;
+}
+
+/* line 76, ../sass/_github.scss */
+pre .tag,
+pre .tag .title,
+pre .rules .property,
+pre .django .tag .keyword {
+  color: #000080;
+  font-weight: normal;
+}
+
+/* line 83, ../sass/_github.scss */
+pre .attribute,
+pre .variable,
+pre .lisp .body {
+  color: teal;
+}
+
+/* line 87, ../sass/_github.scss */
+pre .regexp {
+  color: #009926;
+}
+
+/* line 91, ../sass/_github.scss */
+pre .class {
+  color: #458;
+  font-weight: bold;
+}
+
+/* line 100, ../sass/_github.scss */
+pre .symbol,
+pre .ruby .symbol .string,
+pre .lisp .keyword,
+pre .tex .special,
+pre .prompt {
+  color: #990073;
+}
+
+/* line 106, ../sass/_github.scss */
+pre .built_in,
+pre .lisp .title,
+pre .clojure .built_in {
+  color: #0086b3;
+}
+
+/* line 114, ../sass/_github.scss */
+pre .preprocessor,
+pre .pi,
+pre .doctype,
+pre .shebang,
+pre .cdata {
+  color: #999;
+  font-weight: bold;
+}
+
+/* line 119, ../sass/_github.scss */
+pre .deletion {
+  background: #ffdddd;
+}
+
+/* line 123, ../sass/_github.scss */
+pre .addition {
+  background: #ddffdd;
+}
+
+/* line 127, ../sass/_github.scss */
+pre .diff .change {
+  background: #0086b3;
+}
+
+/* line 131, ../sass/_github.scss */
+pre .chunk {
+  color: #aaaaaa;
+}
+
+/* line 1, ../sass/pages/_about.scss */
+.about {
+  overflow: hidden;
+}
+/* line 4, ../sass/pages/_about.scss */
+.about ul {
+  list-style: none;
+  margin: 0;
+  overflow: hidden;
+}
+/* line 9, ../sass/pages/_about.scss */
+.about ul li {
+  float: left;
+  font-size: 40px;
+  text-align: center;
+}
+/* line 14, ../sass/pages/_about.scss */
+.about ul li i {
+  display: block;
+  margin-bottom: 10px;
+}
+/* line 19, ../sass/pages/_about.scss */
+.about ul li p {
+  border-bottom: 0;
+  color: #6a6359;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: justify;
+  padding: 20px;
+}
+/* line 27, ../sass/pages/_about.scss */
+.about ul li p i {
+  display: inline;
+  font-size: 10px;
+}
+
+@media only screen and (min-width: 48em) {
+  /* line 39, ../sass/pages/_about.scss */
+  .about ul li {
+    float: left;
+    font-size: 40px;
+    text-align: center;
+    width: 50%;
+  }
+  /* line 45, ../sass/pages/_about.scss */
+  .about ul li p {
+    border-bottom: 0;
+    color: #6a6359;
+    font-size: 14px;
+    line-height: 22px;
+    padding: 20px;
+  }
+  /* line 53, ../sass/pages/_about.scss */
+  .about ul li:nth-of-type(n) {
+    clear: none;
+  }
+  /* line 57, ../sass/pages/_about.scss */
+  .about ul li:nth-of-type(2n+1) {
+    clear: both;
+  }
+}
+/* line 2, ../sass/pages/_archive.scss */
+.archive li {
+  margin: 2px;
+}
+/* line 5, ../sass/pages/_archive.scss */
+.archive li a {
+  background-color: #f6f5f1;
+  color: #aaa28c;
+  display: inline-block;
+  padding: 5px;
+}
+/* line 11, ../sass/pages/_archive.scss */
+.archive li a:hover {
+  background-color: #aaa28c;
+  color: #f6f5f1;
+}
+
+/* line 2, ../sass/pages/_category.scss */
+.category li {
+  margin: 2px;
+}
+/* line 5, ../sass/pages/_category.scss */
+.category li a {
+  background-color: #f6f5f1;
+  color: #aaa28c;
+  display: inline-block;
+  padding: 5px;
+}
+/* line 11, ../sass/pages/_category.scss */
+.category li a:hover {
+  background-color: #aaa28c;
+  color: #f6f5f1;
+}
+
+/* line 3, ../sass/pages/_categories.scss */
+.categories ul {
+  overflow: hidden;
+}
+/* line 6, ../sass/pages/_categories.scss */
+.categories ul li {
+  float: left;
+  margin: 2px;
+}
+/* line 10, ../sass/pages/_categories.scss */
+.categories ul li a {
+  background-color: #f6f5f1;
+  color: #aaa28c;
+  display: inline-block;
+  padding: 5px;
+}
+/* line 17, ../sass/pages/_categories.scss */
+.categories ul li a:hover {
+  background-color: #aaa28c;
+  color: #f6f5f1;
+}
+
+/* line 2, ../sass/pages/_index.scss */
+.index ul {
+  list-style-type: disc;
+  margin-bottom: 20px;
+  margin-left: 35px;
+}
+/* line 10, ../sass/pages/_index.scss */
+.index .snow-series {
+  list-style: none;
+  margin-left: 0;
+  margin-top: 20px;
+}
+
+/* line 1, ../sass/_main.scss */
+body {
+  background-color: #f6f5f1;
+  color: #6a6359;
+  font: 16px/28px 'Open Sans', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, "Lucida Grande", sans-serif;
+  padding: 50px 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 9, ../sass/_main.scss */
+a {
+  color: #2ba6cb;
+  line-height: inherit;
+  text-decoration: none;
+}
+/* line 14, ../sass/_main.scss */
+a:visited {
+  color: #2ba6cb;
+}
+
+/* line 20, ../sass/_main.scss */
+div[class~="body"] > p:first-child {
+  color: #aaa;
+  border-bottom: 1px solid #ddd;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+/* line 30, ../sass/_main.scss */
+blockquote {
+  border-left: 4px solid #ddd;
+  padding: 0 20px;
+}
+/* line 34, ../sass/_main.scss */
+blockquote p {
+  color: #aaa28c;
+  border-bottom: 0;
+  font-family: Georgia, serif;
+  font-size: 20px;
+  font-style: italic;
+  padding-bottom: 0;
+}
+/* line 42, ../sass/_main.scss */
+blockquote p::before {
+  content: '\0022';
+}
+/* line 46, ../sass/_main.scss */
+blockquote p::after {
+  content: '\0022';
+}
+
+/* line 52, ../sass/_main.scss */
+code {
+  font-family: Consolas, 'Liberation Mono', Courier, monospace;
+  font-size: 14px;
+}
+
+/* line 57, ../sass/_main.scss */
+h1, h2, h3 {
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  text-transform: none;
+}
+
+/* line 63, ../sass/_main.scss */
+h1 {
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+/* line 68, ../sass/_main.scss */
+h2 {
+  font-size: 20px;
+}
+/* line 71, ../sass/_main.scss */
+h2 a {
+  color: #6a6359;
+}
+/* line 74, ../sass/_main.scss */
+h2 a:visited {
+  color: #6a6359;
+}
+/* line 79, ../sass/_main.scss */
+h2::first-letter {
+  text-transform: capitalize;
+}
+
+/* line 84, ../sass/_main.scss */
+em {
+  font-style: italic;
+}
+
+/* line 88, ../sass/_main.scss */
+strong {
+  font-weight: bold;
+}
+
+/* line 92, ../sass/_main.scss */
+.content {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 10px;
+  width: auto;
+}
+
+/* line 100, ../sass/_main.scss */
+nav a {
+  color: #aaa28c;
+  font-weight: bold;
+  font-size: 16px;
+}
+/* line 105, ../sass/_main.scss */
+nav a:visited {
+  color: #aaa28c;
+}
+
+/* line 111, ../sass/_main.scss */
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+/* line 116, ../sass/_main.scss */
+header {
+  overflow: hidden;
+  padding: 0 50px;
+}
+/* line 120, ../sass/_main.scss */
+header h1 {
+  color: #aaa28c;
+  font-size: 30px;
+}
+/* line 125, ../sass/_main.scss */
+header nav {
+  margin: 0;
+}
+/* line 129, ../sass/_main.scss */
+header nav ul li {
+  float: left;
+  font-weight: bold;
+  margin-left: 20px;
+}
+/* line 134, ../sass/_main.scss */
+header nav ul li:first-child {
+  margin-left: 0;
+}
+
+/* line 142, ../sass/_main.scss */
+footer {
+  margin: 20px auto;
+  text-align: center;
+}
+/* line 147, ../sass/_main.scss */
+footer nav a {
+  margin: 0 15px;
+}
+
+/* line 153, ../sass/_main.scss */
+article {
+  background-color: #fff;
+  border: 1px solid;
+  border-color: #e5e5e5 #dbdbdb #d2d2d2;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+  margin-top: 20px;
+  padding: 50px;
+}
+/* line 162, ../sass/_main.scss */
+article:first-child {
+  margin-top: 20px;
+}
+/* line 166, ../sass/_main.scss */
+article table {
+  background: white;
+}
+/* line 169, ../sass/_main.scss */
+article table td {
+  display: table-cell;
+  font-size: 0.875em;
+  line-height: 1.125em;
+}
+/* line 176, ../sass/_main.scss */
+article p {
+  margin-bottom: 1.25em;
+  text-rendering: optimizeLegibility;
+}
+/* line 181, ../sass/_main.scss */
+article header {
+  margin: 0;
+  padding: 0;
+}
+/* line 185, ../sass/_main.scss */
+article header div {
+  font-size: 12px;
+}
+/* line 189, ../sass/_main.scss */
+article header h1 {
+  color: #000;
+  display: block;
+}
+/* line 192, ../sass/_main.scss */
+article header h1 a {
+  color: #000;
+  font-family: 'Open Sans', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 20px;
+}
+/* line 199, ../sass/_main.scss */
+article header address {
+  display: inline;
+  font-size: 12px;
+}
+/* line 203, ../sass/_main.scss */
+article header address::before {
+  content: ' by ';
+  font-style: normal;
+}
+/* line 209, ../sass/_main.scss */
+article header time {
+  color: #aaa;
+  margin-bottom: 10px;
+}
+/* line 216, ../sass/_main.scss */
+article img.gravatar {
+  display: none;
+}
+/* line 221, ../sass/_main.scss */
+article footer {
+  margin: 20px 0 0 0;
+}
+/* line 223, ../sass/_main.scss */
+article footer small {
+  color: #aaa;
+  font-size: 10px;
+}
+/* line 229, ../sass/_main.scss */
+article em {
+  font-weight: bold;
+}
+/* line 233, ../sass/_main.scss */
+article h2 {
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* line 239, ../sass/_main.scss */
+kbd {
+  white-space: nowrap;
+  color: #000;
+  background: #eee;
+  border-style: solid;
+  border-color: #ccc #aaa #888 #bbb;
+  padding: 2px 6px;
+  border-radius: 4px;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px white inset;
+  background-color: #fafafa;
+  border-color: #cccccc #cccccc #ffffff;
+  border-style: solid solid none;
+  border-width: 1px 1px medium;
+  color: #444444;
+  font-family: 'Helvetica Neue',Helvetica,Arial,Sans-serif;
+  font-size: 14px;
+  height: 18px;
+  line-height: 16px;
+  white-space: nowrap;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+@media only screen and (min-width: 48em) {
+  /* line 263, ../sass/_main.scss */
+  .content {
+    padding: 0 50px;
+  }
+
+  /* line 268, ../sass/_main.scss */
+  header h1 {
+    display: inline-block;
+    float: left;
+  }
+  /* line 273, ../sass/_main.scss */
+  header nav {
+    float: right;
+  }
+
+  /* line 278, ../sass/_main.scss */
+  article {
+    margin-top: 80px;
+    padding: 50px;
+  }
+  /* line 283, ../sass/_main.scss */
+  article header h1 {
+    display: block;
+    width: 100%;
+  }
+  /* line 286, ../sass/_main.scss */
+  article header h1 a {
+    font-size: 36px;
+  }
+  /* line 288, ../sass/_main.scss */
+  article header h1 a:visited {
+    color: #000;
+  }
+  /* line 296, ../sass/_main.scss */
+  article img.gravatar {
+    border: 4px solid #fff;
+    border-radius: 100% 100%;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.8);
+    display: table-cell;
+    height: 72px;
+    margin-left: -90px;
+    position: absolute;
+    width: 72px;
+  }
+}
