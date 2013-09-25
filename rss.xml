@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?><rss xmlns:a10="http://www.w3.org/2005/Atom" version="2.0"><channel><title>TheCodeJunkie</title><link>http://thecodejunkie.com/rss.xml</link><description>TheCodeJunkie</description><item><guid isPermaLink="true">http://thecodejunkie.com/2013/09/10/i-am-back-and-this-time-i-am-taking-control/</guid><link>http://thecodejunkie.com/2013/09/10/i-am-back-and-this-time-i-am-taking-control/</link><title>I am back and this time I am taking control</title><description>&lt;p&gt;When Posterous closed down on April 30th 2012, they took my blog with them. I made sure I downloaded my content before the service shut down but did not make any effort in relocating. Why? I had gotten to the point where I thought there was something inheritly wrong with the way that blogging services and blog engines work.&lt;/p&gt;
+﻿<?xml version="1.0" encoding="utf-8"?><rss xmlns:a10="http://www.w3.org/2005/Atom" version="2.0"><channel><title>TheCodeJunkie</title><link>http://thecodejunkie.com/rss.xml</link><description>TheCodeJunkie</description><item><guid isPermaLink="true">http://thecodejunkie.com/2013/09/10/i-am-back-and-this-time-i-am-taking-control/</guid><link>http://thecodejunkie.com/2013/09/10/i-am-back-and-this-time-i-am-taking-control/</link><title>I am back and this time I am taking control</title><description>&lt;p&gt;When Posterous closed down on April 30th 2012, they took my blog with them. I made sure I downloaded my content before the service shut down but did not make any effort in relocating. Why? I had gotten to the point where I thought there was something inherently wrong with the way that blogging services and blog engines work.&lt;/p&gt;
 
 &lt;p&gt;A blog, in its purest form, is nothing but information with a bit of formatting, added to make it look nice, yet each service (and engine) seem to have need to mangle the content. They do this by either converting your data into HTML, thus losing the initial separation of content and formatting, and/or store it in a proprietary format. Either way, as soon as you have handed over your post, you are no longer in control and that bugs me.&lt;/p&gt;
 
@@ -7,12 +7,12 @@
 &lt;p&gt;The things that really appealed to me were&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;I would get write my content in a very neutral markup language&lt;/li&gt;
+&lt;li&gt;I would get to write my content in a very neutral markup language&lt;/li&gt;
 &lt;li&gt;I could store my posts in a normal Git repository&lt;/li&gt;
 &lt;li&gt;The pages would be static and there would be no need for databases or other software to run it&lt;/li&gt;
 &lt;/ul&gt;
 
-</description><pubDate>Mon, 09 Sep 2013 22:00:00 Z</pubDate><a10:updated>2013-09-09T22:00:00Z</a10:updated><a10:content type="text">&lt;p&gt;When Posterous closed down on April 30th 2012, they took my blog with them. I made sure I downloaded my content before the service shut down but did not make any effort in relocating. Why? I had gotten to the point where I thought there was something inheritly wrong with the way that blogging services and blog engines work.&lt;/p&gt;
+</description><pubDate>Mon, 09 Sep 2013 22:00:00 Z</pubDate><a10:updated>2013-09-09T22:00:00Z</a10:updated><a10:content type="text">&lt;p&gt;When Posterous closed down on April 30th 2012, they took my blog with them. I made sure I downloaded my content before the service shut down but did not make any effort in relocating. Why? I had gotten to the point where I thought there was something inherently wrong with the way that blogging services and blog engines work.&lt;/p&gt;
 
 &lt;p&gt;A blog, in its purest form, is nothing but information with a bit of formatting, added to make it look nice, yet each service (and engine) seem to have need to mangle the content. They do this by either converting your data into HTML, thus losing the initial separation of content and formatting, and/or store it in a proprietary format. Either way, as soon as you have handed over your post, you are no longer in control and that bugs me.&lt;/p&gt;
 
@@ -21,7 +21,7 @@
 &lt;p&gt;The things that really appealed to me were&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;I would get write my content in a very neutral markup language&lt;/li&gt;
+&lt;li&gt;I would get to write my content in a very neutral markup language&lt;/li&gt;
 &lt;li&gt;I could store my posts in a normal Git repository&lt;/li&gt;
 &lt;li&gt;The pages would be static and there would be no need for databases or other software to run it&lt;/li&gt;
 &lt;/ul&gt;
