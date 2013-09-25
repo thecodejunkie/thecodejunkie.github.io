@@ -663,7 +663,7 @@ article header time {
   margin-bottom: 10px;
 }
 /* line 225, ../sass/_main.scss */
-article img.gravatar {
+article div.gravatar {
   display: none;
 }
 /* line 230, ../sass/_main.scss */
@@ -753,14 +753,20 @@ kbd {
     color: #000;
   }
   /* line 313, ../sass/_main.scss */
-  article img.gravatar {
+  article div.gravatar {
     border: 4px solid #fff;
     border-radius: 100% 100%;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.8);
-    display: table-cell;
+    display: block;
     height: 72px;
     margin-left: -90px;
     position: absolute;
+    width: 72px;
+  }
+  /* line 323, ../sass/_main.scss */
+  article div.gravatar img {
+    border-radius: 100% 100%;
+    height: 72px;
     width: 72px;
   }
 }
