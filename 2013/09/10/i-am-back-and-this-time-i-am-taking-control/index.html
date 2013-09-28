@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="description" content="The blog of TheCodeJunkie" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<meta http-equiv="last-modified" content="2013-09-27T09:50:52.4824673+02:00" />
+	<meta http-equiv="last-modified" content="2013-09-28T15:49:44.5243950+02:00" />
 
 	    <title>thecodejunkie.com - 
 	I am back and this time I am taking control
@@ -121,25 +121,28 @@
 	</div>
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="/js/jquery-1.10.2.min.js"><\/script>')</script>
+	<script>window.jQuery || document.write('<script src="/js/jquery-1.10.2.min.js"><\/script>')</script>
 	<script src="/js/highlight.js"></script>
 
 	<script>
 
 		$(function () {
 			hljs.tabReplace = '  ';
-	    	hljs.initHighlightingOnLoad();
+			hljs.initHighlightingOnLoad();
 
-	    	window.scrollTo(0, 1);
+			window.scrollTo(0, 1);
 		});
 		
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-21346449-1']);
+		_gaq.push(['_setDomainName', 'thecodejunkie.com']);
+		_gaq.push(['_trackPageview']);
 
-		ga('create', 'UA-21346449-1');
-		ga('send', 'pageview');
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
 
 	</script>
 </body>
