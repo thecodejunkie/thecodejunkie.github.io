@@ -1,4 +1,34 @@
-<rss xmlns:a10="http://www.w3.org/2005/Atom" version="2.0"><channel><title>TheCodeJunkie</title><link>http://thecodejunkie.com/rss.xml</link><description>TheCodeJunkie</description><item><guid isPermaLink="true">http://thecodejunkie.com/2013/09/10/i-am-back-and-this-time-i-am-taking-control/</guid><link>http://thecodejunkie.com/2013/09/10/i-am-back-and-this-time-i-am-taking-control/</link><title>I am back and this time I am taking control</title><description>&lt;p&gt;When Posterous closed down on April 30th 2012, they took my blog with them. I made sure I downloaded my content before the service shut down but did not make any effort in relocating. Why? I had gotten to the point where I thought there was something inherently wrong with the way that blogging services and blog engines work.&lt;/p&gt;
+<rss xmlns:a10="http://www.w3.org/2005/Atom" version="2.0"><channel><title>TheCodeJunkie</title><link>http://thecodejunkie.com/rss.xml</link><description>TheCodeJunkie</description><item><guid isPermaLink="true">http://thecodejunkie.com/2013/11/14/i-created-the-github-expandinizer-extension-for-google-chrome/</guid><link>http://thecodejunkie.com/2013/11/14/i-created-the-github-expandinizer-extension-for-google-chrome/</link><title>I created the Github.Expandinizr extension for Google Chrome</title><description>&lt;p&gt;&lt;img src="/img/github.expandinizer.logo.png" alt="" /&gt;&lt;/p&gt;
+
+&lt;p&gt;A while back when &lt;a href="https://github.com"&gt;GitHub&lt;/a&gt; updated the design of their web page, they introduces a change that has annoyed a lot of people; they decided to truncate the file/folder name in the repository browser. This makes it impossible to distinguish files/folders that follow a naming conventions, such as namespace hierarchies.&lt;/p&gt;
+
+</description><pubDate>Wed, 13 Nov 2013 23:00:00 Z</pubDate><a10:updated>2013-11-13T23:00:00Z</a10:updated><a10:content type="text">&lt;p&gt;&lt;img src="/img/github.expandinizer.logo.png" alt="" /&gt;&lt;/p&gt;
+
+&lt;p&gt;A while back when &lt;a href="https://github.com"&gt;GitHub&lt;/a&gt; updated the design of their web page, they introduces a change that has annoyed a lot of people; they decided to truncate the file/folder name in the repository browser. This makes it impossible to distinguish files/folders that follow a naming conventions, such as namespace hierarchies.&lt;/p&gt;
+
+&lt;!--excerpt--&gt; 
+
+&lt;p&gt;What I did was create a very simple Google Chrome extension, called &lt;a href="https://chrome.google.com/webstore/detail/githubexpandinizr/cbehdjjcilgnejbpnjhobkiiggkedfib"&gt;GitHub.Expandinizr&lt;/a&gt; which &lt;em&gt;kinda&lt;/em&gt; solves the problem. I say kinda, because it is a quick hack really and it was not designed to be prefect. That said, if you can improve it, then please send a pull-request, you can find the source at &lt;a href="https://github.com/thecodejunkie/github.expandinizr"&gt;github.com/thecodejunkie/github.expandinizr&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;So what does it do? All it really does is that when it detects that you are browsing github.com, it will inject a single css class into the page to remove the ellipsis from the file/folder name.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;.css-truncate.css-truncate-target {
+    display: inline !important;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This css class is usually sets the &lt;code&gt;display&lt;/code&gt; property to &lt;code&gt;inline-block&lt;/code&gt; with an added &lt;code&gt;text-overflow&lt;/code&gt; that has been set to &lt;code&gt;ellipsis&lt;/code&gt;. By changing the display we prevent it, in a rather crude way, to ellipsis the text. Notice that the css declaration has been marked as &lt;code&gt;!important&lt;/code&gt; which will ensure it gets higher priority than the one in the GitHub css declaration.&lt;/p&gt;
+
+&lt;h2&gt;Known issues&lt;/h2&gt;
+
+&lt;p&gt;Like I said, this is a hack. If the un-ellipsed text becomes too long, then it could cause the new width of the repository browser to push into other page elements, such as the sidebar navigation on the right hand side of the design. This is especially noticeable on the main page of the repository browser, since the sidebar is expanded and takes up much more horizontal space, than when it has been collapsed.&lt;/p&gt;
+
+&lt;p&gt;I've fine with this, so at present I am not going to spend any time trying to figure out an alternative approach, that resolves this issues (I spend 10 minutes on it and got a decent result, but it caused other problems). But, like I said, if you come up with a better solution, send me a pull-request with an updated &lt;a href="https://github.com/thecodejunkie/github.expandinizr/blob/master/ext/content/inject.css"&gt;inject.css&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2&gt;All-in-all&lt;/h2&gt;
+
+&lt;p&gt;This was a fun learning experience. It was the first time that I created a proper Chrome Extension and it was certainly the first time I published it in the Chrome Store. Who knew it cost $5 to become a publisher in the store? Now I know!&lt;/p&gt;
+</a10:content></item><item><guid isPermaLink="true">http://thecodejunkie.com/2013/09/10/i-am-back-and-this-time-i-am-taking-control/</guid><link>http://thecodejunkie.com/2013/09/10/i-am-back-and-this-time-i-am-taking-control/</link><title>I am back and this time I am taking control</title><description>&lt;p&gt;When Posterous closed down on April 30th 2012, they took my blog with them. I made sure I downloaded my content before the service shut down but did not make any effort in relocating. Why? I had gotten to the point where I thought there was something inherently wrong with the way that blogging services and blog engines work.&lt;/p&gt;
 
 &lt;p&gt;A blog, in its purest form, is nothing but information with a bit of formatting, added to make it look nice, yet each service (and engine) seem to have need to mangle the content. They do this by either converting your data into HTML, thus losing the initial separation of content and formatting, and/or store it in a proprietary format. Either way, as soon as you have handed over your post, you are no longer in control and that bugs me.&lt;/p&gt;
 

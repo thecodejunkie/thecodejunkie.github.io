@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="description" content="The blog of TheCodeJunkie" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta http-equiv="last-modified" content="2013-11-14T23:20:32.6381610+01:00" />
+
+	    <title>thecodejunkie.com - 
+	I created the Github.Expandinizr extension for Google Chrome
+</title>
+
+	<link rel="canonical" href="http://thecodejunkie.com/2013/11/14/i-created-the-github-expandinizer-extension-for-google-chrome/" />
+	<link rel="alternate" type="application/rss+xml" title="TheCodeJunkie" href="http://thecodejunkie.com/rss.xml" />
+	<link rel="stylesheet" href="/css/app.css" />
+
+	<!--[if lt IE 9]>
+	<script src="/js/html5shiv.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+
+	<div class="content">
+		<header>
+			<h1>thecodejunkie</h1>
+			<nav>
+				<ul>
+					<li><a href="/" title="Back to the main page">Home</a></li>
+					<li><a href="/categories" title="List of all the available blog categories">Categories</a></li>
+					<li><a href="/archive" title="Archive of all the posts onthe blog">Archive</a></li>
+					<li><a href="/about" title="About me, contact details and so on">About</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main role="main">
+			
+
+
+
+<article>
+	<div class="gravatar">
+		<img src="http://www.gravatar.com/avatar/0bf4194335195c9225f8f22e4e70b192.jpg?s=128" title="TheCodeJunkie" />
+	</div>
+
+	<header>
+		<h1><a href="/2013/11/14/i-created-the-github-expandinizer-extension-for-google-chrome/">I created the Github.Expandinizr extension for Google Chrome</a></h1>
+
+		<div class="post-info">
+	      	<time pubdate datetime='2013-11-14' title='den 14 november 2013'>2013-11-14</time>
+			
+			<address class="author">
+				<a rel="author" href="http://twitter.com/TheCodeJunkie">TheCodeJunkie</a>
+			</address>
+
+			in 
+
+			<a href='/category/chrome' title='Chrome'>Chrome</a>, <a href='/category/announcement' title='Announcement'>Announcement</a>
+		</div>
+	</header>
+	
+	<div class="body">
+		<p><img src="/img/github.expandinizer.logo.png" alt="" /></p>
+
+<p>A while back when <a href="https://github.com">GitHub</a> updated the design of their web page, they introduces a change that has annoyed a lot of people; they decided to truncate the file/folder name in the repository browser. This makes it impossible to distinguish files/folders that follow a naming conventions, such as namespace hierarchies.</p>
+
+<!--excerpt--> 
+
+<p>What I did was create a very simple Google Chrome extension, called <a href="https://chrome.google.com/webstore/detail/githubexpandinizr/cbehdjjcilgnejbpnjhobkiiggkedfib">GitHub.Expandinizr</a> which <em>kinda</em> solves the problem. I say kinda, because it is a quick hack really and it was not designed to be prefect. That said, if you can improve it, then please send a pull-request, you can find the source at <a href="https://github.com/thecodejunkie/github.expandinizr">github.com/thecodejunkie/github.expandinizr</a>.</p>
+
+<p>So what does it do? All it really does is that when it detects that you are browsing github.com, it will inject a single css class into the page to remove the ellipsis from the file/folder name.</p>
+
+<pre><code>.css-truncate.css-truncate-target {
+    display: inline !important;
+}
+</code></pre>
+
+<p>This css class is usually sets the <code>display</code> property to <code>inline-block</code> with an added <code>text-overflow</code> that has been set to <code>ellipsis</code>. By changing the display we prevent it, in a rather crude way, to ellipsis the text. Notice that the css declaration has been marked as <code>!important</code> which will ensure it gets higher priority than the one in the GitHub css declaration.</p>
+
+<h2>Known issues</h2>
+
+<p>Like I said, this is a hack. If the un-ellipsed text becomes too long, then it could cause the new width of the repository browser to push into other page elements, such as the sidebar navigation on the right hand side of the design. This is especially noticeable on the main page of the repository browser, since the sidebar is expanded and takes up much more horizontal space, than when it has been collapsed.</p>
+
+<p>I've fine with this, so at present I am not going to spend any time trying to figure out an alternative approach, that resolves this issues (I spend 10 minutes on it and got a decent result, but it caused other problems). But, like I said, if you come up with a better solution, send me a pull-request with an updated <a href="https://github.com/thecodejunkie/github.expandinizr/blob/master/ext/content/inject.css">inject.css</a></p>
+
+<h2>All-in-all</h2>
+
+<p>This was a fun learning experience. It was the first time that I created a proper Chrome Extension and it was certainly the first time I published it in the Chrome Store. Who knew it cost $5 to become a publisher in the store? Now I know!</p>
+
+	</div>
+
+	<div class="comments">
+		<div id="disqus_thread"></div>
+<script>
+    var reset_disqus = function(){
+        DISQUS.reset({
+            reload: true,
+            config: function () {
+                //this.page.identifier = '';
+                this.page.url = 'http://thecodejunkie.com/2013/11/14/i-created-the-github-expandinizer-extension-for-google-chrome/';
+                //this.page.title = '';
+            }
+        });
+    };
+
+    var disqus_shortname = 'thecodejunkie';
+    var disqus_url = 'http://thecodejunkie.com/2013/11/14/i-created-the-github-expandinizer-extension-for-google-chrome/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    window.addEventListener('orientationchange', reset_disqus);
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+	</div>
+
+	<footer>
+		<small>&copy; Copyright 2013, Andreas H&#229;kansson</small>
+	</footer>
+</article>
+		</main>
+
+		
+
+	</div>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="/js/jquery-1.10.2.min.js"><\/script>')</script>
+	<script src="/js/highlight.js"></script>
+
+	<script>
+
+		$(function () {
+			hljs.tabReplace = '  ';
+			hljs.initHighlightingOnLoad();
+
+			window.scrollTo(0, 1);
+		});
+		
+		<script type="text/javascript">
+var _gaq = _gaq || [];
+
+_gaq.push(['_setAccount', 'UA-21346449-1']);
+_gaq.push(['_trackPageview']);
+        
+(function () {
+    var ga = document.createElement('script');
+    ga.type = 'text/javascript';
+    ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+	</script>
+</body>
+</html>
