@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="description" content="The blog of TheCodeJunkie" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta http-equiv="last-modified" content="2013-11-15T13:25:38.5953975+01:00" />
+
+	    <title>thecodejunkie.com - 
+	On the Nancy templates for Visual Studio
+</title>
+
+	<link rel="canonical" href="http://thecodejunkie.com/2013/11/15/on-the-nancy-templates-for-visual-studio/" />
+	<link rel="alternate" type="application/rss+xml" title="TheCodeJunkie" href="http://thecodejunkie.com/rss.xml" />
+	<link rel="stylesheet" href="/css/app.css" />
+
+	<!--[if lt IE 9]>
+	<script src="/js/html5shiv.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+
+	<div class="content">
+		<header>
+			<h1>thecodejunkie</h1>
+			<nav>
+				<ul>
+					<li><a href="/" title="Back to the main page">Home</a></li>
+					<li><a href="/categories" title="List of all the available blog categories">Categories</a></li>
+					<li><a href="/archive" title="Archive of all the posts onthe blog">Archive</a></li>
+					<li><a href="/about" title="About me, contact details and so on">About</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main role="main">
+			
+
+
+
+<article>
+	<div class="gravatar">
+		<img src="http://www.gravatar.com/avatar/0bf4194335195c9225f8f22e4e70b192.jpg?s=128" title="TheCodeJunkie" />
+	</div>
+
+	<header>
+		<h1><a href="/2013/11/15/on-the-nancy-templates-for-visual-studio/">On the Nancy templates for Visual Studio</a></h1>
+
+		<div class="post-info">
+	      	<time pubdate datetime='2013-11-15' title='den 15 november 2013'>2013-11-15</time>
+			
+			<address class="author">
+				<a rel="author" href="http://twitter.com/TheCodeJunkie">TheCodeJunkie</a>
+			</address>
+
+			in 
+
+			<a href='/category/nancy' title='Nancy'>Nancy</a>
+		</div>
+	</header>
+	
+	<div class="body">
+		<p>A while back we introduced Nancy templates for Visual Studio, which gave you the ability to create a new Nancy project that has Nancy added out-of-the-box. This meant no more creating an empty ASP.NET web application, removing all those pesky project references and installing the Nancy nugets, just to get up and running.</p>
+
+<p>Unfortunately we have not been able to update these template with every new release of Nancy, which means you have had to update the Nancy Nugets to make sure you where using the latest build. </p>
+
+<p>Believe me when I tell you that this has not been out of laziness, but rather the instinct to survive, but hopefully we've taken a couple of important reasons to remedy this in the future</p>
+
+<!--excerpt-->
+
+<h2>So what does it take to create a template (with Nuget support)?</h2>
+
+<p>As it turns out, quite a lot actually. It definitely takes a lot more than I anticipated and it is quite obvious that that tooling was not created for performing anything else than trivial template tasks.</p>
+
+<p>Here is basically the steps we have to do extract the template from the projects</p>
+
+<ul>
+<li>Start Visual Studio and load the solution</li>
+<li>File -> Export Template</li>
+<li>Make sure "Project Template" is selected on the first page of the Wizard + select the correct project in the drop-down</li>
+<li>Fill out template name, description, icon and preview image (either use the Browse button or copy/paste the path)</li>
+<li>Export the template to the default (non-changeable) location</li>
+<li>Go the output location</li>
+<li>Break open the zip file</li>
+<li>Open the MyTemplate.vstemplate file (yes, they all get this name when you export)</li>
+<li>Modify the "DefaultName" element</li>
+<li>Modify all .cs files and so that the namespace declarations (and other things you need to like assembly name etc) so it uses the $safeprojectname$ placeholder</li>
+<li>Insert the <package> node (and sub-nodes), which contains information on which Nuget packages to install + versions</li>
+<li>Zip up the content again (making sure you get the folder structure right)</li>
+<li>Copy the zip to the right location in our VSIX project (ProjectTemplates\CSharp\Web)</li>
+<li>Go back into visual studio, include the zip in the project, edit it's build action to "content" and configure it to be included in the VSI</li>
+</ul>
+
+<p>We have to repeat these things for each and everyone of the templates we ship. We currently have 9 C# templates and that is already quite a work load to do for each new release of Nancy we put out.</p>
+
+<p>If that was not enough, the awesome <a href="http://wizardsofsmart.net/">Ryan Riley</a> (<a href="http://twitter.com/panesofglass">@panesofglass</a> on Twitter) and <a href="http://blogs.lessthandot.com/index.php/All/?disp=authdir&amp;author=7">Christiaan Baes</a> (<a href="http://twitter.com/chrissie1">@chrissie1</a> on Twitter) send us pull-requests for adding F# and VB.NET templates.</p>
+
+<p>This pushed the number of template count a bit into the 20's and this is pretty much where our work efforts kept coming to a grinding halt. The sheer amount of work required to get these new templates out is what made me start (and abandon) the work several times.</p>
+
+<p>Yesterday, me and <a href="http://twitter.com/grumpydev">@grumpydev</a> took the decision to only support the C# templates moving forward. We really appreciate the work put in by Ryan and Christiaan, but we came to the conclusion that the vast majority of our users are C# users and the added workload could not justify us supporting F# and VB.NET.</p>
+
+<p>That said, we would really like to thank Ryan and Christiaan for their work and support and would like to encourage them to either support the templates themselves, or see someone else in the community step up and do it for them (or why not team up with them if these templates are in your interest?)</p>
+
+<h2>Moving forward</h2>
+
+<p>By deciding to only focus on the C# templates, we reduce our workload by a huge chunk moving forward and thanks to the awesome <a href="http://devlead.se">Mattias Karlsson</a> (<a href="http://twitter.com/devload">@devlead</a> on Twitter), whom sent us a pull-request last night with the C# templates updated to 0.22.1, we expect to have these in your Visual Studio any day now!</p>
+
+<p>We have also decided to look into the <a href="http://sidewaffle.com/">Sidewaffle</a> project as an alternative to the VSIX distribution. If anyone would like to offer their Sidewaffle expertise or just help out, please let us know</p>
+
+<p>Thanks for your patience!</p>
+
+	</div>
+
+	<div class="comments">
+		<div id="disqus_thread"></div>
+<script>
+    var reset_disqus = function(){
+        DISQUS.reset({
+            reload: true,
+            config: function () {
+                //this.page.identifier = '';
+                this.page.url = 'http://thecodejunkie.com/2013/11/15/on-the-nancy-templates-for-visual-studio/';
+                //this.page.title = '';
+            }
+        });
+    };
+
+    var disqus_shortname = 'thecodejunkie';
+    var disqus_url = 'http://thecodejunkie.com/2013/11/15/on-the-nancy-templates-for-visual-studio/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    window.addEventListener('orientationchange', reset_disqus);
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+	</div>
+
+	<footer>
+		<small>&copy; Copyright 2013, Andreas H&#229;kansson</small>
+	</footer>
+</article>
+		</main>
+
+		
+
+	</div>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="/js/jquery-1.10.2.min.js"><\/script>')</script>
+	<script src="/js/highlight.js"></script>
+
+	<script>
+
+		$(function () {
+			hljs.tabReplace = '  ';
+			hljs.initHighlightingOnLoad();
+
+			window.scrollTo(0, 1);
+		});
+		
+		<script type="text/javascript">
+var _gaq = _gaq || [];
+
+_gaq.push(['_setAccount', 'UA-21346449-1']);
+_gaq.push(['_trackPageview']);
+        
+(function () {
+    var ga = document.createElement('script');
+    ga.type = 'text/javascript';
+    ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+	</script>
+</body>
+</html>

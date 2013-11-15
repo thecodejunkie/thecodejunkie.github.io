@@ -1,4 +1,58 @@
-<rss xmlns:a10="http://www.w3.org/2005/Atom" version="2.0"><channel><title>TheCodeJunkie</title><link>http://thecodejunkie.com/rss.xml</link><description>TheCodeJunkie</description><item><guid isPermaLink="true">http://thecodejunkie.com/2013/11/14/i-created-the-github-expandinizer-extension-for-google-chrome/</guid><link>http://thecodejunkie.com/2013/11/14/i-created-the-github-expandinizer-extension-for-google-chrome/</link><title>I created the Github.Expandinizr extension for Google Chrome</title><description>&lt;p&gt;&lt;img src="/img/github.expandinizer.logo.png" alt="" /&gt;&lt;/p&gt;
+<rss xmlns:a10="http://www.w3.org/2005/Atom" version="2.0"><channel><title>TheCodeJunkie</title><link>http://thecodejunkie.com/rss.xml</link><description>TheCodeJunkie</description><item><guid isPermaLink="true">http://thecodejunkie.com/2013/11/15/on-the-nancy-templates-for-visual-studio/</guid><link>http://thecodejunkie.com/2013/11/15/on-the-nancy-templates-for-visual-studio/</link><title>On the Nancy templates for Visual Studio</title><description>&lt;p&gt;A while back we introduced Nancy templates for Visual Studio, which gave you the ability to create a new Nancy project that has Nancy added out-of-the-box. This meant no more creating an empty ASP.NET web application, removing all those pesky project references and installing the Nancy nugets, just to get up and running.&lt;/p&gt;
+
+&lt;p&gt;Unfortunately we have not been able to update these template with every new release of Nancy, which means you have had to update the Nancy Nugets to make sure you where using the latest build. &lt;/p&gt;
+
+&lt;p&gt;Believe me when I tell you that this has not been out of laziness, but rather the instinct to survive, but hopefully we've taken a couple of important reasons to remedy this in the future&lt;/p&gt;
+
+</description><pubDate>Thu, 14 Nov 2013 23:00:00 Z</pubDate><a10:updated>2013-11-14T23:00:00Z</a10:updated><a10:content type="text">&lt;p&gt;A while back we introduced Nancy templates for Visual Studio, which gave you the ability to create a new Nancy project that has Nancy added out-of-the-box. This meant no more creating an empty ASP.NET web application, removing all those pesky project references and installing the Nancy nugets, just to get up and running.&lt;/p&gt;
+
+&lt;p&gt;Unfortunately we have not been able to update these template with every new release of Nancy, which means you have had to update the Nancy Nugets to make sure you where using the latest build. &lt;/p&gt;
+
+&lt;p&gt;Believe me when I tell you that this has not been out of laziness, but rather the instinct to survive, but hopefully we've taken a couple of important reasons to remedy this in the future&lt;/p&gt;
+
+&lt;!--excerpt--&gt;
+
+&lt;h2&gt;So what does it take to create a template (with Nuget support)?&lt;/h2&gt;
+
+&lt;p&gt;As it turns out, quite a lot actually. It definitely takes a lot more than I anticipated and it is quite obvious that that tooling was not created for performing anything else than trivial template tasks.&lt;/p&gt;
+
+&lt;p&gt;Here is basically the steps we have to do extract the template from the projects&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Start Visual Studio and load the solution&lt;/li&gt;
+&lt;li&gt;File -&gt; Export Template&lt;/li&gt;
+&lt;li&gt;Make sure "Project Template" is selected on the first page of the Wizard + select the correct project in the drop-down&lt;/li&gt;
+&lt;li&gt;Fill out template name, description, icon and preview image (either use the Browse button or copy/paste the path)&lt;/li&gt;
+&lt;li&gt;Export the template to the default (non-changeable) location&lt;/li&gt;
+&lt;li&gt;Go the output location&lt;/li&gt;
+&lt;li&gt;Break open the zip file&lt;/li&gt;
+&lt;li&gt;Open the MyTemplate.vstemplate file (yes, they all get this name when you export)&lt;/li&gt;
+&lt;li&gt;Modify the "DefaultName" element&lt;/li&gt;
+&lt;li&gt;Modify all .cs files and so that the namespace declarations (and other things you need to like assembly name etc) so it uses the $safeprojectname$ placeholder&lt;/li&gt;
+&lt;li&gt;Insert the &lt;package&gt; node (and sub-nodes), which contains information on which Nuget packages to install + versions&lt;/li&gt;
+&lt;li&gt;Zip up the content again (making sure you get the folder structure right)&lt;/li&gt;
+&lt;li&gt;Copy the zip to the right location in our VSIX project (ProjectTemplates\CSharp\Web)&lt;/li&gt;
+&lt;li&gt;Go back into visual studio, include the zip in the project, edit it's build action to "content" and configure it to be included in the VSI&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We have to repeat these things for each and everyone of the templates we ship. We currently have 9 C# templates and that is already quite a work load to do for each new release of Nancy we put out.&lt;/p&gt;
+
+&lt;p&gt;If that was not enough, the awesome &lt;a href="http://wizardsofsmart.net/"&gt;Ryan Riley&lt;/a&gt; (&lt;a href="http://twitter.com/panesofglass"&gt;@panesofglass&lt;/a&gt; on Twitter) and &lt;a href="http://blogs.lessthandot.com/index.php/All/?disp=authdir&amp;amp;author=7"&gt;Christiaan Baes&lt;/a&gt; (&lt;a href="http://twitter.com/chrissie1"&gt;@chrissie1&lt;/a&gt; on Twitter) send us pull-requests for adding F# and VB.NET templates.&lt;/p&gt;
+
+&lt;p&gt;This pushed the number of template count a bit into the 20's and this is pretty much where our work efforts kept coming to a grinding halt. The sheer amount of work required to get these new templates out is what made me start (and abandon) the work several times.&lt;/p&gt;
+
+&lt;p&gt;Yesterday, me and &lt;a href="http://twitter.com/grumpydev"&gt;@grumpydev&lt;/a&gt; took the decision to only support the C# templates moving forward. We really appreciate the work put in by Ryan and Christiaan, but we came to the conclusion that the vast majority of our users are C# users and the added workload could not justify us supporting F# and VB.NET.&lt;/p&gt;
+
+&lt;p&gt;That said, we would really like to thank Ryan and Christiaan for their work and support and would like to encourage them to either support the templates themselves, or see someone else in the community step up and do it for them (or why not team up with them if these templates are in your interest?)&lt;/p&gt;
+
+&lt;h2&gt;Moving forward&lt;/h2&gt;
+
+&lt;p&gt;By deciding to only focus on the C# templates, we reduce our workload by a huge chunk moving forward and thanks to the awesome &lt;a href="http://devlead.se"&gt;Mattias Karlsson&lt;/a&gt; (&lt;a href="http://twitter.com/devload"&gt;@devlead&lt;/a&gt; on Twitter), whom sent us a pull-request last night with the C# templates updated to 0.22.1, we expect to have these in your Visual Studio any day now!&lt;/p&gt;
+
+&lt;p&gt;We have also decided to look into the &lt;a href="http://sidewaffle.com/"&gt;Sidewaffle&lt;/a&gt; project as an alternative to the VSIX distribution. If anyone would like to offer their Sidewaffle expertise or just help out, please let us know&lt;/p&gt;
+
+&lt;p&gt;Thanks for your patience!&lt;/p&gt;
+</a10:content></item><item><guid isPermaLink="true">http://thecodejunkie.com/2013/11/14/i-created-the-github-expandinizer-extension-for-google-chrome/</guid><link>http://thecodejunkie.com/2013/11/14/i-created-the-github-expandinizer-extension-for-google-chrome/</link><title>I created the Github.Expandinizr extension for Google Chrome</title><description>&lt;p&gt;&lt;img src="/img/github.expandinizer.logo.png" alt="" /&gt;&lt;/p&gt;
 
 &lt;p&gt;A while back when &lt;a href="https://github.com"&gt;GitHub&lt;/a&gt; updated the design of their web page, they introduces a change that has annoyed a lot of people; they decided to truncate the file/folder name in the repository browser. This makes it impossible to distinguish files/folders that follow a naming conventions, such as namespace hierarchies.&lt;/p&gt;
 
