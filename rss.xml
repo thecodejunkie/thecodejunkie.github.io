@@ -2,13 +2,13 @@
 
 &lt;p&gt;Unfortunately we have not been able to update these template with every new release of Nancy, which means you have had to update the Nancy Nugets to make sure you where using the latest build. &lt;/p&gt;
 
-&lt;p&gt;Believe me when I tell you that this has not been out of laziness, but rather the instinct to survive, but hopefully we've taken a couple of important reasons to remedy this in the future&lt;/p&gt;
+&lt;p&gt;Believe me when I tell you that this has not been out of laziness, but rather the instinct to survive, but hopefully we've taken a couple of important decisions to remedy this in the future&lt;/p&gt;
 
 </description><pubDate>Thu, 14 Nov 2013 23:00:00 Z</pubDate><a10:updated>2013-11-14T23:00:00Z</a10:updated><a10:content type="text">&lt;p&gt;A while back we introduced Nancy templates for Visual Studio, which gave you the ability to create a new Nancy project that has Nancy added out-of-the-box. This meant no more creating an empty ASP.NET web application, removing all those pesky project references and installing the Nancy nugets, just to get up and running.&lt;/p&gt;
 
 &lt;p&gt;Unfortunately we have not been able to update these template with every new release of Nancy, which means you have had to update the Nancy Nugets to make sure you where using the latest build. &lt;/p&gt;
 
-&lt;p&gt;Believe me when I tell you that this has not been out of laziness, but rather the instinct to survive, but hopefully we've taken a couple of important reasons to remedy this in the future&lt;/p&gt;
+&lt;p&gt;Believe me when I tell you that this has not been out of laziness, but rather the instinct to survive, but hopefully we've taken a couple of important decisions to remedy this in the future&lt;/p&gt;
 
 &lt;!--excerpt--&gt;
 
