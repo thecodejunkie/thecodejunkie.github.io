@@ -9,10 +9,10 @@
 	<meta http-equiv="last-modified" content="2013-12-14T12:50:18.2820620+01:00" />
 
 	    <title>thecodejunkie.com - 
-	I created the Github.Expandinizr extension for Google Chrome
+	Community maintained Nancy F# templates for Visual Studio
 </title>
 
-	<link rel="canonical" href="http://thecodejunkie.com/2013/11/14/i-created-the-github-expandinizer-extension-for-google-chrome/" />
+	<link rel="canonical" href="http://thecodejunkie.com/2013/12/13/community-maintained-nancy-fsharp-templates-for-visual-studio/" />
 	<link rel="alternate" type="application/rss+xml" title="TheCodeJunkie" href="http://thecodejunkie.com/rss.xml" />
 	<link rel="stylesheet" href="/css/app.css" />
 
@@ -47,10 +47,10 @@
 	</div>
 
 	<header>
-		<h1><a href="/2013/11/14/i-created-the-github-expandinizer-extension-for-google-chrome/">I created the Github.Expandinizr extension for Google Chrome</a></h1>
+		<h1><a href="/2013/12/13/community-maintained-nancy-fsharp-templates-for-visual-studio/">Community maintained Nancy F# templates for Visual Studio</a></h1>
 
 		<div class="post-info">
-	      	<time pubdate datetime='2013-11-14' title='den 14 november 2013'>2013-11-14</time>
+	      	<time pubdate datetime='2013-12-13' title='den 13 december 2013'>2013-12-13</time>
 			
 			<address class="author">
 				<a rel="author" href="http://twitter.com/TheCodeJunkie">TheCodeJunkie</a>
@@ -58,37 +58,26 @@
 
 			in 
 
-			<a href='/category/chrome' title='Chrome'>Chrome</a>, <a href='/category/announcement' title='Announcement'>Announcement</a>
+			<a href='/category/nancy' title='Nancy'>Nancy</a>, <a href='/category/f' title='F#'>F#</a>
 		</div>
 	</header>
 	
 	<div class="body post">
-		<p><img src="/img/github.expandinizer.logo.png" alt="" /></p>
+		<p>Not too long ago, I posted about the <a href="/2013/11/15/On-the-Nancy-templates-for-Visual-Studio">Visual Studio templates for Nancy</a> and how we had taken the (tough) decision to only maintain C# templates outselves. Not because we do not see value in supporting other languages, but solely because of the shear amount of work that is required to maintain a single template.</p>
 
-<p>A while back when <a href="https://github.com">GitHub</a> updated the design of their web page, they introduces a change that has annoyed a lot of people; they decided to truncate the file/folder name in the repository browser. This makes it impossible to distinguish files/folders that follow a naming conventions, such as namespace hierarchies.</p>
+<p>Maintaining 9 templates (as we do with out C# templates) is a time consuming process, and the time required to support additional templates scales linear to the amount of templates we add.</p>
 
-<!--excerpt--> 
+<p>We reached out the authors of the VB.NET templates and F# templates, as well as our community, and ask them to maintain the templates themselves. I didn't take long for the F# community to step up to the plate...</p>
 
-<p>What I did was create a very simple Google Chrome extension, called <a href="https://chrome.google.com/webstore/detail/githubexpandinizr/cbehdjjcilgnejbpnjhobkiiggkedfib">GitHub.Expandinizr</a> which <em>kinda</em> solves the problem. I say kinda, because it is a quick hack really and it was not designed to be prefect. That said, if you can improve it, then please send a pull-request, you can find the source at <a href="https://github.com/thecodejunkie/github.expandinizr">github.com/thecodejunkie/github.expandinizr</a>.</p>
+<!--excerpt-->
 
-<p>So what does it do? All it really does is that when it detects that you are browsing github.com, it will inject a single css class into the page to remove the ellipsis from the file/folder name.</p>
+<p><a href="http://wizardsofsmart.net/">Ryan Riley</a> (<a href="http://twitter.com/panesofglass">@panesofglass</a> on Twitter) and <a href="http://blog.danielmohl.com/">Daniel Mohl</a> (<a href="http://twitter.com/dmohl">@dmohl</a> on Twitter) took the templates and creates their own VSIX extension with their F# templates</p>
 
-<pre><code>.css-truncate.css-truncate-target {
-    display: inline !important;
-}
-</code></pre>
+<p><img src="/img/nancy.fsharp.templates.for.visual.studio.png" alt="" /></p>
 
-<p>This css class is usually sets the <code>display</code> property to <code>inline-block</code> with an added <code>text-overflow</code> that has been set to <code>ellipsis</code>. By changing the display we prevent it, in a rather crude way, to ellipsis the text. Notice that the css declaration has been marked as <code>!important</code> which will ensure it gets higher priority than the one in the GitHub css declaration.</p>
+<p>The templates can be found at <a href="http://visualstudiogallery.msdn.microsoft.com/b55b8aac-b11a-4a6a-8a77-2153f46f4e2f">F# Nancy Template</a> on the Visual Studio Gallery.</p>
 
-<h2>Known issues</h2>
-
-<p>Like I said, this is a hack. If the un-ellipsed text becomes too long, then it could cause the new width of the repository browser to push into other page elements, such as the sidebar navigation on the right hand side of the design. This is especially noticeable on the main page of the repository browser, since the sidebar is expanded and takes up much more horizontal space, than when it has been collapsed.</p>
-
-<p>I've fine with this, so at present I am not going to spend any time trying to figure out an alternative approach, that resolves this issues (I spend 10 minutes on it and got a decent result, but it caused other problems). But, like I said, if you come up with a better solution, send me a pull-request with an updated <a href="https://github.com/thecodejunkie/github.expandinizr/blob/master/ext/content/inject.css">inject.css</a></p>
-
-<h2>All-in-all</h2>
-
-<p>This was a fun learning experience. It was the first time that I created a proper Chrome Extension and it was certainly the first time I published it in the Chrome Store. Who knew it cost $5 to become a publisher in the store? Now I know!</p>
+<p>For more informatation, head over to <a href="http://bloggemdano.blogspot.se/2013/12/a-few-other-template-additions-and.html">Daniel's blog</a></p>
 
 	</div>
 
@@ -101,14 +90,14 @@
             reload: true,
             config: function () {
                 //this.page.identifier = '';
-                this.page.url = 'http://thecodejunkie.com/2013/11/14/i-created-the-github-expandinizer-extension-for-google-chrome/';
+                this.page.url = 'http://thecodejunkie.com/2013/12/13/community-maintained-nancy-fsharp-templates-for-visual-studio/';
                 //this.page.title = '';
             }
         });
     };
 
     var disqus_shortname = 'thecodejunkie';
-    var disqus_url = 'http://thecodejunkie.com/2013/11/14/i-created-the-github-expandinizer-extension-for-google-chrome/';
+    var disqus_url = 'http://thecodejunkie.com/2013/12/13/community-maintained-nancy-fsharp-templates-for-visual-studio/';
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

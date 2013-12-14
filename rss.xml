@@ -1,4 +1,25 @@
-<rss xmlns:a10="http://www.w3.org/2005/Atom" version="2.0"><channel><title>TheCodeJunkie</title><link>http://thecodejunkie.com/rss.xml</link><description>TheCodeJunkie</description><item><guid isPermaLink="true">http://thecodejunkie.com/2013/11/15/on-the-nancy-templates-for-visual-studio/</guid><link>http://thecodejunkie.com/2013/11/15/on-the-nancy-templates-for-visual-studio/</link><title>On the Nancy templates for Visual Studio</title><description>&lt;p&gt;A while back we introduced Nancy templates for Visual Studio, which gave you the ability to create a new Nancy project that has Nancy added out-of-the-box. This meant no more creating an empty ASP.NET web application, removing all those pesky project references and installing the Nancy nugets, just to get up and running.&lt;/p&gt;
+<rss xmlns:a10="http://www.w3.org/2005/Atom" version="2.0"><channel><title>TheCodeJunkie</title><link>http://thecodejunkie.com/rss.xml</link><description>TheCodeJunkie</description><item><guid isPermaLink="true">http://thecodejunkie.com/2013/12/13/community-maintained-nancy-fsharp-templates-for-visual-studio/</guid><link>http://thecodejunkie.com/2013/12/13/community-maintained-nancy-fsharp-templates-for-visual-studio/</link><title>Community maintained Nancy F# templates for Visual Studio</title><description>&lt;p&gt;Not too long ago, I posted about the &lt;a href="/2013/11/15/On-the-Nancy-templates-for-Visual-Studio"&gt;Visual Studio templates for Nancy&lt;/a&gt; and how we had taken the (tough) decision to only maintain C# templates outselves. Not because we do not see value in supporting other languages, but solely because of the shear amount of work that is required to maintain a single template.&lt;/p&gt;
+
+&lt;p&gt;Maintaining 9 templates (as we do with out C# templates) is a time consuming process, and the time required to support additional templates scales linear to the amount of templates we add.&lt;/p&gt;
+
+&lt;p&gt;We reached out the authors of the VB.NET templates and F# templates, as well as our community, and ask them to maintain the templates themselves. I didn't take long for the F# community to step up to the plate...&lt;/p&gt;
+
+</description><pubDate>Thu, 12 Dec 2013 23:00:00 Z</pubDate><a10:updated>2013-12-12T23:00:00Z</a10:updated><a10:content type="text">&lt;p&gt;Not too long ago, I posted about the &lt;a href="/2013/11/15/On-the-Nancy-templates-for-Visual-Studio"&gt;Visual Studio templates for Nancy&lt;/a&gt; and how we had taken the (tough) decision to only maintain C# templates outselves. Not because we do not see value in supporting other languages, but solely because of the shear amount of work that is required to maintain a single template.&lt;/p&gt;
+
+&lt;p&gt;Maintaining 9 templates (as we do with out C# templates) is a time consuming process, and the time required to support additional templates scales linear to the amount of templates we add.&lt;/p&gt;
+
+&lt;p&gt;We reached out the authors of the VB.NET templates and F# templates, as well as our community, and ask them to maintain the templates themselves. I didn't take long for the F# community to step up to the plate...&lt;/p&gt;
+
+&lt;!--excerpt--&gt;
+
+&lt;p&gt;&lt;a href="http://wizardsofsmart.net/"&gt;Ryan Riley&lt;/a&gt; (&lt;a href="http://twitter.com/panesofglass"&gt;@panesofglass&lt;/a&gt; on Twitter) and &lt;a href="http://blog.danielmohl.com/"&gt;Daniel Mohl&lt;/a&gt; (&lt;a href="http://twitter.com/dmohl"&gt;@dmohl&lt;/a&gt; on Twitter) took the templates and creates their own VSIX extension with their F# templates&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="/img/nancy.fsharp.templates.for.visual.studio.png" alt="" /&gt;&lt;/p&gt;
+
+&lt;p&gt;The templates can be found at &lt;a href="http://visualstudiogallery.msdn.microsoft.com/b55b8aac-b11a-4a6a-8a77-2153f46f4e2f"&gt;F# Nancy Template&lt;/a&gt; on the Visual Studio Gallery.&lt;/p&gt;
+
+&lt;p&gt;For more informatation, head over to &lt;a href="http://bloggemdano.blogspot.se/2013/12/a-few-other-template-additions-and.html"&gt;Daniel's blog&lt;/a&gt;&lt;/p&gt;
+</a10:content></item><item><guid isPermaLink="true">http://thecodejunkie.com/2013/11/15/on-the-nancy-templates-for-visual-studio/</guid><link>http://thecodejunkie.com/2013/11/15/on-the-nancy-templates-for-visual-studio/</link><title>On the Nancy templates for Visual Studio</title><description>&lt;p&gt;A while back we introduced Nancy templates for Visual Studio, which gave you the ability to create a new Nancy project that has Nancy added out-of-the-box. This meant no more creating an empty ASP.NET web application, removing all those pesky project references and installing the Nancy nugets, just to get up and running.&lt;/p&gt;
 
 &lt;p&gt;Unfortunately we have not been able to update these template with every new release of Nancy, which means you have had to update the Nancy Nugets to make sure you where using the latest build. &lt;/p&gt;
 
