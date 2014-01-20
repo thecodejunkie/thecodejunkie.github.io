@@ -1,4 +1,59 @@
-<rss xmlns:a10="http://www.w3.org/2005/Atom" version="2.0"><channel><title>TheCodeJunkie</title><link>http://thecodejunkie.com/rss.xml</link><description>TheCodeJunkie</description><item><guid isPermaLink="true">http://thecodejunkie.com/2013/12/13/community-maintained-nancy-fsharp-templates-for-visual-studio/</guid><link>http://thecodejunkie.com/2013/12/13/community-maintained-nancy-fsharp-templates-for-visual-studio/</link><title>Community maintained Nancy F# templates for Visual Studio</title><description>&lt;p&gt;Not too long ago, I posted about the &lt;a href="/2013/11/15/On-the-Nancy-templates-for-Visual-Studio"&gt;Visual Studio templates for Nancy&lt;/a&gt; and how we had taken the (tough) decision to only maintain C# templates outselves. Not because we do not see value in supporting other languages, but solely because of the shear amount of work that is required to maintain a single template.&lt;/p&gt;
+<rss xmlns:a10="http://www.w3.org/2005/Atom" version="2.0"><channel><title>TheCodeJunkie</title><link>http://thecodejunkie.com/rss.xml</link><description>TheCodeJunkie</description><item><guid isPermaLink="true">http://thecodejunkie.com/2014/01/20/copying-virtual-machines-between-azure-subscriptions/</guid><link>http://thecodejunkie.com/2014/01/20/copying-virtual-machines-between-azure-subscriptions/</link><title>Copying virtual machines between Azure subscriptions</title><description>&lt;p&gt;I recently found myself in the need to copy a couple of Azure Virtual Machines from one subscription to another. Not having used Azure that much before, I figured there must be support to perform this kind of migration from inside the Azure portal itself.&lt;/p&gt;
+
+&lt;p&gt;Turns out there isn't, but that does not mean it is impossible, or even hard for that matter. Once you figure it out, it is actually quite frictionless and smooth.&lt;/p&gt;
+
+</description><pubDate>Sun, 19 Jan 2014 23:00:00 Z</pubDate><a10:updated>2014-01-19T23:00:00Z</a10:updated><a10:content type="text">&lt;p&gt;I recently found myself in the need to copy a couple of Azure Virtual Machines from one subscription to another. Not having used Azure that much before, I figured there must be support to perform this kind of migration from inside the Azure portal itself.&lt;/p&gt;
+
+&lt;p&gt;Turns out there isn't, but that does not mean it is impossible, or even hard for that matter. Once you figure it out, it is actually quite frictionless and smooth.&lt;/p&gt;
+
+&lt;!--excerpt--&gt;
+
+&lt;p&gt;The easy and, as it turns out, slow way it to go to the Azure Portal, click &lt;strong&gt;Storage&lt;/strong&gt;, then the name of your storage, followed by &lt;strong&gt;Containers&lt;/strong&gt; at the top. You should now see a container called &lt;strong&gt;Vhds&lt;/strong&gt;. Clicking that will list all of the VHD file you have on your subscription.&lt;/p&gt;
+
+&lt;p&gt;By selecting one of the files the then clicking the &lt;strong&gt;Download&lt;/strong&gt; button, at the bottom of the page, Azure will start a file download straight in the browser. I am on a 100 mbit connection and I was only getting around 4MB/s on average.&lt;/p&gt;
+
+&lt;p&gt;Normally that is a pretty OK download speed, but I was looking to transfer two VHD files that totalled at 150GB of data. Needless to say it would take quite a while to complete so I needed another solution.&lt;/p&gt;
+
+&lt;h2&gt;Blob Service REST API&lt;/h2&gt;
+
+&lt;p&gt;Microsoft was nice enough to create a nice &lt;a href="http://msdn.microsoft.com/en-us/library/windowsazure/dd135733.aspx"&gt;Blob Service REST API&lt;/a&gt; that you can use to programatically access the content of your containers.&lt;/p&gt;
+
+&lt;p&gt;To do this, the API uses the concept of access keys. If you have the name and access key to a storage, then you can use that to access the files that are stored in it.&lt;/p&gt;
+
+&lt;p&gt;You find your keys by going to the Azure Portal, click on &lt;strong&gt;Storage&lt;/strong&gt; then &lt;strong&gt;Manage Access Keys&lt;/strong&gt; at the bottom of the page. There are two keys, the primary and the secondary. Both do the same thing, but Azure gives you a convinent way to have a personal key and a key you give to services etc. that you wish to gain access to your storage.&lt;/p&gt;
+
+&lt;p&gt;At anytime you can regenerate theys keys if you feel they've been compromised or if you have given them to some service and you no longer wish them to be valid. Just click the &lt;strong&gt;Regenerate&lt;/strong&gt; button next to the key you wish to create a new one for.&lt;/p&gt;
+
+&lt;h2&gt;AzCopy to the rescue&lt;/h2&gt;
+
+&lt;p&gt;I tried a couple of different tools, that uses the Blob Service REST API, but they all suffered from the same problem as the browser download option - speed.&lt;/p&gt;
+
+&lt;p&gt;Then &lt;a href="http://twitter.com/avidebbo"&gt;David Ebbo&lt;/a&gt; pointed me to the &lt;a href="http://blogs.msdn.com/b/windowsazurestorage/archive/2013/04/01/azcopy-using-cross-account-copy-blob.aspx"&gt;AzCopy&lt;/a&gt;. David works on Windows Azure Web Sites and he told me they uses that tool to copy things across blob stores.&lt;/p&gt;
+
+&lt;p&gt;It just so happened that as of CTP2, AzCopy supports the &lt;a href="http://blogs.msdn.com/b/windowsazurestorage/archive/2013/04/01/azcopy-using-cross-account-copy-blob.aspx"&gt;Asynchronous Cross-Account Copy Blob&lt;/a&gt; feature of the Blob Service REST API.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;NOTE: To use this feature, your storage account must have been created after June 7th 2012. Read more about this limitaion on the previous link&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;What this enables you to do is to copy from one store to another, without the need to first copying the data locally. This drastically improved the transfer speed. Using AzCopy I was getting speeds at around 45MB/s instead of 4MB/s!&lt;/p&gt;
+
+&lt;p&gt;I ended up using the following command&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;AzCopy https://&amp;lt;sourceaccount&amp;gt;.blob.core.windows.net/&amp;lt;sourcecontainer&amp;gt;/ https://&amp;lt;destaccount&amp;gt;
+.blob.core.windows.net/&amp;lt;destcontainer&amp;gt;/ /sourcekey:&amp;lt;key&amp;gt; /destkey:&amp;lt;key&amp;gt; /S
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;and it worked great!&lt;/p&gt;
+
+&lt;h2&gt;A word of caution on Azure Disks vs Images&lt;/h2&gt;
+
+&lt;p&gt;After I had copied the VHD files to my second subscription, I set out to re-create my virtual machines. This is where I messed up a bit. I went into &lt;strong&gt;Virtual Machines&lt;/strong&gt; and then &lt;strong&gt;Images&lt;/strong&gt; where I created images of the VHD files. What I should have done is gone into &lt;strong&gt;Virtual Machines&lt;/strong&gt; followed by &lt;strong&gt;Disks&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The difference between the two is that images are like templates. You use them to create a completley new VHD file, based on the image, that you then use as a disk for your virtual machine.&lt;/p&gt;
+
+&lt;p&gt;Since I was copying existing machines across, I just needed to create disks directly, that I then used to create my virtual machines from. &lt;/p&gt;
+
+&lt;p&gt;When I created a virtual machine from one of the images, it worked fine (I could login to the machine), except for Azure getting stuck while provisioning my machine. So even though the machine was functional, it was not sitting quite right with Azure. Once I changed to use a disk, it immediatly behaved as I expected.&lt;/p&gt;
+</a10:content></item><item><guid isPermaLink="true">http://thecodejunkie.com/2013/12/13/community-maintained-nancy-fsharp-templates-for-visual-studio/</guid><link>http://thecodejunkie.com/2013/12/13/community-maintained-nancy-fsharp-templates-for-visual-studio/</link><title>Community maintained Nancy F# templates for Visual Studio</title><description>&lt;p&gt;Not too long ago, I posted about the &lt;a href="/2013/11/15/On-the-Nancy-templates-for-Visual-Studio"&gt;Visual Studio templates for Nancy&lt;/a&gt; and how we had taken the (tough) decision to only maintain C# templates outselves. Not because we do not see value in supporting other languages, but solely because of the shear amount of work that is required to maintain a single template.&lt;/p&gt;
 
 &lt;p&gt;Maintaining 9 templates (as we do with out C# templates) is a time consuming process, and the time required to support additional templates scales linear to the amount of templates we add.&lt;/p&gt;
 
