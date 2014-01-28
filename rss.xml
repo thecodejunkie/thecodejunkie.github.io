@@ -1,8 +1,21 @@
 <rss xmlns:a10="http://www.w3.org/2005/Atom" version="2.0"><channel><title>TheCodeJunkie</title><link>http://thecodejunkie.com/rss.xml</link><description>TheCodeJunkie</description><item><guid isPermaLink="true">http://thecodejunkie.com/2014/01/28/keyboard-shortcuts-for-taking-a-screenshot-on-osx/</guid><link>http://thecodejunkie.com/2014/01/28/keyboard-shortcuts-for-taking-a-screenshot-on-osx/</link><title>Keyboard shortcuts for taking a screenshot on OS X</title><description>&lt;p&gt;OS X comes with some really nice keyboard shortcuts to take screenshots. The problem is that I keep forgetting exactly which shortcut does. So for the purpose of having a place to look them up the next time I forget - here they are&lt;/p&gt;
 
-</description><pubDate>Mon, 27 Jan 2014 23:00:00 Z</pubDate><a10:updated>2014-01-27T23:00:00Z</a10:updated><a10:content type="text">&lt;p&gt;OS X comes with some really nice keyboard shortcuts to take screenshots. The problem is that I keep forgetting exactly which shortcut does. So for the purpose of having a place to look them up the next time I forget - here they are&lt;/p&gt;
+&lt;h2&gt;Saving to a file on the desktop&lt;/h2&gt;
 
-&lt;!--excerpt--&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;kbd&gt;&amp;#8984;&lt;/kbd&gt;-&lt;kbd&gt;Shift&lt;/kbd&gt;-&lt;kbd&gt;-3&lt;/kbd&gt;: Take a screenshot of the screen&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;&amp;#8984;&lt;/kbd&gt;-&lt;kbd&gt;Shift&lt;/kbd&gt;-&lt;kbd&gt;-4&lt;/kbd&gt;, then select an area: Take a screenshot of an area&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;&amp;#8984;&lt;/kbd&gt;-&lt;kbd&gt;Shift&lt;/kbd&gt;-&lt;kbd&gt;-4&lt;/kbd&gt;, then &lt;kbd&gt;Space&lt;/kbd&gt;, then click a window: Take a screenshot of a window&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Saving to the clipboard&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;kbd&gt;&amp;#8984;&lt;/kbd&gt;-&lt;kbd&gt;Ctrl&lt;/kbd&gt;-&lt;kbd&gt;Shift&lt;/kbd&gt;-&lt;kbd&gt;-3&lt;/kbd&gt;: Take a screenshot of the screen&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;&amp;#8984;&lt;/kbd&gt;-&lt;kbd&gt;Ctrl&lt;/kbd&gt;-&lt;kbd&gt;Shift&lt;/kbd&gt;-&lt;kbd&gt;-4&lt;/kbd&gt;, then select an area: Take a screenshot of an area&lt;/li&gt;
+&lt;li&gt;&lt;kbd&gt;&amp;#8984;&lt;/kbd&gt;-&lt;kbd&gt;Ctrl&lt;/kbd&gt;-&lt;kbd&gt;Shift&lt;/kbd&gt;-&lt;kbd&gt;-4&lt;/kbd&gt;, then &lt;kbd&gt;Space&lt;/kbd&gt;, then click a window: Take a screenshot of a window&lt;/li&gt;
+&lt;/ul&gt;
+</description><pubDate>Mon, 27 Jan 2014 23:00:00 Z</pubDate><a10:updated>2014-01-27T23:00:00Z</a10:updated><a10:content type="text">&lt;p&gt;OS X comes with some really nice keyboard shortcuts to take screenshots. The problem is that I keep forgetting exactly which shortcut does. So for the purpose of having a place to look them up the next time I forget - here they are&lt;/p&gt;
 
 &lt;h2&gt;Saving to a file on the desktop&lt;/h2&gt;
 
