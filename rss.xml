@@ -1,4 +1,41 @@
-<rss xmlns:a10="http://www.w3.org/2005/Atom" version="2.0"><channel><title>TheCodeJunkie</title><link>http://thecodejunkie.com/rss.xml</link><description>TheCodeJunkie</description><item><guid isPermaLink="true">http://thecodejunkie.com/2014/01/28/keyboard-shortcuts-for-taking-a-screenshot-on-osx/</guid><link>http://thecodejunkie.com/2014/01/28/keyboard-shortcuts-for-taking-a-screenshot-on-osx/</link><title>Keyboard shortcuts for taking a screenshot on OS X</title><description>&lt;p&gt;OS X comes with some really nice keyboard shortcuts to take screenshots. The problem is that I keep forgetting exactly which shortcut does. So for the purpose of having a place to look them up the next time I forget - here they are&lt;/p&gt;
+<rss xmlns:a10="http://www.w3.org/2005/Atom" version="2.0"><channel><title>TheCodeJunkie</title><link>http://thecodejunkie.com/rss.xml</link><description>TheCodeJunkie</description><item><guid isPermaLink="true">http://thecodejunkie.com/2014/02/03/open-source-day-aftermath/</guid><link>http://thecodejunkie.com/2014/02/03/open-source-day-aftermath/</link><title>Open-Source day aftermath</title><description>&lt;p&gt;I recently blogged about &lt;a href="/2014/01/28/A-full-day-of-open-source-at-tretton37"&gt;A full day of open-source at tretton37&lt;/a&gt; and on Friday 31st January 2014 we all gathered at our &lt;a href="http://www.flickr.com/photos/tretton37/sets/72157634906411089/"&gt;awesome offices in Lund and Stockholm&lt;/a&gt; to spend the day working with open-source software.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="/img/tretton37.open.source.day.mission.png" alt="" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Our mission for the day was simple; create value for both the team and the open-source community!&lt;/p&gt;
+
+</description><pubDate>Sun, 02 Feb 2014 23:00:00 Z</pubDate><a10:updated>2014-02-02T23:00:00Z</a10:updated><a10:content type="text">&lt;p&gt;I recently blogged about &lt;a href="/2014/01/28/A-full-day-of-open-source-at-tretton37"&gt;A full day of open-source at tretton37&lt;/a&gt; and on Friday 31st January 2014 we all gathered at our &lt;a href="http://www.flickr.com/photos/tretton37/sets/72157634906411089/"&gt;awesome offices in Lund and Stockholm&lt;/a&gt; to spend the day working with open-source software.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="/img/tretton37.open.source.day.mission.png" alt="" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Our mission for the day was simple; create value for both the team and the open-source community!&lt;/p&gt;
+
+&lt;!--excerpt--&gt; 
+
+&lt;p&gt;The first half of the day was spent getting to know the project your teams would be working with. The had set time aside to "Take it for a spin", where we grabbed the project and played around with the code and got a basic sample working on our local machines. &lt;/p&gt;
+
+&lt;p&gt;Next up was "Take it apart" and this is where the real fun started taking place. We dove into the code and tried to figure out how the code was glued together and what made it tick. We had allocated two hours for this, but most teams got excited and started working on pull-requests as soon as they had figured out the mechanics of their projects :)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="/img/tretton37.open.source.day.contributing.jpg" alt="" /&gt;&lt;/p&gt;
+
+&lt;p&gt;After lunch we had two short presentations. I held one on the subject of "The 1-2-3 of Open-Source Contributing", which was a short introduction on a couple of things that it worth knowing up-front before sending any project code. Things like the project licence, contributor licence agreements, copyrights and general DO's and DON'Ts where brought up.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="/img/tretton37.open.source.day.hacking.jpg" alt="" /&gt;&lt;/p&gt;
+
+&lt;p&gt;The the real hacking started! Everybody was in such an awesome mood and the atmosphere was really great. People where breaking out of their teams to offer help where they could, all for the purpose of making sure that we delivered as much value to the projects as we possibly could. &lt;/p&gt;
+
+&lt;p&gt;It's always fun when we all get to meet up and code together, something we unfortunately don't get to do as much as we want because we're a consultant company and spend a lot of time at clients, but it was especially fun this time because we got to work on some really cool projects and contribute back.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="/img/tretton37.open.source.day.results.jpg" alt="" /&gt;&lt;/p&gt;
+
+&lt;p&gt;At the end of the day we took toll and it turned out that we had managed to send in a total of &lt;strong&gt;23 pull-requests&lt;/strong&gt;, which is quite an achievement! I feel to proud of our entire company. Not only for taking the initiative of the day itself, but also for being able to create some tangible value to the open-source community.&lt;/p&gt;
+
+&lt;p&gt;Throughout the day, one of the reoccurring discussions were; "Is the cake a lie?"&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="/img/tretton37.open.source.day.cake.jpg" alt="" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Turns out it wasn't! We finished the day by celebrating out awesome day and also the fact that &lt;a href="http://tretton37.com"&gt;tretton37&lt;/a&gt; turned 4 years old! What a day...&lt;/p&gt;
+</a10:content></item><item><guid isPermaLink="true">http://thecodejunkie.com/2014/01/28/keyboard-shortcuts-for-taking-a-screenshot-on-osx/</guid><link>http://thecodejunkie.com/2014/01/28/keyboard-shortcuts-for-taking-a-screenshot-on-osx/</link><title>Keyboard shortcuts for taking a screenshot on OS X</title><description>&lt;p&gt;OS X comes with some really nice keyboard shortcuts to take screenshots. The problem is that I keep forgetting exactly which shortcut does. So for the purpose of having a place to look them up the next time I forget - here they are&lt;/p&gt;
 
 &lt;h2&gt;Saving to a file on the desktop&lt;/h2&gt;
 
