@@ -1,4 +1,40 @@
-<rss xmlns:a10="http://www.w3.org/2005/Atom" version="2.0"><channel><title>TheCodeJunkie</title><link>http://thecodejunkie.com/rss.xml</link><description>TheCodeJunkie</description><item><guid isPermaLink="true">http://thecodejunkie.com/2014/02/03/open-source-day-aftermath/</guid><link>http://thecodejunkie.com/2014/02/03/open-source-day-aftermath/</link><title>Open-Source day aftermath</title><description>&lt;p&gt;I recently blogged about &lt;a href="/2014/01/27/a-full-day-of-open-source-at-tretton37"&gt;A full day of open-source at tretton37&lt;/a&gt; and on Friday 31st January 2014 we all gathered at our &lt;a href="http://www.flickr.com/photos/tretton37/sets/72157634906411089/"&gt;awesome offices in Lund and Stockholm&lt;/a&gt; to spend the day working with open-source software.&lt;/p&gt;
+<rss xmlns:a10="http://www.w3.org/2005/Atom" version="2.0"><channel><title>TheCodeJunkie</title><link>http://thecodejunkie.com/rss.xml</link><description>TheCodeJunkie</description><item><guid isPermaLink="true">http://thecodejunkie.com/2014/02/24/github-expandinizr-1-3-1-release-notes/</guid><link>http://thecodejunkie.com/2014/02/24/github-expandinizr-1-3-1-release-notes/</link><title>Github.ExpandinizR v1.3.1 release notes</title><description>&lt;p&gt;This time, the awesome &lt;a href="https://github.com/khellang"&gt;Kristian Hellang&lt;/a&gt; contributed changes that added responsive functionality to GitHub. You can now enjoy a full-width experience, removed truncating and word-wrap on long file and directory names.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="/img/github.expandinizer.logo.png" alt="" /&gt;&lt;/p&gt;
+
+</description><pubDate>Sun, 23 Feb 2014 23:00:00 Z</pubDate><a10:updated>2014-02-23T23:00:00Z</a10:updated><a10:content type="text">&lt;p&gt;This time, the awesome &lt;a href="https://github.com/khellang"&gt;Kristian Hellang&lt;/a&gt; contributed changes that added responsive functionality to GitHub. You can now enjoy a full-width experience, removed truncating and word-wrap on long file and directory names.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="/img/github.expandinizer.logo.png" alt="" /&gt;&lt;/p&gt;
+
+&lt;!--excerpt--&gt;
+
+&lt;h2&gt;Currently enhances the following&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Removes the truncating of file and directory names in the repository browser&lt;/li&gt;
+&lt;li&gt;Really long file and directory names will word-wrap&lt;/li&gt;
+&lt;li&gt;Fully expands the website, with breakpoints at 1400px, 1600px and 1800px&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Contributors&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/phillip-haydon"&gt;Phillip Haydon&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/frankradocaj"&gt;Frank Radocaj&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/khellang"&gt;Kristian Hellang&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Changelog&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;v1.3.1 - Fixed a couple of small layout bugs&lt;/li&gt;
+&lt;li&gt;v1.3.0 - Changed to a responsive approach&lt;/li&gt;
+&lt;li&gt;v1.2.0 - Improved the un-truncting to word-wrap (thanks Frank Radocaj)&lt;/li&gt;
+&lt;li&gt;v1.1.1 - Fix for labels on the expanded issue form&lt;/li&gt;
+&lt;li&gt;v1.1.0 - Expands the issue form to full width (thanks Phillip Haydon)&lt;/li&gt;
+&lt;li&gt;v1.0.0 - First release of the extension&lt;/li&gt;
+&lt;/ul&gt;
+</a10:content></item><item><guid isPermaLink="true">http://thecodejunkie.com/2014/02/03/open-source-day-aftermath/</guid><link>http://thecodejunkie.com/2014/02/03/open-source-day-aftermath/</link><title>Open-Source day aftermath</title><description>&lt;p&gt;I recently blogged about &lt;a href="/2014/01/27/a-full-day-of-open-source-at-tretton37"&gt;A full day of open-source at tretton37&lt;/a&gt; and on Friday 31st January 2014 we all gathered at our &lt;a href="http://www.flickr.com/photos/tretton37/sets/72157634906411089/"&gt;awesome offices in Lund and Stockholm&lt;/a&gt; to spend the day working with open-source software.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src="/img/tretton37.open.source.day.mission.jpg" alt="" /&gt;&lt;/p&gt;
 

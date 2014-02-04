@@ -9,10 +9,10 @@
 	<meta http-equiv="last-modified" content="2014-02-04T18:08:40.1968242+01:00" />
 
 	    <title>thecodejunkie.com - 
-	I created the Github.Expandinizr extension for Google Chrome
+	Github.ExpandinizR v1.3.1 release notes
 </title>
 
-	<link rel="canonical" href="http://thecodejunkie.com/2013/11/14/i-created-the-github-expandinizer-extension-for-google-chrome/" />
+	<link rel="canonical" href="http://thecodejunkie.com/2014/02/24/github-expandinizr-1-3-1-release-notes/" />
 	<link rel="alternate" type="application/rss+xml" title="TheCodeJunkie" href="http://thecodejunkie.com/rss.xml" />
 	<link rel="stylesheet" href="/css/app.css" />
 
@@ -47,10 +47,10 @@
 	</div>
 
 	<header>
-		<h1><a href="/2013/11/14/i-created-the-github-expandinizer-extension-for-google-chrome/">I created the Github.Expandinizr extension for Google Chrome</a></h1>
+		<h1><a href="/2014/02/24/github-expandinizr-1-3-1-release-notes/">Github.ExpandinizR v1.3.1 release notes</a></h1>
 
 		<div class="post-info">
-	      	<time pubdate datetime='2013-11-14' title='den 14 november 2013'>2013-11-14</time>
+	      	<time pubdate datetime='2014-02-24' title='den 24 februari 2014'>2014-02-24</time>
 			
 			<address class="author">
 				<a rel="author" href="http://twitter.com/TheCodeJunkie">TheCodeJunkie</a>
@@ -58,37 +58,43 @@
 
 			in 
 
-			<a href='/category/chrome' title='Chrome'>Chrome</a>, <a href='/category/announcement' title='Announcement'>Announcement</a>
+			<a href='/category/chrome' title='Chrome'>Chrome</a>
 		</div>
 	</header>
 	
 	<div class="body post">
-		<p><img src="/img/github.expandinizer.logo.png" alt="" /></p>
+		<p>This time, the awesome <a href="https://github.com/khellang">Kristian Hellang</a> contributed changes that added responsive functionality to GitHub. You can now enjoy a full-width experience, removed truncating and word-wrap on long file and directory names.</p>
 
-<p>A while back when <a href="https://github.com">GitHub</a> updated the design of their web page, they introduces a change that has annoyed a lot of people; they decided to truncate the file/folder name in the repository browser. This makes it impossible to distinguish files/folders that follow a naming conventions, such as namespace hierarchies.</p>
+<p><img src="/img/github.expandinizer.logo.png" alt="" /></p>
 
-<!--excerpt--> 
+<!--excerpt-->
 
-<p>What I did was create a very simple Google Chrome extension, called <a href="https://chrome.google.com/webstore/detail/githubexpandinizr/cbehdjjcilgnejbpnjhobkiiggkedfib">GitHub.Expandinizr</a> which <em>kinda</em> solves the problem. I say kinda, because it is a quick hack really and it was not designed to be prefect. That said, if you can improve it, then please send a pull-request, you can find the source at <a href="https://github.com/thecodejunkie/github.expandinizr">github.com/thecodejunkie/github.expandinizr</a>.</p>
+<h2>Currently enhances the following</h2>
 
-<p>So what does it do? All it really does is that when it detects that you are browsing github.com, it will inject a single css class into the page to remove the ellipsis from the file/folder name.</p>
+<ul>
+<li>Removes the truncating of file and directory names in the repository browser</li>
+<li>Really long file and directory names will word-wrap</li>
+<li>Fully expands the website, with breakpoints at 1400px, 1600px and 1800px</li>
+</ul>
 
-<pre><code>.css-truncate.css-truncate-target {
-    display: inline !important;
-}
-</code></pre>
+<h2>Contributors</h2>
 
-<p>This css class is usually sets the <code>display</code> property to <code>inline-block</code> with an added <code>text-overflow</code> that has been set to <code>ellipsis</code>. By changing the display we prevent it, in a rather crude way, to ellipsis the text. Notice that the css declaration has been marked as <code>!important</code> which will ensure it gets higher priority than the one in the GitHub css declaration.</p>
+<ul>
+<li><a href="https://github.com/phillip-haydon">Phillip Haydon</a></li>
+<li><a href="https://github.com/frankradocaj">Frank Radocaj</a></li>
+<li><a href="https://github.com/khellang">Kristian Hellang</a></li>
+</ul>
 
-<h2>Known issues</h2>
+<h2>Changelog</h2>
 
-<p>Like I said, this is a hack. If the un-ellipsed text becomes too long, then it could cause the new width of the repository browser to push into other page elements, such as the sidebar navigation on the right hand side of the design. This is especially noticeable on the main page of the repository browser, since the sidebar is expanded and takes up much more horizontal space, than when it has been collapsed.</p>
-
-<p>I've fine with this, so at present I am not going to spend any time trying to figure out an alternative approach, that resolves this issues (I spend 10 minutes on it and got a decent result, but it caused other problems). But, like I said, if you come up with a better solution, send me a pull-request with an updated <a href="https://github.com/thecodejunkie/github.expandinizr/blob/master/ext/content/inject.css">inject.css</a></p>
-
-<h2>All-in-all</h2>
-
-<p>This was a fun learning experience. It was the first time that I created a proper Chrome Extension and it was certainly the first time I published it in the Chrome Store. Who knew it cost $5 to become a publisher in the store? Now I know!</p>
+<ul>
+<li>v1.3.1 - Fixed a couple of small layout bugs</li>
+<li>v1.3.0 - Changed to a responsive approach</li>
+<li>v1.2.0 - Improved the un-truncting to word-wrap (thanks Frank Radocaj)</li>
+<li>v1.1.1 - Fix for labels on the expanded issue form</li>
+<li>v1.1.0 - Expands the issue form to full width (thanks Phillip Haydon)</li>
+<li>v1.0.0 - First release of the extension</li>
+</ul>
 
 	</div>
 
@@ -101,14 +107,14 @@
             reload: true,
             config: function () {
                 //this.page.identifier = '';
-                this.page.url = 'http://thecodejunkie.com/2013/11/14/i-created-the-github-expandinizer-extension-for-google-chrome/';
+                this.page.url = 'http://thecodejunkie.com/2014/02/24/github-expandinizr-1-3-1-release-notes/';
                 //this.page.title = '';
             }
         });
     };
 
     var disqus_shortname = 'thecodejunkie';
-    var disqus_url = 'http://thecodejunkie.com/2013/11/14/i-created-the-github-expandinizer-extension-for-google-chrome/';
+    var disqus_url = 'http://thecodejunkie.com/2014/02/24/github-expandinizr-1-3-1-release-notes/';
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
