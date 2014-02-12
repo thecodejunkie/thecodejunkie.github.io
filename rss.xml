@@ -1,8 +1,93 @@
-<rss xmlns:a10="http://www.w3.org/2005/Atom" version="2.0"><channel><title>TheCodeJunkie</title><link>http://thecodejunkie.com/rss.xml</link><description>TheCodeJunkie</description><item><guid isPermaLink="true">http://thecodejunkie.com/2014/02/24/github-expandinizr-1-3-1-release-notes/</guid><link>http://thecodejunkie.com/2014/02/24/github-expandinizr-1-3-1-release-notes/</link><title>Github.ExpandinizR v1.3.1 release notes</title><description>&lt;p&gt;This time, the awesome &lt;a href="https://github.com/khellang"&gt;Kristian Hellang&lt;/a&gt; contributed changes that added responsive functionality to GitHub. You can now enjoy a full-width experience, removed truncating and word-wrap on long file and directory names.&lt;/p&gt;
+<rss xmlns:a10="http://www.w3.org/2005/Atom" version="2.0"><channel><title>TheCodeJunkie</title><link>http://thecodejunkie.com/rss.xml</link><description>TheCodeJunkie</description><item><guid isPermaLink="true">http://thecodejunkie.com/2014/02/12/creating-value-by-sharing-knowledge/</guid><link>http://thecodejunkie.com/2014/02/12/creating-value-by-sharing-knowledge/</link><title>Creating value by sharing knowledge</title><description>&lt;p&gt;When we announced our &lt;a href="/2014/01/27/a-full-day-of-open-source-at-tretton37"&gt;full day of open-source at tretton37&lt;/a&gt;, we immediately got a lot of questions from people asking us all sorts of questions. A lot of the questions were about what projects we would be working on and how many people would be involved. However, even more questions were related to how we convinced the company to let us spend a full day doing free work, instead of billing clients.&lt;/p&gt;
+
+&lt;p&gt;The short version is that we did not have to convince the company at all. We already had the corporate structure in place to enable us to do something like this. The more interesting question really is; why are we able do things like this?&lt;/p&gt;
+
+</description><pubDate>Tue, 11 Feb 2014 23:00:00 Z</pubDate><a10:updated>2014-02-11T23:00:00Z</a10:updated><a10:content type="text">&lt;p&gt;When we announced our &lt;a href="/2014/01/27/a-full-day-of-open-source-at-tretton37"&gt;full day of open-source at tretton37&lt;/a&gt;, we immediately got a lot of questions from people asking us all sorts of questions. A lot of the questions were about what projects we would be working on and how many people would be involved. However, even more questions were related to how we convinced the company to let us spend a full day doing free work, instead of billing clients.&lt;/p&gt;
+
+&lt;p&gt;The short version is that we did not have to convince the company at all. We already had the corporate structure in place to enable us to do something like this. The more interesting question really is; why are we able do things like this?&lt;/p&gt;
+
+&lt;!--excerpt--&gt;
+
+&lt;p&gt;&lt;a href="http://tretton37.com"&gt;tretton37&lt;/a&gt; was founded on the ethos of &lt;strong&gt;"Creating value by sharing knowledge"&lt;/strong&gt;. An important thing to understand is that for us this is just not a marketing strap-line. This is the ethos that defines who we are and it is what attracts people to join our family.&lt;/p&gt;
+
+&lt;p&gt;We have defined five core values that are important to us, as a company, to help us embrace that ethos.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Craftsmanship as a lifestyle&lt;/li&gt;
+&lt;li&gt;Embrace the family spirit&lt;/li&gt;
+&lt;li&gt;What you see if what you get&lt;/li&gt;
+&lt;li&gt;Challenge the world&lt;/li&gt;
+&lt;li&gt;Have fun&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I won't go into detail about each of the values, but if you are interested to learning more about them, you can find the information at &lt;a href="http://tretton37.com/about-us"&gt;our website&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;So who exactly do we share knowledge with? The answer is &lt;strong&gt;EVERYONE&lt;/strong&gt;. We share knowledge inside the company by organizing weekly code nights, we share knowledge with the community by speaking at conferences, sponsoring user groups and other meetups, being crazy enough to &lt;a href="http://leetspeak.com"&gt;create our own, nearly free, conference Leetspeak&lt;/a&gt; and we share knowledge with our clients.&lt;/p&gt;
+
+&lt;p&gt;Just last year we sponsored 16 user group meetups, spoke at 10 conferences, organized 50 (!) code nights, wrote 82 blog posts and organized the second incarnation of the Leetspeak conference. It just so happens that we created a nice little &lt;a href="https://pbs.twimg.com/media/BfSzq6TCMAAKr46.png:large"&gt;infographic&lt;/a&gt; about our past year.&lt;/p&gt;
+
+&lt;p&gt;So sharing knowledge is not something we do, but it's also who we are.&lt;/p&gt;
+
+&lt;h2&gt;Knowabunga Days&lt;/h2&gt;
+
+&lt;p&gt;One thing that we love doing is getting the opportunity to all meetup and embrace our ethos and core values. There is not a single ninja at our company that wouldn't tell you this is you asked them. Because of this and because we are consultancy company, which means we spend a lot of our time spread out between our various clients, we needed to create a platform where we could quench the thirst of having everyone meetup and do cool things. That's where the Knowabunga Days came to see the day of lights.&lt;/p&gt;
+
+&lt;p&gt;What is a Knowabunga Day then? We define them in the following way&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;So what is a Knowabunga Day? It's the name of the days where we gets the opportunity to gather at our headquarters and further sharpen our swords, learning interesting things by experts and each other. The content and format of the days is created by the ninjas in the Knowledge Committee. The content could be just anything related to our community or our field of knowledge, but the day should be delivered with quality and not just be a day where we hang around at the office.&lt;/p&gt;
+  
+  &lt;p&gt;The thought behind these days goes back to our five core values; maybe most "Craftsmanship as a Lifestyle", "Embrace the Family Spirit" and "Have fun". We state that we focus intently on creating a great environment for gaining knowledge and building a company where we have fun. By doing the Knowabunga Days we try to further develop our own identity and culture as well as maintaining and develop our reputation at existing clients and new ones.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;They're nothing more than allocated days where we meetup and try and do awesome things while staying true to our core values and our ethos of creating value by sharing knowledge!&lt;/p&gt;
+
+&lt;h2&gt;Why an open-source Knowabunga Day?&lt;/h2&gt;
+
+&lt;p&gt;I was also asked how and why we decide to spend the day working on open-source. The simple answer is that we all love open-source and many of us regularly contribute to projects and/or maintain them ourselves. The slightly longer answer is that back in November we had a company strategy day, where we all (once again) met up at our offices but this time to talk and plan about our strategy for the next couple of years.&lt;/p&gt;
+
+&lt;p&gt;We have a very flat corporate structure and we also embrace transparency. Truth be told, the company is (not is made up of - pay attention to the distinction) the people that work there. We are all a bunch of geeks with a huge passion for our profession and the software community. Everything around those individuals is there to help facilitate those individuals to get to work with the things that they are passionate about. We work hard, play hard and know when we should be on either side of the line that divides the two.&lt;/p&gt;
+
+&lt;p&gt;So because of this is very important that everybody helps define our strategy for the next couple of year, what we should focus on and what we would love to work more with. During the day, open-source emerged in all sorts of discussions and it became clear that everybody wanted us to actively participate in the open-source community. So that's one of the things we'll be doing, in various formats.&lt;/p&gt;
+
+&lt;p&gt;When it was time for our knowledge committee to plan for our next Knowabunga Day, choosing an open-source theme was the obvious things to do and there were cheers all around when the theme was announced!&lt;/p&gt;
+
+&lt;h2&gt;Planning the day itself&lt;/h2&gt;
+
+&lt;p&gt;Planning the day was, relatively speaking, pretty straight forward and can be summarized with the following check-list&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Define the purpose and goals of the day&lt;/li&gt;
+&lt;li&gt;Have everyone sign-up, or decline, to participate during the day&lt;/li&gt;
+&lt;li&gt;When we know how many that is able to attend we can start planning how to divide people up&lt;/li&gt;
+&lt;li&gt;Ask everyone that will be attending what they'd like to work on (front-end, back-end etc.)&lt;/li&gt;
+&lt;li&gt;Ask everyone that will attend if they have any projects they would like to recommend&lt;/li&gt;
+&lt;li&gt;Add additional interesting projects to the list of suggested projects&lt;/li&gt;
+&lt;li&gt;Select projects that suite the interests of the attending people&lt;/li&gt;
+&lt;li&gt;Divide attendees into teams and assign them a project&lt;/li&gt;
+&lt;li&gt;Encourage attendees to read up and explore the project a bit ahead of time&lt;/li&gt;
+&lt;li&gt;Tell people to prepare their laptops for the environments they will be needing&lt;/li&gt;
+&lt;li&gt;Have an awesome day&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The key thing to take away from this is that &lt;strong&gt;planning is key&lt;/strong&gt;. We would never have succeeded in producing 23 total (I've previously mentioned 16 but we had not counted both offices at that time) in a single day unless we had made preparations up front - we would have wasted too much time trying to decide what to do and with whom we'd like to work with.&lt;/p&gt;
+
+&lt;p&gt;For this particular Knowabunga Day we followed a simple agenda when it came to the projects&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Take it for a spin&lt;/li&gt;
+&lt;li&gt;Take it apart&lt;/li&gt;
+&lt;li&gt;Contribute to the project&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We had allocated time for each of these activities to help people familiarize themselves with the project and become confident enough with them to start contributing back.&lt;/p&gt;
+
+&lt;p&gt;The rest is history...&lt;/p&gt;
+</a10:content></item><item><guid isPermaLink="true">http://thecodejunkie.com/2014/02/04/github-expandinizr-1-3-1-release-notes/</guid><link>http://thecodejunkie.com/2014/02/04/github-expandinizr-1-3-1-release-notes/</link><title>Github.ExpandinizR v1.3.1 release notes</title><description>&lt;p&gt;This time, the awesome &lt;a href="https://github.com/khellang"&gt;Kristian Hellang&lt;/a&gt; contributed changes that added responsive functionality to GitHub. You can now enjoy a full-width experience, removed truncating and word-wrap on long file and directory names.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src="/img/github.expandinizer.logo.png" alt="" /&gt;&lt;/p&gt;
 
-</description><pubDate>Sun, 23 Feb 2014 23:00:00 Z</pubDate><a10:updated>2014-02-23T23:00:00Z</a10:updated><a10:content type="text">&lt;p&gt;This time, the awesome &lt;a href="https://github.com/khellang"&gt;Kristian Hellang&lt;/a&gt; contributed changes that added responsive functionality to GitHub. You can now enjoy a full-width experience, removed truncating and word-wrap on long file and directory names.&lt;/p&gt;
+</description><pubDate>Mon, 03 Feb 2014 23:00:00 Z</pubDate><a10:updated>2014-02-03T23:00:00Z</a10:updated><a10:content type="text">&lt;p&gt;This time, the awesome &lt;a href="https://github.com/khellang"&gt;Kristian Hellang&lt;/a&gt; contributed changes that added responsive functionality to GitHub. You can now enjoy a full-width experience, removed truncating and word-wrap on long file and directory names.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src="/img/github.expandinizer.logo.png" alt="" /&gt;&lt;/p&gt;
 
