@@ -1,4 +1,29 @@
-<rss xmlns:a10="http://www.w3.org/2005/Atom" version="2.0"><channel><title>TheCodeJunkie</title><link>http://thecodejunkie.com/rss.xml</link><description>TheCodeJunkie</description><item><guid isPermaLink="true">http://thecodejunkie.com/2014/02/12/creating-value-by-sharing-knowledge/</guid><link>http://thecodejunkie.com/2014/02/12/creating-value-by-sharing-knowledge/</link><title>Creating value by sharing knowledge</title><description>&lt;p&gt;When we announced our &lt;a href="/2014/01/27/a-full-day-of-open-source-at-tretton37"&gt;full day of open-source at tretton37&lt;/a&gt;, we immediately got a lot of questions from people asking us all sorts of questions. A lot of the questions were about what projects we would be working on and how many people would be involved. However, even more questions were related to how we convinced the company to let us spend a full day doing free work, instead of billing clients.&lt;/p&gt;
+<rss xmlns:a10="http://www.w3.org/2005/Atom" version="2.0"><channel><title>TheCodeJunkie</title><link>http://thecodejunkie.com/rss.xml</link><description>TheCodeJunkie</description><item><guid isPermaLink="true">http://thecodejunkie.com/2014/02/20/visual-studio-2013-source-map-mode-for-the-vertical-scrollbar/</guid><link>http://thecodejunkie.com/2014/02/20/visual-studio-2013-source-map-mode-for-the-vertical-scrollbar/</link><title>Visual Studio 2013 source map mode for the vertical scrollbar</title><description>&lt;p&gt;I was playing around a bit with the Visual Studio 2013 scroll bar options, when I noticed a (too me) new section at the bottom of the options. &lt;/p&gt;
+
+&lt;p&gt;The thing that was new to me was the &lt;strong&gt;Behavior&lt;/strong&gt; section at the bottom. More specifically what Microsoft calls &lt;strong&gt;map mode&lt;/strong&gt;. Enabling map mode will turn the vertical scrollbar into a source map, i.e. it will give you an overview of your code, to help you navigate it. This is kind of like the minimap option you find in Sublime Text.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="/img/vs2013.scollbars.sourcemap.png" alt="" /&gt;&lt;/p&gt;
+
+</description><pubDate>Wed, 19 Feb 2014 23:00:00 Z</pubDate><a10:updated>2014-02-19T23:00:00Z</a10:updated><a10:content type="text">&lt;p&gt;I was playing around a bit with the Visual Studio 2013 scroll bar options, when I noticed a (too me) new section at the bottom of the options. &lt;/p&gt;
+
+&lt;p&gt;The thing that was new to me was the &lt;strong&gt;Behavior&lt;/strong&gt; section at the bottom. More specifically what Microsoft calls &lt;strong&gt;map mode&lt;/strong&gt;. Enabling map mode will turn the vertical scrollbar into a source map, i.e. it will give you an overview of your code, to help you navigate it. This is kind of like the minimap option you find in Sublime Text.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="/img/vs2013.scollbars.sourcemap.png" alt="" /&gt;&lt;/p&gt;
+
+&lt;!--excerpt--&gt;
+
+&lt;p&gt;To enable this, you right-click the vertical scroll bar, then you can choose "Scroll Bar Options..." at the bottom of the context menu, or you can select &lt;strong&gt;Tools -&gt; Options -&gt; Text Editor -&gt; All Languages -&gt; Scroll Bars&lt;/strong&gt; from the menu. This will bring up a bunch of customizations you can apply to the scrollbars.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="/img/vs2013.scollbars.settings.png" alt="" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Here you see the full content of the file, with the code that is currently in view inside the black area. The white line represents the current line of the cursor. By chaning the value of the &lt;strong&gt;source overview&lt;/strong&gt; dropdown, you can change how wide the source map will be.&lt;/p&gt;
+
+&lt;p&gt;If you also enable the &lt;strong&gt;Show Preview Tooltip&lt;/strong&gt; option, you will get a small preview window when you hover the mouse for a bit over the same location in the source map. The preview will show the code at the current mouse cursor position, helping you make sure you are at the right place in your code, before navigating.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="/img/vs2013.scrollbars.preview.png" alt="" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Still not sure if I like it or not, but I am going to leave it on for a while and see if I grow to like or hate it. &lt;/p&gt;
+</a10:content></item><item><guid isPermaLink="true">http://thecodejunkie.com/2014/02/12/creating-value-by-sharing-knowledge/</guid><link>http://thecodejunkie.com/2014/02/12/creating-value-by-sharing-knowledge/</link><title>Creating value by sharing knowledge</title><description>&lt;p&gt;When we announced our &lt;a href="/2014/01/27/a-full-day-of-open-source-at-tretton37"&gt;full day of open-source at tretton37&lt;/a&gt;, we immediately got a lot of questions from people asking us all sorts of questions. A lot of the questions were about what projects we would be working on and how many people would be involved. However, even more questions were related to how we convinced the company to let us spend a full day doing free work, instead of billing clients.&lt;/p&gt;
 
 &lt;p&gt;The short version is that we did not have to convince the company at all. We already had the corporate structure in place to enable us to do something like this. The more interesting question really is; why are we able do things like this?&lt;/p&gt;
 
@@ -15,7 +40,7 @@
 &lt;ul&gt;
 &lt;li&gt;Craftsmanship as a lifestyle&lt;/li&gt;
 &lt;li&gt;Embrace the family spirit&lt;/li&gt;
-&lt;li&gt;What you see if what you get&lt;/li&gt;
+&lt;li&gt;What you see is what you get&lt;/li&gt;
 &lt;li&gt;Challenge the world&lt;/li&gt;
 &lt;li&gt;Have fun&lt;/li&gt;
 &lt;/ul&gt;
@@ -394,47 +419,4 @@ https://&amp;lt;destaccount&amp;gt;.blob.core.windows.net/&amp;lt;destcontainer&
 &lt;h2&gt;All-in-all&lt;/h2&gt;
 
 &lt;p&gt;This was a fun learning experience. It was the first time that I created a proper Chrome Extension and it was certainly the first time I published it in the Chrome Store. Who knew it cost $5 to become a publisher in the store? Now I know!&lt;/p&gt;
-</a10:content></item><item><guid isPermaLink="true">http://thecodejunkie.com/2013/09/10/i-am-back-and-this-time-i-am-taking-control/</guid><link>http://thecodejunkie.com/2013/09/10/i-am-back-and-this-time-i-am-taking-control/</link><title>I am back and this time I am taking control</title><description>&lt;p&gt;When Posterous closed down on April 30th 2012, they took my blog with them. I made sure I downloaded my content before the service shut down but did not make any effort in relocating. Why? I had gotten to the point where I thought there was something inherently wrong with the way that blogging services and blog engines work.&lt;/p&gt;
-
-&lt;p&gt;A blog, in its purest form, is nothing but information with a bit of formatting, added to make it look nice, yet each service (and engine) seem to have need to mangle the content. They do this by either converting your data into HTML, thus losing the initial separation of content and formatting, and/or store it in a proprietary format. Either way, as soon as you have handed over your post, you are no longer in control and that bugs me.&lt;/p&gt;
-
-&lt;p&gt;Looking around for options on how to solve this, I got more and more keen on the idea of using &lt;a href="http://pages.github.com/"&gt;GitHub Pages&lt;/a&gt;, that lets you write your posts using Markdown and then automatically convert them to static pages using &lt;a href="http://jekyllrb.com/"&gt;Jekyll&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;The things that really appealed to me were&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;I would get to write my content in a very neutral markup language&lt;/li&gt;
-&lt;li&gt;I could store my posts in a normal Git repository&lt;/li&gt;
-&lt;li&gt;The pages would be static and there would be no need for databases or other software to run it&lt;/li&gt;
-&lt;/ul&gt;
-
-</description><pubDate>Mon, 09 Sep 2013 22:00:00 Z</pubDate><a10:updated>2013-09-09T22:00:00Z</a10:updated><a10:content type="text">&lt;p&gt;When Posterous closed down on April 30th 2012, they took my blog with them. I made sure I downloaded my content before the service shut down but did not make any effort in relocating. Why? I had gotten to the point where I thought there was something inherently wrong with the way that blogging services and blog engines work.&lt;/p&gt;
-
-&lt;p&gt;A blog, in its purest form, is nothing but information with a bit of formatting, added to make it look nice, yet each service (and engine) seem to have need to mangle the content. They do this by either converting your data into HTML, thus losing the initial separation of content and formatting, and/or store it in a proprietary format. Either way, as soon as you have handed over your post, you are no longer in control and that bugs me.&lt;/p&gt;
-
-&lt;p&gt;Looking around for options on how to solve this, I got more and more keen on the idea of using &lt;a href="http://pages.github.com/"&gt;GitHub Pages&lt;/a&gt;, that lets you write your posts using Markdown and then automatically convert them to static pages using &lt;a href="http://jekyllrb.com/"&gt;Jekyll&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;The things that really appealed to me were&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;I would get to write my content in a very neutral markup language&lt;/li&gt;
-&lt;li&gt;I could store my posts in a normal Git repository&lt;/li&gt;
-&lt;li&gt;The pages would be static and there would be no need for databases or other software to run it&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;!--excerpt--&gt; 
-
-&lt;p&gt;While looking into this, I asked &lt;a href="http://philliphaydon.com"&gt;Phillip Haydon&lt;/a&gt;, whom at the time was using GitHub Pages and Jekyll, about some advice on how to get started. He gave me some pointers, but also told me he wanted to build his own version of Jekyll, with his opinions on how such a tool should work, using &lt;a href="http://nancyfx.org"&gt;Nancy&lt;/a&gt; - obviously this was something I had to use!&lt;/p&gt;
-
-&lt;p&gt;Phillip started hacking on his tool and with the help of &lt;a href="http://jonathanchannon.com"&gt;Jonathan Channon&lt;/a&gt; he ended up creating &lt;a href="https://github.com/sandra/sandra.snow"&gt;Sandra.Snow&lt;/a&gt;. &lt;/p&gt;
-
-&lt;p&gt;The ReadMe file, in the repository, describes Sandra.Snow as&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Sandra.Snow is a Jekyll inspired static site generation tool that can be run locally, as a CAAS(Compiler as a Service) or setup with Azure to build your site when your repository changes. It is built on top of NancyFX.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;I have been working on building a blog, using Sandra.Snow, for a while now and you are looking at the result. The reason it took me a while was a combination of me wanting to create my own design (responsive, clean, semantic HTML and so on) and the lack of willpower to get it done with. Happy to say that I am at least happy enough to put it out now, even though I still have some finishing touches I would like to sort out in the coming weeks (hopefully you will not notice them the same way I do).&lt;/p&gt;
-
-&lt;p&gt;After much consideration, I have decided not to convert my entire backlog (I got a data backup from Posterous before they shutdown) to the new blog, but instead I will be cherry-picking posts that I'll convert. I simply see no point to convert post that I feel are out dates and that does not add any value any longer.&lt;/p&gt;
 </a10:content></item></channel></rss>
