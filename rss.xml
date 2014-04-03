@@ -1,4 +1,30 @@
-<rss xmlns:a10="http://www.w3.org/2005/Atom" version="2.0"><channel><title>TheCodeJunkie</title><link>http://thecodejunkie.com/rss.xml</link><description>TheCodeJunkie</description><item><guid isPermaLink="true">http://thecodejunkie.com/2014/02/20/visual-studio-2013-source-map-mode-for-the-vertical-scrollbar/</guid><link>http://thecodejunkie.com/2014/02/20/visual-studio-2013-source-map-mode-for-the-vertical-scrollbar/</link><title>Visual Studio 2013 source map mode for the vertical scrollbar</title><description>&lt;p&gt;I was playing around a bit with the Visual Studio 2013 scroll bar options, when I noticed a (too me) new section at the bottom of the options. &lt;/p&gt;
+<rss xmlns:a10="http://www.w3.org/2005/Atom" version="2.0"><channel><title>TheCodeJunkie</title><link>http://thecodejunkie.com/rss.xml</link><description>TheCodeJunkie</description><item><guid isPermaLink="true">http://thecodejunkie.com/2014/04/03/knowabunga-day-pitching-ideas-as-a-way-of-learning/</guid><link>http://thecodejunkie.com/2014/04/03/knowabunga-day-pitching-ideas-as-a-way-of-learning/</link><title>Knowabunga day, pitching ideas as a way of learning.</title><description>&lt;p&gt;I &lt;a href="/2014/02/20/creating-value-by-sharing-knowledge"&gt;recently blogged&lt;/a&gt; about the Knowabunga day concept that we use at &lt;a href="http://tretton37.com"&gt;tretton37&lt;/a&gt; as a platform to creating learning oppertunities. Last time we devoted all of our time to contribute to a bunch of awesome open-source projects and it was a great success for everybody that participated. Tomorrow we're meeting up again, but this time we will use a different format.&lt;/p&gt;
+
+&lt;p&gt;The challenge we face is; How do you create a learning oppertunity for nearly 80 people, that all have different passions and paths they would like to explore? The concept we came up with this time was to allow everyone pitch an idea for something they would like to spend the day learning. You then join on of the idea that was pitched and go on a learning frenzy throughout the day!&lt;/p&gt;
+
+</description><pubDate>Wed, 02 Apr 2014 22:00:00 Z</pubDate><a10:updated>2014-04-02T22:00:00Z</a10:updated><a10:content type="text">&lt;p&gt;I &lt;a href="/2014/02/20/creating-value-by-sharing-knowledge"&gt;recently blogged&lt;/a&gt; about the Knowabunga day concept that we use at &lt;a href="http://tretton37.com"&gt;tretton37&lt;/a&gt; as a platform to creating learning oppertunities. Last time we devoted all of our time to contribute to a bunch of awesome open-source projects and it was a great success for everybody that participated. Tomorrow we're meeting up again, but this time we will use a different format.&lt;/p&gt;
+
+&lt;p&gt;The challenge we face is; How do you create a learning oppertunity for nearly 80 people, that all have different passions and paths they would like to explore? The concept we came up with this time was to allow everyone pitch an idea for something they would like to spend the day learning. You then join on of the idea that was pitched and go on a learning frenzy throughout the day!&lt;/p&gt;
+
+&lt;!--excerpt--&gt;
+
+&lt;p&gt;The idea is as simple as it is effecient. Everybody has been given the oppertunity to think about things they would like to explore more, and then write up a basic, but to the point, pitch that they post on our internal website. People can read the proposals up front, but each pitch will also be given a couple of minutes to state their case at the start of the day.&lt;/p&gt;
+
+&lt;p&gt;One once all the picthes have been made, people form up behind the one they like the most and then we follow a simple agenda throughout the day&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The pitch (described above)&lt;/li&gt;
+&lt;li&gt;The curriculum (we decide on a curriculum for the day in the group you joined)&lt;/li&gt;
+&lt;li&gt;The hack (codez!)&lt;/li&gt;
+&lt;li&gt;Lunch (nom-nom!)&lt;/li&gt;
+&lt;li&gt;The talks (time to meet up and share what we've been doing and what we've learned)&lt;/li&gt;
+&lt;li&gt;After work (can't have all work, there need to be some play as well!)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I'll be writing a follow up post and let you know how it worked out for us and what kind of pitches that was made. I know I have already made up my mind though! I will be joining a group of people that will be exploring game making using &lt;a href="http://www.unity3d.com"&gt;Unity3D&lt;/a&gt;, which is something I have been playing around with myself the last couple of weeks. Can't wait!&lt;/p&gt;
+
+&lt;p&gt;If you wanna follow the event on twitter, you can follow the &lt;a href="https://twitter.com/search?q=%23knowabunga&amp;amp;src=typd&amp;amp;f=realtime"&gt;#knowabunga&lt;/a&gt; Twitter hashtag!&lt;/p&gt;
+</a10:content></item><item><guid isPermaLink="true">http://thecodejunkie.com/2014/02/20/visual-studio-2013-source-map-mode-for-the-vertical-scrollbar/</guid><link>http://thecodejunkie.com/2014/02/20/visual-studio-2013-source-map-mode-for-the-vertical-scrollbar/</link><title>Visual Studio 2013 source map mode for the vertical scrollbar</title><description>&lt;p&gt;I was playing around a bit with the Visual Studio 2013 scroll bar options, when I noticed a (too me) new section at the bottom of the options. &lt;/p&gt;
 
 &lt;p&gt;The thing that was new to me was the &lt;strong&gt;Behavior&lt;/strong&gt; section at the bottom. More specifically what Microsoft calls &lt;strong&gt;map mode&lt;/strong&gt;. Enabling map mode will turn the vertical scrollbar into a source map, i.e. it will give you an overview of your code, to help you navigate it. This is kind of like the minimap option you find in Sublime Text.&lt;/p&gt;
 
@@ -389,34 +415,4 @@ https://&amp;lt;destaccount&amp;gt;.blob.core.windows.net/&amp;lt;destcontainer&
 &lt;p&gt;We have also decided to look into the &lt;a href="http://sidewaffle.com/"&gt;Sidewaffle&lt;/a&gt; project as an alternative to the VSIX distribution. If anyone would like to offer their Sidewaffle expertise or just help out, please let us know&lt;/p&gt;
 
 &lt;p&gt;Thanks for your patience!&lt;/p&gt;
-</a10:content></item><item><guid isPermaLink="true">http://thecodejunkie.com/2013/11/14/i-created-the-github-expandinizer-extension-for-google-chrome/</guid><link>http://thecodejunkie.com/2013/11/14/i-created-the-github-expandinizer-extension-for-google-chrome/</link><title>I created the Github.Expandinizr extension for Google Chrome</title><description>&lt;p&gt;&lt;img src="/img/github.expandinizer.logo.png" alt="" /&gt;&lt;/p&gt;
-
-&lt;p&gt;A while back when &lt;a href="https://github.com"&gt;GitHub&lt;/a&gt; updated the design of their web page, they introduces a change that has annoyed a lot of people; they decided to truncate the file/folder name in the repository browser. This makes it impossible to distinguish files/folders that follow a naming conventions, such as namespace hierarchies.&lt;/p&gt;
-
-</description><pubDate>Wed, 13 Nov 2013 23:00:00 Z</pubDate><a10:updated>2013-11-13T23:00:00Z</a10:updated><a10:content type="text">&lt;p&gt;&lt;img src="/img/github.expandinizer.logo.png" alt="" /&gt;&lt;/p&gt;
-
-&lt;p&gt;A while back when &lt;a href="https://github.com"&gt;GitHub&lt;/a&gt; updated the design of their web page, they introduces a change that has annoyed a lot of people; they decided to truncate the file/folder name in the repository browser. This makes it impossible to distinguish files/folders that follow a naming conventions, such as namespace hierarchies.&lt;/p&gt;
-
-&lt;!--excerpt--&gt; 
-
-&lt;p&gt;What I did was create a very simple Google Chrome extension, called &lt;a href="https://chrome.google.com/webstore/detail/githubexpandinizr/cbehdjjcilgnejbpnjhobkiiggkedfib"&gt;GitHub.Expandinizr&lt;/a&gt; which &lt;em&gt;kinda&lt;/em&gt; solves the problem. I say kinda, because it is a quick hack really and it was not designed to be prefect. That said, if you can improve it, then please send a pull-request, you can find the source at &lt;a href="https://github.com/thecodejunkie/github.expandinizr"&gt;github.com/thecodejunkie/github.expandinizr&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;So what does it do? All it really does is that when it detects that you are browsing github.com, it will inject a single css class into the page to remove the ellipsis from the file/folder name.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;.css-truncate.css-truncate-target {
-    display: inline !important;
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This css class is usually sets the &lt;code&gt;display&lt;/code&gt; property to &lt;code&gt;inline-block&lt;/code&gt; with an added &lt;code&gt;text-overflow&lt;/code&gt; that has been set to &lt;code&gt;ellipsis&lt;/code&gt;. By changing the display we prevent it, in a rather crude way, to ellipsis the text. Notice that the css declaration has been marked as &lt;code&gt;!important&lt;/code&gt; which will ensure it gets higher priority than the one in the GitHub css declaration.&lt;/p&gt;
-
-&lt;h2&gt;Known issues&lt;/h2&gt;
-
-&lt;p&gt;Like I said, this is a hack. If the un-ellipsed text becomes too long, then it could cause the new width of the repository browser to push into other page elements, such as the sidebar navigation on the right hand side of the design. This is especially noticeable on the main page of the repository browser, since the sidebar is expanded and takes up much more horizontal space, than when it has been collapsed.&lt;/p&gt;
-
-&lt;p&gt;I've fine with this, so at present I am not going to spend any time trying to figure out an alternative approach, that resolves this issues (I spend 10 minutes on it and got a decent result, but it caused other problems). But, like I said, if you come up with a better solution, send me a pull-request with an updated &lt;a href="https://github.com/thecodejunkie/github.expandinizr/blob/master/ext/content/inject.css"&gt;inject.css&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2&gt;All-in-all&lt;/h2&gt;
-
-&lt;p&gt;This was a fun learning experience. It was the first time that I created a proper Chrome Extension and it was certainly the first time I published it in the Chrome Store. Who knew it cost $5 to become a publisher in the store? Now I know!&lt;/p&gt;
 </a10:content></item></channel></rss>

@@ -1,4 +1,6 @@
+/* global require */
 require(['jquery'], function($) {
+	'use strict';
 
 	var getSiteUrl = function() {
 		var url = window.location.protocol + '//' + window.location.hostname;
@@ -18,8 +20,7 @@ require(['jquery'], function($) {
 				var link = 
 					post.link.replace(config.siteUrl, '');
 
-				var anchor = 
-					$("a[href='" + link + "'][title|='Read more']");
+				var anchor = $('a[href="' + link + '"][title|="Read more"]');
 
 				var suffix = 
 					(post.posts == 1) ? "comment" : "comments";
