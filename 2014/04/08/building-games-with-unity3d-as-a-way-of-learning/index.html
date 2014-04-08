@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="description" content="The blog of TheCodeJunkie" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<meta http-equiv="last-modified" content="2014-04-08T22:53:44.4440458+02:00" />
+	<meta http-equiv="last-modified" content="2014-04-08T23:23:29.8521653+02:00" />
 
 	    <title>thecodejunkie.com - 
 	Building games with Unity3D as a way of learning
@@ -65,7 +65,7 @@
 	<div class="body post">
 		<p>In <a href="/2014/04/03/knowabunga-day-pitching-ideas-as-a-way-of-learning">my last blog</a> I wrote about an upcoming <a href="/2014/02/12/creating-value-by-sharing-knowledge">Knowabunga</a> day at the <a href="http://tretton37.com">tretton37</a> offices. The concept of the day was to give people the opportunity to pitch something they would like to spend the day learning more about and have others form up behind their topic.</p>
 
-<p>The rules were simple, you get a couple of minutes to pitch you idea and in order for it to move beyond a pitch, at least one other person had to be willing to spend their day learning with you. If your pitch did not generate any interest you had to join one of the other teams.</p>
+<p>The rules were simple, you get a couple of minutes to pitch your idea and in order for it to move beyond a pitch, at least one other person had to be willing to spend their day learning with you. If your pitch did not generate any interest you had to join one of the other teams.</p>
 
 <p>We were all given the opportunity to post our pitches up front. A lot of interesting topics were brought up such as learning Clojure, using the Web Speech API, Web Components, exploring Roslyn and many many more.</p>
 
@@ -87,7 +87,7 @@
 
 <p>Priority one was to find some decent pre-made art assets that I could use. I could have opened an image editor and drawn something myself, but I figured that somewhere on the internet existed free art that would make my game look much cooler.</p>
 
-<p>After searching for a while, I found a blog post on MSDN called <a href="http://blogs.msdn.com/b/cdnstudents/archive/2013/09/12/free-space-art-assets-to-help-you-build-your-game.aspx">"Free Space Art Assets to help you build your game"</a>. The graphics looked nice and the post said two magical things: <em>free</em> and <em>no string attached</em>. Yay!</p>
+<p>After searching for a while, I found a blog post on MSDN called <a href="http://blogs.msdn.com/b/cdnstudents/archive/2013/09/12/free-space-art-assets-to-help-you-build-your-game.aspx">"Free Space Art Assets to help you build your game"</a>. The graphics looked nice and the post said two magical things: <em>free</em> and <em>no strings attached</em>. Yay!</p>
 
 <h2>Entering the zone</h2>
 
@@ -104,9 +104,9 @@
 
 <p>The basics of Unity3D are pretty straight forward. You add <em>Game Objects</em> to your scene. These game objects can have various <em>Components</em> added to them. Components are things like audio sources, sprite renderers, animators, colliders, rigidbody (makes your game object be affected by physics) and scripts (to name a few).</p>
 
-<p>The scripts is what gives your game objects (and world) its behaviors and it is also the thing that made Unity3D so easy for me (and the other people in our group) to get up and running. The reason is that Unity3D build on Mono which enables you to write your game code using C# (or JavaScript or Boo). This meant that we did not have to learn a new language, while at the same time learn the concepts of Unity3D and game making in general.</p>
+<p>The scripts is what gives your game objects (and world) its behaviors and it is also the thing that made Unity3D so easy for me (and the other people in our group) to get up and running. The reason is that Unity3D built on top of Mono which enables you to write your game code using C# (or JavaScript or Boo). This meant that we did not have to learn a new language, while at the same time learn the concepts of Unity3D and game making in general.</p>
 
-<p>When you attach a script to a game object, then the <em>this</em> reference in your script will refer to the game object that it is attached too. This means that you can create a general purpose script and reuse it across different game objects. You can attach multiple scripts to a game object, which makes them extremely powerful.</p>
+<p>When you attach a script to a game object, then the <em>this</em> reference in your script will refer to the game object that it is attached to. This means that you can create a general purpose script and reuse it across different game objects. You can attach multiple scripts to a game object, which makes them extremely powerful.</p>
 
 <p>It helps if you think about the scripts as <em>Behaviors</em> (you actually inherit your code from a class called <em>MonoBehavior</em>) that you attach to your game objects. I can see myself build up a library of scripts that can be reused across multiple projects. Even the camera can have scripts attached to it, so you could create different kind of tracking behaviors (follow player, zoom out when you travel fast etc).</p>
 
