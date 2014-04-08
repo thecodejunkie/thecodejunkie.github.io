@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="description" content="The blog of TheCodeJunkie" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta http-equiv="last-modified" content="2014-04-08T22:53:44.4440458+02:00" />
+
+	    <title>thecodejunkie.com - 
+	Building games with Unity3D as a way of learning
+</title>
+
+	<link rel="canonical" href="http://thecodejunkie.com/2014/04/08/building-games-with-unity3d-as-a-way-of-learning/" />
+	<link rel="alternate" type="application/rss+xml" title="TheCodeJunkie" href="http://thecodejunkie.com/rss.xml" />
+	<link rel="stylesheet" href="/css/app.css" />
+
+	<!--[if lt IE 9]>
+	<script src="/js/html5shiv.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+
+	<div class="content">
+		<header>
+			<h1>thecodejunkie</h1>
+			<nav>
+				<ul>
+					<li><a href="/" title="Back to the main page">Home</a></li>
+					<li><a href="/categories" title="List of all the available blog categories">Categories</a></li>
+					<li><a href="/archive" title="Archive of all the posts onthe blog">Archive</a></li>
+					<li><a href="/about" title="About me, contact details and so on">About</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main role="main">
+			
+
+
+
+<article>
+	<div class="gravatar">
+		<img src="http://www.gravatar.com/avatar/0bf4194335195c9225f8f22e4e70b192.jpg?s=128" title="TheCodeJunkie" />
+	</div>
+
+	<header>
+		<h1><a href="/2014/04/08/building-games-with-unity3d-as-a-way-of-learning/">Building games with Unity3D as a way of learning</a></h1>
+
+		<div class="post-info">
+	      	<time pubdate datetime='2014-04-08' title='den 8 april 2014'>2014-04-08</time>
+			
+			<address class="author">
+				<a rel="author" href="http://twitter.com/TheCodeJunkie">TheCodeJunkie</a>
+			</address>
+
+			in 
+
+			<a href='/category/learning' title='Learning'>Learning</a>, <a href='/category/unity3d' title='Unity3D'>Unity3D</a>
+		</div>
+	</header>
+	
+	<div class="body post">
+		<p>In <a href="/2014/04/03/knowabunga-day-pitching-ideas-as-a-way-of-learning">my last blog</a> I wrote about an upcoming <a href="/2014/02/12/creating-value-by-sharing-knowledge">Knowabunga</a> day at the <a href="http://tretton37.com">tretton37</a> offices. The concept of the day was to give people the opportunity to pitch something they would like to spend the day learning more about and have others form up behind their topic.</p>
+
+<p>The rules were simple, you get a couple of minutes to pitch you idea and in order for it to move beyond a pitch, at least one other person had to be willing to spend their day learning with you. If your pitch did not generate any interest you had to join one of the other teams.</p>
+
+<p>We were all given the opportunity to post our pitches up front. A lot of interesting topics were brought up such as learning Clojure, using the Web Speech API, Web Components, exploring Roslyn and many many more.</p>
+
+<p>However, the moment I saw it, I knew I wanted to form up behind a pitch that suggested we spend the day with <a href="http://www.unity3d.com">Unity3D</a> and build games! Turns out, so did others and we found ourselves in a group of 8 developers, all eager to get started hacking.</p>
+
+<p><img src="/img/tretton37.knowabunga.unity3d.01.jpg" alt="" /></p>
+
+<p>The above screenshot is from the game that I managed to write, from scratch in less than 6 hours without any real prior experience with Unity3D.</p>
+
+<p>But let us rewind the tape and see what we did during the day.</p>
+
+<!--excerpt-->
+
+<p>The first order of the day for the group was to set a curriculum. We quickly came to the conclusion that the group were too big for us too all cooperate on a single project and decided that we would split into smaller teams. </p>
+
+<p>In the end we broke up into 5 smaller groups, with me in a group of my own because I had my sights set on creating a side scrolling shoot 'em up game. I seemed like a daunting challenge to complete in less than a full work day, without having any prior experience, but I need a good challenge every now and then.</p>
+
+<p>To get us started, the ones that had read up a bit started of by sharing what they knew about using from having done a bit of homework up front. Me and a co-worker had spent some time reading up on the basics and watching some of the learning material, so we shared our take on it with the group.</p>
+
+<p>Priority one was to find some decent pre-made art assets that I could use. I could have opened an image editor and drawn something myself, but I figured that somewhere on the internet existed free art that would make my game look much cooler.</p>
+
+<p>After searching for a while, I found a blog post on MSDN called <a href="http://blogs.msdn.com/b/cdnstudents/archive/2013/09/12/free-space-art-assets-to-help-you-build-your-game.aspx">"Free Space Art Assets to help you build your game"</a>. The graphics looked nice and the post said two magical things: <em>free</em> and <em>no string attached</em>. Yay!</p>
+
+<h2>Entering the zone</h2>
+
+<p>After that, the rest is a bit of a blur to be honest. I more or less went into a  hour coding frenzy - I got into the zone. I had a small mental check-list of things that I wanted the game to have by the end of the day.</p>
+
+<p>The list was really modest and (more or less) looked like this</p>
+
+<ul>
+<li>A ship that can move across the screen</li>
+<li>A scrolling background (parallax if time permits)</li>
+<li>Enemies that fly across the screen</li>
+<li>Some sort of weapon that would let me blow the enemy scum to pieces</li>
+</ul>
+
+<p>The basics of Unity3D are pretty straight forward. You add <em>Game Objects</em> to your scene. These game objects can have various <em>Components</em> added to them. Components are things like audio sources, sprite renderers, animators, colliders, rigidbody (makes your game object be affected by physics) and scripts (to name a few).</p>
+
+<p>The scripts is what gives your game objects (and world) its behaviors and it is also the thing that made Unity3D so easy for me (and the other people in our group) to get up and running. The reason is that Unity3D build on Mono which enables you to write your game code using C# (or JavaScript or Boo). This meant that we did not have to learn a new language, while at the same time learn the concepts of Unity3D and game making in general.</p>
+
+<p>When you attach a script to a game object, then the <em>this</em> reference in your script will refer to the game object that it is attached too. This means that you can create a general purpose script and reuse it across different game objects. You can attach multiple scripts to a game object, which makes them extremely powerful.</p>
+
+<p>It helps if you think about the scripts as <em>Behaviors</em> (you actually inherit your code from a class called <em>MonoBehavior</em>) that you attach to your game objects. I can see myself build up a library of scripts that can be reused across multiple projects. Even the camera can have scripts attached to it, so you could create different kind of tracking behaviors (follow player, zoom out when you travel fast etc).</p>
+
+<h2>Wrapping it up</h2>
+
+<p>Before I knew it, it was time to wrap up and meet up with the other groups and demo what we had accomplished during the day.</p>
+
+<p>By the end of the day my game contained</p>
+
+<ul>
+<li>An infinite scrolling background using a second camera, a quad and texture wrapping</li>
+<li>Three types of enemies, all flying across the screen in various sine curves</li>
+<li>Background music</li>
+<li>A ship that could fire missiles, complete with a pew-pew sound</li>
+<li>Missile explosion sound effect on enemy impact</li>
+<li>Enemy spawners</li>
+<li>Scripts that de-spawned missiles/enemies that fly of screen</li>
+<li>The start of a scoring system</li>
+</ul>
+
+<p>Below are some screenshots of other games that were created (can you tell that many of them used the same art asset pack? Free stuff is awesome, he-he) during the day.</p>
+
+<p><img src="/img/tretton37.knowabunga.unity3d.02.jpg" alt="" /></p>
+
+<p><img src="/img/tretton37.knowabunga.unity3d.03.jpg" alt="" /></p>
+
+<p><img src="/img/tretton37.knowabunga.unity3d.04.jpg" alt="" /></p>
+
+<p><img src="/img/tretton37.knowabunga.unity3d.05.jpg" alt="" /></p>
+
+<p>I do not have all the details on all these games, but I can tell you that the last one is a 2-4 player game that uses wireless Xbox 360 controllers to steer your skateboarder. The objective is to try and knock everyone else of the platforms.</p>
+
+<h2>The aftermath</h2>
+
+<p>Although I did not have enough time to add the scoring, but I revisited the code over the weekend and added it in, along with particle system based explosions when an enemy was hit. I also added a pause option with a single line of code (again, wrapped it up in a Pause-script that can be re-used).</p>
+
+<p>It is still undecided if I am going to publish the project on GitHub or not. I am all for open-source, but I need to make sure that the audio assets, that I grabbed of random sites on the internet, does not violate any licenses. The biggest challenge would be to find the sites where I found them.</p>
+
+<p>However, I will most definitely keep evolving my knowledge with Unity3D, because game development is something I have always (and periodically have done using other platforms and tools) wanted to pick up and be more active with. It is a very rewarding and creative process that goes hand in hand with my passion for programming.</p>
+
+<p>The free version of <a href="http://www.unity3d.com">Unity3D</a> is great and it works both on Windows and OSX. Unity3D also lets you target a wide range of platforms such as Windows, OSX, Linux, PS3 (PS4 on the way), XBox, Wii-U, Windows Phone, Windows Store Apps, Blackberry 10, iOS, Android and the web with the help of WebGL.</p>
+
+	</div>
+
+	<a href="#comments"></a>
+	<div class="comments">
+		<div id="disqus_thread"></div>
+<script>
+    var reset_disqus = function(){
+        DISQUS.reset({
+            reload: true,
+            config: function () {
+                //this.page.identifier = '';
+                this.page.url = 'http://thecodejunkie.com/2014/04/08/building-games-with-unity3d-as-a-way-of-learning/';
+                //this.page.title = '';
+            }
+        });
+    };
+
+    var disqus_shortname = 'thecodejunkie';
+    var disqus_url = 'http://thecodejunkie.com/2014/04/08/building-games-with-unity3d-as-a-way-of-learning/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    window.addEventListener('orientationchange', reset_disqus);
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+	</div>
+
+	<footer>
+		<small>&copy; Copyright 2013, Andreas H&#229;kansson</small>
+	</footer>
+</article>
+		</main>
+
+		
+
+	</div>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="/js/jquery-1.10.2.min.js"><\/script>')</script>
+	<script src="/js/highlight.js"></script>
+	<script src="/js/require.js" data-main="/js/app"></script>
+
+	<script>
+
+		$(function () {
+			hljs.tabReplace = '  ';
+			hljs.initHighlightingOnLoad();
+
+			window.scrollTo(0, 1);
+		});
+
+	</script>
+
+	<script type="text/javascript">
+var _gaq = _gaq || [];
+
+_gaq.push(['_setAccount', 'UA-21346449-1']);
+_gaq.push(['_trackPageview']);
+        
+(function () {
+    var ga = document.createElement('script');
+    ga.type = 'text/javascript';
+    ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+</body>
+</html>
