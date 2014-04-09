@@ -1,4 +1,25 @@
-<rss xmlns:a10="http://www.w3.org/2005/Atom" version="2.0"><channel><title>TheCodeJunkie</title><link>http://thecodejunkie.com/rss.xml</link><description>TheCodeJunkie</description><item><guid isPermaLink="true">http://thecodejunkie.com/2014/04/08/building-games-with-unity3d-as-a-way-of-learning/</guid><link>http://thecodejunkie.com/2014/04/08/building-games-with-unity3d-as-a-way-of-learning/</link><title>Building games with Unity3D as a way of learning</title><description>&lt;p&gt;In &lt;a href="/2014/04/03/knowabunga-day-pitching-ideas-as-a-way-of-learning"&gt;my last blog&lt;/a&gt; I wrote about an upcoming &lt;a href="/2014/02/12/creating-value-by-sharing-knowledge"&gt;Knowabunga&lt;/a&gt; day at the &lt;a href="http://tretton37.com"&gt;tretton37&lt;/a&gt; offices. The concept of the day was to give people the opportunity to pitch something they would like to spend the day learning more about and have others form up behind their topic.&lt;/p&gt;
+<rss xmlns:a10="http://www.w3.org/2005/Atom" version="2.0"><channel><title>TheCodeJunkie</title><link>http://thecodejunkie.com/rss.xml</link><description>TheCodeJunkie</description><item><guid isPermaLink="true">http://thecodejunkie.com/2014/04/09/i-have-been-awarded-an-aspnet-mvp-based-on-oss-contributions/</guid><link>http://thecodejunkie.com/2014/04/09/i-have-been-awarded-an-aspnet-mvp-based-on-oss-contributions/</link><title>I have been awarded an ASP.NET MVP based on OSS contributions!</title><description>&lt;p&gt;A while ago &lt;a href="http://twitter.com/hanselman"&gt;Scott Hanselman&lt;/a&gt; blogged about &lt;a href="http://www.hanselman.com/blog/ChangesInTheMicrosoftMVPProgramMVPsForOpenSourceContributions.aspx"&gt;Changes in the Microsoft MVP Program - MVPs for Open Source Contributions&lt;/a&gt;, which detailed changed to the Microsoft MVP program that would enable Microsoft to award people an MVP solely based on open-source contributions.&lt;/p&gt;
+
+&lt;p&gt;Today I am very proud to share with you that I have been awarded the very first open-source based MVP! I have been awarded an MVP in the ASP.NET category, as it is the most appropriate given most of my open-source work has been in web-related technologies.&lt;/p&gt;
+
+&lt;p&gt;Just to be clear: there is no pure "open-source MVP" category, instead Microsoft will award MVPs in one of the existing categories, but based on different criteria. However, I feel it is only appropriate to include the OSS moniker in my MVP title, hence I will use &lt;em&gt;ASP.NET OSS MVP&lt;/em&gt; to describe my MVP.&lt;/p&gt;
+
+</description><pubDate>Tue, 08 Apr 2014 22:00:00 Z</pubDate><a10:updated>2014-04-08T22:00:00Z</a10:updated><a10:content type="text">&lt;p&gt;A while ago &lt;a href="http://twitter.com/hanselman"&gt;Scott Hanselman&lt;/a&gt; blogged about &lt;a href="http://www.hanselman.com/blog/ChangesInTheMicrosoftMVPProgramMVPsForOpenSourceContributions.aspx"&gt;Changes in the Microsoft MVP Program - MVPs for Open Source Contributions&lt;/a&gt;, which detailed changed to the Microsoft MVP program that would enable Microsoft to award people an MVP solely based on open-source contributions.&lt;/p&gt;
+
+&lt;p&gt;Today I am very proud to share with you that I have been awarded the very first open-source based MVP! I have been awarded an MVP in the ASP.NET category, as it is the most appropriate given most of my open-source work has been in web-related technologies.&lt;/p&gt;
+
+&lt;p&gt;Just to be clear: there is no pure "open-source MVP" category, instead Microsoft will award MVPs in one of the existing categories, but based on different criteria. However, I feel it is only appropriate to include the OSS moniker in my MVP title, hence I will use &lt;em&gt;ASP.NET OSS MVP&lt;/em&gt; to describe my MVP.&lt;/p&gt;
+
+&lt;!--excerpt--&gt;
+
+&lt;p&gt;For me, the biggest thing here is the recognition from Microsoft that the work that I have been putting into helping out the .NET ecosystem is appreciated. That by far exceeds any other benefits that this might bring.&lt;/p&gt;
+
+&lt;p&gt;I know a lot of awesome developers that devote so much time and passion in developing amazing frameworks and projects, all for free, which all help make .NET a better place for everyone. Each and everyone of them deserves this as well and I am happy to also be able to share that starting from the next round of MVP announcements (1st July), Microsoft will start awarding more people an MVP based solely based on open source contributions.&lt;/p&gt;
+
+&lt;p&gt;Anyone can &lt;a href="http://mvp.microsoft.com/en-us/nominate-an-mvp.aspx"&gt;Nominate an MVP&lt;/a&gt; and if you know someone that you think should get the same kind of recognition, then head over to the nomination form and fill in their details. I know there are a bunch of people that will be getting my nomination!&lt;/p&gt;
+
+&lt;p&gt;I would also like to thank &lt;a href="http://twitter.com/hanselman"&gt;Scott Hanselman&lt;/a&gt; and everyone else at Microsoft, that have made this change possible and for their hard work to make open-source a first class citizen in their strategy moving forward&lt;/p&gt;
+</a10:content></item><item><guid isPermaLink="true">http://thecodejunkie.com/2014/04/08/building-games-with-unity3d-as-a-way-of-learning/</guid><link>http://thecodejunkie.com/2014/04/08/building-games-with-unity3d-as-a-way-of-learning/</link><title>Building games with Unity3D as a way of learning</title><description>&lt;p&gt;In &lt;a href="/2014/04/03/knowabunga-day-pitching-ideas-as-a-way-of-learning"&gt;my last blog&lt;/a&gt; I wrote about an upcoming &lt;a href="/2014/02/12/creating-value-by-sharing-knowledge"&gt;Knowabunga&lt;/a&gt; day at the &lt;a href="http://tretton37.com"&gt;tretton37&lt;/a&gt; offices. The concept of the day was to give people the opportunity to pitch something they would like to spend the day learning more about and have others form up behind their topic.&lt;/p&gt;
 
 &lt;p&gt;The rules were simple, you get a couple of minutes to pitch your idea and in order for it to move beyond a pitch, at least one other person had to be willing to spend their day learning with you. If your pitch did not generate any interest you had to join one of the other teams.&lt;/p&gt;
 
@@ -439,25 +460,4 @@ https://&amp;lt;destaccount&amp;gt;.blob.core.windows.net/&amp;lt;destcontainer&
 &lt;p&gt;Since I was copying existing machines across, I just needed to create disks directly, that I then used to create my virtual machines from. &lt;/p&gt;
 
 &lt;p&gt;When I created a virtual machine from one of the images, it worked fine (I could login to the machine), except for Azure getting stuck while provisioning my machine. So even though the machine was functional, it was not sitting quite right with Azure. Once I changed to use a disk, it immediatly behaved as I expected.&lt;/p&gt;
-</a10:content></item><item><guid isPermaLink="true">http://thecodejunkie.com/2013/12/13/community-maintained-nancy-fsharp-templates-for-visual-studio/</guid><link>http://thecodejunkie.com/2013/12/13/community-maintained-nancy-fsharp-templates-for-visual-studio/</link><title>Community maintained Nancy F# templates for Visual Studio</title><description>&lt;p&gt;Not too long ago, I posted about the &lt;a href="/2013/11/15/On-the-Nancy-templates-for-Visual-Studio"&gt;Visual Studio templates for Nancy&lt;/a&gt; and how we had taken the (tough) decision to only maintain C# templates outselves. Not because we do not see value in supporting other languages, but solely because of the shear amount of work that is required to maintain a single template.&lt;/p&gt;
-
-&lt;p&gt;Maintaining 9 templates (as we do with out C# templates) is a time consuming process, and the time required to support additional templates scales linear to the amount of templates we add.&lt;/p&gt;
-
-&lt;p&gt;We reached out the authors of the VB.NET templates and F# templates, as well as our community, and ask them to maintain the templates themselves. I didn't take long for the F# community to step up to the plate...&lt;/p&gt;
-
-</description><pubDate>Thu, 12 Dec 2013 23:00:00 Z</pubDate><a10:updated>2013-12-12T23:00:00Z</a10:updated><a10:content type="text">&lt;p&gt;Not too long ago, I posted about the &lt;a href="/2013/11/15/On-the-Nancy-templates-for-Visual-Studio"&gt;Visual Studio templates for Nancy&lt;/a&gt; and how we had taken the (tough) decision to only maintain C# templates outselves. Not because we do not see value in supporting other languages, but solely because of the shear amount of work that is required to maintain a single template.&lt;/p&gt;
-
-&lt;p&gt;Maintaining 9 templates (as we do with out C# templates) is a time consuming process, and the time required to support additional templates scales linear to the amount of templates we add.&lt;/p&gt;
-
-&lt;p&gt;We reached out the authors of the VB.NET templates and F# templates, as well as our community, and ask them to maintain the templates themselves. I didn't take long for the F# community to step up to the plate...&lt;/p&gt;
-
-&lt;!--excerpt--&gt;
-
-&lt;p&gt;&lt;a href="http://wizardsofsmart.net/"&gt;Ryan Riley&lt;/a&gt; (&lt;a href="http://twitter.com/panesofglass"&gt;@panesofglass&lt;/a&gt; on Twitter) and &lt;a href="http://blog.danielmohl.com/"&gt;Daniel Mohl&lt;/a&gt; (&lt;a href="http://twitter.com/dmohl"&gt;@dmohl&lt;/a&gt; on Twitter) took the templates and creates their own VSIX extension with their F# templates&lt;/p&gt;
-
-&lt;p&gt;&lt;img src="/img/nancy.fsharp.templates.for.visual.studio.png" alt="" /&gt;&lt;/p&gt;
-
-&lt;p&gt;The templates can be found at &lt;a href="http://visualstudiogallery.msdn.microsoft.com/b55b8aac-b11a-4a6a-8a77-2153f46f4e2f"&gt;F# Nancy Template&lt;/a&gt; on the Visual Studio Gallery.&lt;/p&gt;
-
-&lt;p&gt;For more informatation, head over to &lt;a href="http://bloggemdano.blogspot.se/2013/12/a-few-other-template-additions-and.html"&gt;Daniel's blog&lt;/a&gt;&lt;/p&gt;
 </a10:content></item></channel></rss>
