@@ -1,0 +1,204 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="description" content="The blog of TheCodeJunkie" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta http-equiv="last-modified" content="2014-06-19T21:58:14.3377343+02:00" />
+
+	    <title>thecodejunkie.com - 
+	Our sights are set on releasing v1
+</title>
+
+	<link rel="canonical" href="http://thecodejunkie.com/2014/06/19/our-sights-are-set-on-releasing-v1/" />
+	<link rel="alternate" type="application/rss+xml" title="TheCodeJunkie" href="http://thecodejunkie.com/rss.xml" />
+	<link rel="stylesheet" href="/css/app.css" />
+
+	<!--[if lt IE 9]>
+	<script src="/js/html5shiv.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+
+	<div class="content">
+		<header>
+			<h1>thecodejunkie</h1>
+			<nav>
+				<ul>
+					<li><a href="/" title="Back to the main page">Home</a></li>
+					<li><a href="/categories" title="List of all the available blog categories">Categories</a></li>
+					<li><a href="/archive" title="Archive of all the posts onthe blog">Archive</a></li>
+					<li><a href="/about" title="About me, contact details and so on">About</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main role="main">
+			
+
+
+
+<article>
+	<div class="gravatar">
+		<img src="http://www.gravatar.com/avatar/0bf4194335195c9225f8f22e4e70b192.jpg?s=128" title="TheCodeJunkie" />
+	</div>
+
+	<header>
+		<h1><a href="/2014/06/19/our-sights-are-set-on-releasing-v1/">Our sights are set on releasing v1</a></h1>
+
+		<div class="post-info">
+	      	<time pubdate datetime='2014-06-19' title='den 19 juni 2014'>2014-06-19</time>
+			
+			<address class="author">
+				<a rel="author" href="http://twitter.com/TheCodeJunkie">TheCodeJunkie</a>
+			</address>
+
+			in 
+
+			<a href='/category/nancy' title='Nancy'>Nancy</a>, <a href='/category/open-source' title='Open-Source'>Open-Source</a>
+		</div>
+	</header>
+
+		<div class="series">
+			<span>This post is part of a series</span>
+			<ul class="snow-series"><li><a href="/2014/06/19/nancy-moving-forward/">Nancy moving forward</a></li><li><a href="/2014/06/19/the-governance-of-nancy-has-been-expanded/">The governance of Nancy has been expanded</a></li><li><a href="/2014/06/19/changing-the-way-we-work-on-github/">Changing the way we work on GitHub</a></li><li>Our sights are set on releasing v1</li><li><a href="/2014/06/19/streamlining-our-community-presence/">Streamlining our community presence</a></li><li><a href="/2014/06/19/nancy-hosting-owin-and-aspnet-vnext/">Nancy hosting, OWIN and ASP.NET vNext</a></li><li><a href="/2014/04/19/one-nancy-blog-to-aggregate-them-all/">One Nancy blog to aggregate them all!</a></li></ul>
+		</div>
+	
+	<div class="body post">
+		<p>Over the years, we have often gotten the question on when we will be releasing v1 of Nancy. While it has never been important to us, many have been claiming that this is something that is important for enterprise adoption.</p>
+
+<p>I still remember when we went from 0.9.0 to 0.10.0 and many thought we were crazy. Apparently 1.0.0 is the obvious next version after 0.9.0, right? With the current release being 0.23.0, you can perhaps tell that we did not agree.</p>
+
+<p>Of course, it is my personal belief, that changing the version number to v1, is just an artificial sense of security. Nothing else is going to change in terms of support or promises (well almost, more about versioning further below).</p>
+
+<!--excerpt-->
+
+<h2>The reasoning behind moving to v1</h2>
+
+<p>So if the version number is not that important, then why are we finally targeting a v1 release? There are several reasons for us, the two major ones are <strong>SemVer</strong> and <strong>supported framework versions</strong>.</p>
+
+<h2>Adhering to SemVer</h2>
+
+<p>We have always used SemVer-ish to version our releases, with the difference that we have been bumping the minor version, on each release, instead of the major. </p>
+
+<p>When we release v1 we are going to adopt a strict SemVer strategy and bump the major version number each time we release a new version that contains public breaking changes.</p>
+
+<p>Historically we have always had a couple of <a href="https://github.com/NancyFx/Nancy/wiki/Breaking-Changes">breaking changes</a>, but we have always tried to make sure they have been well documented and, for the most part, only affected you if you were doing customisations of Nancy.</p>
+
+<p>While we probably will keep having these kinds of breaking changes for a while longer, we hope they will gradually be fewer over time.</p>
+
+<p>Adhering to SemVer, this means that we will be assuming the Chrome-model of versioning. We are not bothered with increasing the major frequently. The reason for this is that increasing the major version, with SemVer, communicates something very clear to the consumer.</p>
+
+<h2>Supported framework versions</h2>
+
+<p>Ever since Nancy was released, back in 2010, we have been targeting .NET 4.0. This has been an important things for us because it has taken time for 4.5 to gain momentum in the community (especially in enterprise environments), even though it was released nearly 2 years ago.</p>
+
+<p>With the release of v1 we will start to phase out our support for 4.0. We are doing this for a couple of reasons.</p>
+
+<p>The first one being that Microsoft is now pushing their new stacks (Katana, ASP.NET vNext and so on) onto .NET 4.5, so there will be a forced adoption of 4.5 for anyone that wants to keep up with the new stuff they release.</p>
+
+<p>The second reason is that we feel it is time that we start taking advantage of the new language features (such as async/await) and features (classes, method overloads and so on) in the Nancy code base. In many ways this is going to mean we get to delete (yay!) our own code, leaving us with less code to support.</p>
+
+<h2>v1 will be a double edged sword</h2>
+
+<p>We plan on releasing the v1 nuget with two sets of assemblies in it. One that targets 4.0 (v1-net40) and another that targets 4.5 (v1-net45).</p>
+
+<p>The v1-net40 version will be maintained (roughly) for 6 months, before we completely drop support for 4.0. This should give you adequate time to upgrade your infrastructure to support 4.5 (it's time, it was released nearly two years ago).</p>
+
+<p>When it comes to the v1-net45 version, it will contain the same features as v1-net40. However, it also contains other things that will be unique for the 4.5 target.</p>
+
+<p>For example, we will add support for <strong>System.Security.Claims</strong> (which is only available on .NET 4.5) in the v1-net45 release. This will  enable us to flow security credentials into Nancy from things like Katana, which means Nancy will play even better with the OWIN ecosystem.</p>
+
+<h2>The path to v1</h2>
+
+<p>The next release is going to be given the version v1-alpha. It is going to be followed by a v1-beta and then finally the actual v1 release. No exact release dates have been set for the beta and final release, but we hope to get the alpha out in about 3-4 weeks time.</p>
+
+<p>This means that there will not be a 0.24.0 release, however there may be additional 0.23.x releases in the meantime, that contains bug fixes.</p>
+
+<p>Simply put, this is not a 12 month goal that will eventually happen, we are fully committed to making v1 happen within a reasonable near future.</p>
+
+<h2>Even the best of plans is going to need fine tuning</h2>
+
+<p>All of the above is the result of a single meeting, and discussions that have been taking place on JabbR and email, over several months.</p>
+
+<p>Nothing is set in stone yet, but it is the roadmap that we hope to follow. It is not unlikely that we are going to make adjustments to it as we start heading down that path and if you have any feedback then please let us know!</p>
+
+	</div>
+
+	<a href="#comments"></a>
+	<div class="comments">
+		<div id="disqus_thread"></div>
+<script>
+    var reset_disqus = function(){
+        DISQUS.reset({
+            reload: true,
+            config: function () {
+                //this.page.identifier = '';
+                this.page.url = 'http://thecodejunkie.com/2014/06/19/our-sights-are-set-on-releasing-v1/';
+                //this.page.title = '';
+            }
+        });
+    };
+
+    var disqus_shortname = 'thecodejunkie';
+    var disqus_url = 'http://thecodejunkie.com/2014/06/19/our-sights-are-set-on-releasing-v1/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    window.addEventListener('orientationchange', reset_disqus);
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+	</div>
+
+	<footer>
+		<small>&copy; Copyright 2013, Andreas H&#229;kansson</small>
+	</footer>
+</article>
+		</main>
+
+		
+
+	</div>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="/js/jquery-1.10.2.min.js"><\/script>')</script>
+	<script src="/js/highlight.js"></script>
+	<script src="/js/require.js" data-main="/js/app"></script>
+
+	<script>
+
+		$(function () {
+			hljs.tabReplace = '  ';
+			hljs.initHighlightingOnLoad();
+
+			window.scrollTo(0, 1);
+		});
+
+	</script>
+
+	<script type="text/javascript">
+var _gaq = _gaq || [];
+
+_gaq.push(['_setAccount', 'UA-21346449-1']);
+_gaq.push(['_trackPageview']);
+        
+(function () {
+    var ga = document.createElement('script');
+    ga.type = 'text/javascript';
+    ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+</body>
+</html>

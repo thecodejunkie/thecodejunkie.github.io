@@ -374,12 +374,6 @@ pre .chunk {
   margin-bottom: 20px;
   margin-left: 35px;
 }
-/* line 10, ../sass/pages/_index.scss */
-.index .snow-series {
-  list-style: none;
-  margin-left: 0;
-  margin-top: 20px;
-}
 
 /* line 1, ../sass/_main.scss */
 body {
@@ -401,8 +395,8 @@ a:visited {
   color: #2ba6cb;
 }
 
-/* line 20, ../sass/_main.scss */
-div[class~="body"] > p:first-child {
+/* line 21, ../sass/_main.scss */
+div[class~="body"] p:first-of-type {
   color: #959595;
   border-bottom: 1px solid #ddd;
   font-size: 1.2em;
@@ -412,19 +406,19 @@ div[class~="body"] > p:first-child {
   padding-bottom: 20px;
 }
 
-/* line 32, ../sass/_main.scss */
+/* line 34, ../sass/_main.scss */
 .post ul {
   list-style-type: disc;
   margin-bottom: 1.25em;
   padding-left: 35px;
 }
 
-/* line 39, ../sass/_main.scss */
+/* line 41, ../sass/_main.scss */
 blockquote {
   border-left: 4px solid #ddd;
   padding: 0 20px;
 }
-/* line 43, ../sass/_main.scss */
+/* line 45, ../sass/_main.scss */
 blockquote p {
   color: #aaa28c;
   border-bottom: 0;
@@ -433,62 +427,62 @@ blockquote p {
   font-style: italic;
   padding-bottom: 0;
 }
-/* line 51, ../sass/_main.scss */
+/* line 53, ../sass/_main.scss */
 blockquote p::before {
   content: '\0022';
 }
-/* line 55, ../sass/_main.scss */
+/* line 57, ../sass/_main.scss */
 blockquote p::after {
   content: '\0022';
 }
 
-/* line 61, ../sass/_main.scss */
+/* line 63, ../sass/_main.scss */
 code {
   font-family: Consolas, 'Liberation Mono', Courier, monospace;
   font-size: 14px;
 }
 
-/* line 66, ../sass/_main.scss */
+/* line 68, ../sass/_main.scss */
 h1, h2, h3 {
   font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: bold;
   text-transform: none;
 }
 
-/* line 72, ../sass/_main.scss */
+/* line 74, ../sass/_main.scss */
 h1 {
   line-height: 1.4;
   text-transform: uppercase;
 }
 
-/* line 77, ../sass/_main.scss */
+/* line 79, ../sass/_main.scss */
 h2 {
   font-size: 20px;
 }
-/* line 80, ../sass/_main.scss */
+/* line 82, ../sass/_main.scss */
 h2 a {
   color: #6a6359;
 }
-/* line 83, ../sass/_main.scss */
+/* line 85, ../sass/_main.scss */
 h2 a:visited {
   color: #6a6359;
 }
-/* line 88, ../sass/_main.scss */
+/* line 90, ../sass/_main.scss */
 h2::first-letter {
   text-transform: capitalize;
 }
 
-/* line 93, ../sass/_main.scss */
+/* line 95, ../sass/_main.scss */
 em {
   font-style: italic;
 }
 
-/* line 97, ../sass/_main.scss */
+/* line 99, ../sass/_main.scss */
 strong {
   font-weight: bold;
 }
 
-/* line 101, ../sass/_main.scss */
+/* line 103, ../sass/_main.scss */
 .content {
   margin: 0 auto;
   max-width: 960px;
@@ -496,61 +490,72 @@ strong {
   width: auto;
 }
 
-/* line 109, ../sass/_main.scss */
+/* line 111, ../sass/_main.scss */
 nav a {
   color: #aaa28c;
   font-weight: bold;
   font-size: 16px;
 }
-/* line 114, ../sass/_main.scss */
+/* line 116, ../sass/_main.scss */
 nav a:visited {
   color: #aaa28c;
 }
 
-/* line 120, ../sass/_main.scss */
+/* line 122, ../sass/_main.scss */
 ul {
   list-style: none;
   margin: 0;
 }
 
-/* line 125, ../sass/_main.scss */
+/* line 127, ../sass/_main.scss */
 header {
   overflow: hidden;
   padding: 0;
   text-align: center;
 }
-/* line 130, ../sass/_main.scss */
+/* line 132, ../sass/_main.scss */
 header h1 {
   color: #aaa28c;
   font-size: 30px;
 }
-/* line 135, ../sass/_main.scss */
+/* line 137, ../sass/_main.scss */
 header nav {
   margin: 0;
 }
-/* line 139, ../sass/_main.scss */
+/* line 141, ../sass/_main.scss */
 header nav ul li {
   display: inline-block;
   float: none;
   font-weight: bold;
   margin-left: 20px;
 }
-/* line 145, ../sass/_main.scss */
+/* line 147, ../sass/_main.scss */
 header nav ul li:first-child {
   margin-left: 0;
 }
 
-/* line 153, ../sass/_main.scss */
+/* line 155, ../sass/_main.scss */
 footer {
   margin: 20px auto;
   text-align: center;
 }
-/* line 158, ../sass/_main.scss */
+/* line 160, ../sass/_main.scss */
 footer nav a {
   margin: 0 15px;
 }
 
-/* line 164, ../sass/_main.scss */
+/* line 166, ../sass/_main.scss */
+.series {
+  margin-top: 16px;
+}
+/* line 169, ../sass/_main.scss */
+.series .snow-series {
+  list-style: none;
+  margin-left: 15px;
+  margin-top: 5px;
+}
+
+/* line 176, ../sass/_main.scss */
 article {
   background-color: #fff;
   border: 1px solid;
@@ -560,99 +565,99 @@ article {
   margin-top: 20px;
   padding: 50px;
 }
-/* line 173, ../sass/_main.scss */
+/* line 185, ../sass/_main.scss */
 article:first-child {
   margin-top: 20px;
 }
-/* line 177, ../sass/_main.scss */
+/* line 189, ../sass/_main.scss */
 article table {
   background: white;
 }
-/* line 180, ../sass/_main.scss */
+/* line 192, ../sass/_main.scss */
 article table td {
   display: table-cell;
   font-size: 0.875em;
   line-height: 1.125em;
 }
-/* line 187, ../sass/_main.scss */
+/* line 199, ../sass/_main.scss */
 article p {
   margin-bottom: 1.25em;
   text-rendering: optimizeLegibility;
 }
-/* line 192, ../sass/_main.scss */
+/* line 204, ../sass/_main.scss */
 article header {
   margin: 0;
   padding: 0;
   text-align: left;
 }
-/* line 197, ../sass/_main.scss */
+/* line 209, ../sass/_main.scss */
 article header div {
   font-size: 12px;
 }
-/* line 201, ../sass/_main.scss */
+/* line 213, ../sass/_main.scss */
 article header h1 {
   color: #000;
   display: block;
   line-height: 26px;
   margin-bottom: 10px;
 }
-/* line 207, ../sass/_main.scss */
+/* line 219, ../sass/_main.scss */
 article header h1 a {
   color: #000;
   font-family: 'Open Sans', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 24px;
 }
-/* line 212, ../sass/_main.scss */
+/* line 224, ../sass/_main.scss */
 article header h1 a:visited {
   color: #000;
 }
-/* line 218, ../sass/_main.scss */
+/* line 230, ../sass/_main.scss */
 article header address {
   display: inline;
   font-size: 12px;
 }
-/* line 222, ../sass/_main.scss */
+/* line 234, ../sass/_main.scss */
 article header address::before {
   content: ' by ';
   font-style: normal;
 }
-/* line 228, ../sass/_main.scss */
+/* line 240, ../sass/_main.scss */
 article header time {
   color: #aaa;
   margin-bottom: 10px;
 }
-/* line 234, ../sass/_main.scss */
+/* line 246, ../sass/_main.scss */
 article img {
   max-width: 100%;
 }
-/* line 239, ../sass/_main.scss */
+/* line 251, ../sass/_main.scss */
 article div.gravatar {
   display: none;
 }
-/* line 244, ../sass/_main.scss */
+/* line 256, ../sass/_main.scss */
 article footer {
   margin: 20px 0 0 0;
 }
-/* line 246, ../sass/_main.scss */
+/* line 258, ../sass/_main.scss */
 article footer small {
   color: #aaa;
   font-size: 10px;
 }
-/* line 252, ../sass/_main.scss */
+/* line 264, ../sass/_main.scss */
 article em {
   font-weight: bold;
 }
-/* line 256, ../sass/_main.scss */
+/* line 268, ../sass/_main.scss */
 article h2 {
   font-weight: bold;
   margin-top: 20px;
 }
-/* line 261, ../sass/_main.scss */
+/* line 273, ../sass/_main.scss */
 article .post-info {
   line-height: 20px;
 }
 
-/* line 266, ../sass/_main.scss */
+/* line 278, ../sass/_main.scss */
 kbd {
   white-space: nowrap;
   color: #000;
@@ -677,45 +682,45 @@ kbd {
 }
 
 @media only screen and (min-width: 48em) {
-  /* line 290, ../sass/_main.scss */
+  /* line 302, ../sass/_main.scss */
   .content {
     padding: 0 50px;
   }
 
-  /* line 294, ../sass/_main.scss */
+  /* line 306, ../sass/_main.scss */
   header {
     padding: 0 50px;
   }
-  /* line 297, ../sass/_main.scss */
+  /* line 309, ../sass/_main.scss */
   header h1 {
     display: inline-block;
     float: left;
   }
-  /* line 302, ../sass/_main.scss */
+  /* line 314, ../sass/_main.scss */
   header nav {
     float: right;
   }
 
-  /* line 307, ../sass/_main.scss */
+  /* line 319, ../sass/_main.scss */
   article {
     margin-top: 80px;
     padding: 50px;
   }
-  /* line 312, ../sass/_main.scss */
+  /* line 324, ../sass/_main.scss */
   article header h1 {
     display: block;
     line-height: 48px;
     width: 100%;
   }
-  /* line 317, ../sass/_main.scss */
+  /* line 329, ../sass/_main.scss */
   article header h1 a {
     font-size: 36px;
   }
-  /* line 319, ../sass/_main.scss */
+  /* line 331, ../sass/_main.scss */
   article header h1 a:visited {
     color: #000;
   }
-  /* line 327, ../sass/_main.scss */
+  /* line 339, ../sass/_main.scss */
   article div.gravatar {
     border: 4px solid #fff;
     border-radius: 100% 100%;
@@ -726,7 +731,7 @@ kbd {
     position: absolute;
     width: 72px;
   }
-  /* line 337, ../sass/_main.scss */
+  /* line 349, ../sass/_main.scss */
   article div.gravatar img {
     border-radius: 100% 100%;
     height: 72px;
