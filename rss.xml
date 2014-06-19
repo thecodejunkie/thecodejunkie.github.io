@@ -60,12 +60,42 @@
 
 &lt;p&gt;Please do not hesitate to reach out to us if you have any questions, suggestions and just want to share your thoughts on the subjects!&lt;/p&gt;
 
+&lt;p&gt;Here is a tl;dr of the posts&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Most Values Minions can now commit code&lt;/li&gt;
+&lt;li&gt;Cleaned up our labels on GitHub&lt;/li&gt;
+&lt;li&gt;Cleaning up all the open issues and pull-requests&lt;/li&gt;
+&lt;li&gt;Pusing towards a v1 release&lt;/li&gt;
+&lt;li&gt;v1 will be a dual-target release, targeting both .net 4.0 and .net 4.5&lt;/li&gt;
+&lt;li&gt;Post-v1 we will support .net 4.0 for about 6 months&lt;/li&gt;
+&lt;li&gt;We are going to close down our Google group in about 1 month&lt;/li&gt;
+&lt;li&gt;We are going all-in on OWIN, bringing it into our core&lt;/li&gt;
+&lt;li&gt;We are fully committed to supporting ASP.NET vNext&lt;/li&gt;
+&lt;li&gt;We released &lt;a href="http://blog.nancyfx.org"&gt;blog.nancyfx.org&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;p&gt;Happy reading!&lt;/p&gt;
 </description><pubDate>Wed, 18 Jun 2014 22:00:00 Z</pubDate><a10:updated>2014-06-18T22:00:00Z</a10:updated><a10:content type="html">&lt;p&gt;Recently we had a meeting that was made up of Me, &lt;a href="http://twitter.com/grumpydev"&gt;Steven&lt;/a&gt; and most of the &lt;a href="http://nancyfx.org/mvm.html"&gt;Most Valued Minions&lt;/a&gt;. On the agenda was everything from discussing the governance of the project, to making plans for a v1, looking over the state of our GitHub repository and much more.&lt;/p&gt;
 
 &lt;p&gt;A lot of ground was covered and the intention of this blog series is to try and get down as much as possible of what we said and decided. We believe in developing in the open, so it is important that we get the information out to our community.&lt;/p&gt;
 
 &lt;p&gt;Please do not hesitate to reach out to us if you have any questions, suggestions and just want to share your thoughts on the subjects!&lt;/p&gt;
+
+&lt;p&gt;Here is a tl;dr of the posts&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Most Values Minions can now commit code&lt;/li&gt;
+&lt;li&gt;Cleaned up our labels on GitHub&lt;/li&gt;
+&lt;li&gt;Cleaning up all the open issues and pull-requests&lt;/li&gt;
+&lt;li&gt;Pusing towards a v1 release&lt;/li&gt;
+&lt;li&gt;v1 will be a dual-target release, targeting both .net 4.0 and .net 4.5&lt;/li&gt;
+&lt;li&gt;Post-v1 we will support .net 4.0 for about 6 months&lt;/li&gt;
+&lt;li&gt;We are going to close down our Google group in about 1 month&lt;/li&gt;
+&lt;li&gt;We are going all-in on OWIN, bringing it into our core&lt;/li&gt;
+&lt;li&gt;We are fully committed to supporting ASP.NET vNext&lt;/li&gt;
+&lt;li&gt;We released &lt;a href="http://blog.nancyfx.org"&gt;blog.nancyfx.org&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;Happy reading!&lt;/p&gt;
 </a10:content></item><item><guid isPermaLink="true">http://thecodejunkie.com/2014/06/19/our-sights-are-set-on-releasing-v1/</guid><link>http://thecodejunkie.com/2014/06/19/our-sights-are-set-on-releasing-v1/</link><author>andreas@selfinflicted.org</author><category>Nancy</category><category>Open-Source</category><title>Our sights are set on releasing v1</title><description>&lt;p&gt;Over the years, we have often gotten the question on when we will be releasing v1 of Nancy. While it has never been important to us, many have been claiming that this is something that is important for enterprise adoption.&lt;/p&gt;
