@@ -1,4 +1,63 @@
-<rss xmlns:a10="http://www.w3.org/2005/Atom" version="2.0"><channel><title>TheCodeJunkie</title><link>http://thecodejunkie.com/rss.xml</link><description>TheCodeJunkie</description><item><guid isPermaLink="true">http://thecodejunkie.com/2014/06/19/changing-the-way-we-work-on-github/</guid><link>http://thecodejunkie.com/2014/06/19/changing-the-way-we-work-on-github/</link><author>andreas@selfinflicted.org</author><category>Nancy</category><category>Open-Source</category><title>Changing the way we work on GitHub</title><description>&lt;p&gt;Being a distributed team, GitHub is our single most important piece of the puzzle that makes up Nancy. With the recent changes in our governance, we felt we needed to make some changes on how we work on GitHub.&lt;/p&gt;
+<rss xmlns:a10="http://www.w3.org/2005/Atom" version="2.0"><channel><title>TheCodeJunkie</title><link>http://thecodejunkie.com/rss.xml</link><description>TheCodeJunkie</description><item><guid isPermaLink="true">http://thecodejunkie.com/2014/09/27/indie-team-up/</guid><link>http://thecodejunkie.com/2014/09/27/indie-team-up/</link><author>andreas@selfinflicted.org</author><category>Gamedev</category><category>Indie</category><title>Indie Team Up</title><description>&lt;p&gt;We have all been there. We have had one or more awesome project ideas but we knew that it was either too big to tackle on our own, or we were lacking experience in some key areas to make it happen.&lt;/p&gt;
+
+&lt;p&gt;Instinctively we start shopping around for help amonst friends and contacts, but it is still hard to find someone that shares your vision, have the time to help out and that has the skills that are required to pull it off.&lt;/p&gt;
+
+&lt;p&gt;So we tell ourselves that it probably was not such a good idea anyway and move along. Recognise yourself? I sure know I have found myself in that situation more times than I can remember.&lt;/p&gt;
+
+&lt;p&gt;But it does not have to be that way. There are millions of people out there that are feeling the same thing and if we could only find them then we could do amazing things togehter. This is exactly the vision that &lt;a href="http://twitter.com/spazchickens"&gt;Colleen Wilson&lt;/a&gt;, &lt;a href="http://twitter.com/justin35f"&gt;Justin Hammond&lt;/a&gt; and &lt;a href="http://twitter.com/mrdeprey"&gt;Shawn Deprey&lt;/a&gt; have with their &lt;strong&gt;Indie Team Up&lt;/strong&gt; idea.&lt;/p&gt;
+
+&lt;p&gt;I had the oppertunity to catch them on Skype and talk to help about Indie Team Up and their vision for it.&lt;/p&gt;
+
+</description><pubDate>Fri, 26 Sep 2014 22:00:00 Z</pubDate><a10:updated>2014-09-26T22:00:00Z</a10:updated><a10:content type="html">&lt;p&gt;We have all been there. We have had one or more awesome project ideas but we knew that it was either too big to tackle on our own, or we were lacking experience in some key areas to make it happen.&lt;/p&gt;
+
+&lt;p&gt;Instinctively we start shopping around for help amonst friends and contacts, but it is still hard to find someone that shares your vision, have the time to help out and that has the skills that are required to pull it off.&lt;/p&gt;
+
+&lt;p&gt;So we tell ourselves that it probably was not such a good idea anyway and move along. Recognise yourself? I sure know I have found myself in that situation more times than I can remember.&lt;/p&gt;
+
+&lt;p&gt;But it does not have to be that way. There are millions of people out there that are feeling the same thing and if we could only find them then we could do amazing things togehter. This is exactly the vision that &lt;a href="http://twitter.com/spazchickens"&gt;Colleen Wilson&lt;/a&gt;, &lt;a href="http://twitter.com/justin35f"&gt;Justin Hammond&lt;/a&gt; and &lt;a href="http://twitter.com/mrdeprey"&gt;Shawn Deprey&lt;/a&gt; have with their &lt;strong&gt;Indie Team Up&lt;/strong&gt; idea.&lt;/p&gt;
+
+&lt;p&gt;I had the oppertunity to catch them on Skype and talk to help about Indie Team Up and their vision for it.&lt;/p&gt;
+
+&lt;!--excerpt--&gt;
+
+&lt;h2&gt;Helping you make the right connections&lt;/h2&gt;
+
+&lt;p&gt;Basically, the Indie Team Up concept is very simple. Help connect people with different skillsets, that share the interest in the same kind of projects, so they can create awesome things together.&lt;/p&gt;
+
+&lt;p&gt;How is this done? Currently most of the activity is happening on Twitter, using the &lt;a href="https://twitter.com/search?q=%23indieteamup"&gt;#indieteamup&lt;/a&gt; hashtag. People post request for help, hoping to find the right people to help them out. This has been working great, and still does, but the Indie Team Up team want to take it to the next level by launching a website to help you, without the restriction of being limited by 140 characters.&lt;/p&gt;
+
+&lt;p&gt;Soon they will launch &lt;a href="http://indieteamup.com"&gt;indieteamup.com&lt;/a&gt;, a website that will let people sign-up and add their own project along with a list of what they are looking to get help with. You also add a profile with information on what you are able to help out with. The site will then help match projects and people together - kind of like an internet dating site, but for indie projects.&lt;/p&gt;
+
+&lt;p&gt;Even though Colleen, Justin and Shawn all are involved in the gaming part of the indie movement, they told me that the website will not be exclusive for game projecsts, but will be open for all sorts of indie projects. Yay!&lt;/p&gt;
+
+&lt;p&gt;The idea is that the website will launch, in a private alpha, very shortly, followed by a public beta and then an official launch.&lt;/p&gt;
+
+&lt;p&gt;From what I could tell, they have a very sensible approach to the website and they will be launching with a minimal viable product and add more features in, if and when there is a big enough demand for it. The core product is to connect people and projects.&lt;/p&gt;
+
+&lt;h2&gt;The hashtags of the indie game community&lt;/h2&gt;
+
+&lt;p&gt;I have &lt;a href="http://thecodejunkie.com/2014/04/03/knowabunga-day-pitching-ideas-as-a-way-of-learning"&gt;previously&lt;/a&gt; blogged about how we arranged a day of &lt;a href="http://unity3d.com"&gt;Unity3D&lt;/a&gt; programming where I worked and how I much I enjoy getting into gamedev. So when I had the Indie Team Up people on Skype, I decided to ask them for a couple of good hashtags to monitor on Twitter to find other cool projects and people that are active in that space.&lt;/p&gt;
+
+&lt;p&gt;This is the list that they gave me&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://twitter.com/search?q=%gamedev"&gt;#gamedev&lt;/a&gt; - Game development in general&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://twitter.com/search?q=%indiedev"&gt;#indiedev&lt;/a&gt; - Indie development in general&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://twitter.com/search?q=%23indieteamup"&gt;#indieteamup&lt;/a&gt; - Indie team up requests and oppertunities&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://twitter.com/search?q=%indiedevhour"&gt;#indiedevhour&lt;/a&gt; - Used every Wednesday between 11am PST and noon as a way for indie devs to share progress of their projects&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://twitter.com/search?q=%screenshotsaturday"&gt;#screenshotsaturday&lt;/a&gt; - Every saturday people post screenshots of thins from their projects. You get to see some really cool and amazing work being done by fellow indie devs and it is a great way to get some feedback on your own work&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;The podcast version&lt;/h2&gt;
+
+&lt;p&gt;The Indie Team Up people also teamed up with Karyl Gilbertson (http://twitter.com/karyl) to record and publish the &lt;a href="http://indieteamup.podbean.com"&gt;Indie Team Podcast&lt;/a&gt;, a weekly podcast where they talk about things related to the indie movements, what games they have played recently and about their own personal indie game projects.&lt;/p&gt;
+
+&lt;h2&gt;More to come&lt;/h2&gt;
+
+&lt;p&gt;I have recently started a indie game projects myself, together with a friend and we are getting ready to start blogging about it and share some of the progress we have made so far. I will definitly be blogging more about &lt;a href="http://unity3d.com"&gt;Unity3D&lt;/a&gt; and game development in general because of this, so stay tuned!&lt;/p&gt;
+
+&lt;p&gt;HUGE thanks to Colleen, Shawn and Justin for taking the time to chat with me and answer all of my questions!&lt;/p&gt;
+</a10:content></item><item><guid isPermaLink="true">http://thecodejunkie.com/2014/06/19/changing-the-way-we-work-on-github/</guid><link>http://thecodejunkie.com/2014/06/19/changing-the-way-we-work-on-github/</link><author>andreas@selfinflicted.org</author><category>Nancy</category><category>Open-Source</category><title>Changing the way we work on GitHub</title><description>&lt;p&gt;Being a distributed team, GitHub is our single most important piece of the puzzle that makes up Nancy. With the recent changes in our governance, we felt we needed to make some changes on how we work on GitHub.&lt;/p&gt;
 
 </description><pubDate>Wed, 18 Jun 2014 22:00:00 Z</pubDate><a10:updated>2014-06-18T22:00:00Z</a10:updated><a10:content type="html">&lt;p&gt;Being a distributed team, GitHub is our single most important piece of the puzzle that makes up Nancy. With the recent changes in our governance, we felt we needed to make some changes on how we work on GitHub.&lt;/p&gt;
 
