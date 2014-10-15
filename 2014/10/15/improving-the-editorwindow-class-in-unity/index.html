@@ -1,0 +1,391 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="description" content="The blog of TheCodeJunkie" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta http-equiv="last-modified" content="2014-10-15T20:17:19.6671219+02:00" />
+
+	    <title>thecodejunkie.com - 
+	Improving the EditorWindow class in Unity
+</title>
+
+	<link rel="canonical" href="http://thecodejunkie.com/2014/10/15/improving-the-editorwindow-class-in-unity/" />
+	<link rel="alternate" type="application/rss+xml" title="TheCodeJunkie" href="http://thecodejunkie.com/rss.xml" />
+	<link rel="stylesheet" href="/css/app.css" />
+	
+</head>
+<body>
+
+	<div class="content">
+		<header>
+			<h1>thecodejunkie</h1>
+			<nav>
+				<ul>
+					<li><a href="/" title="Back to the main page">Home</a></li>
+					<li><a href="/categories" title="List of all the available blog categories">Categories</a></li>
+					<li><a href="/archive" title="Archive of all the posts onthe blog">Archive</a></li>
+					<li><a href="/about" title="About me, contact details and so on">About</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main role="main">
+			
+
+
+
+<article>
+	<div class="gravatar">
+		<img src="http://www.gravatar.com/avatar/0bf4194335195c9225f8f22e4e70b192.jpg?s=128" title="TheCodeJunkie" />
+	</div>
+
+	<header>
+		<h1><a href="/2014/10/15/improving-the-editorwindow-class-in-unity/">Improving the EditorWindow class in Unity</a></h1>
+
+		<div class="post-info">
+	      	<time pubdate datetime='2014-10-15' title='den 15 oktober 2014'>2014-10-15</time>
+			
+			<address class="author">
+				<a rel="author" href="http://twitter.com/TheCodeJunkie">TheCodeJunkie</a>
+			</address>
+
+			in 
+
+			<a href='/category/gamedev' title='Gamedev'>Gamedev</a>, <a href='/category/unity' title='Unity'>Unity</a>
+		</div>
+	</header>
+
+	
+	<div class="body post">
+		<p>Extending the Unity editor UI is pretty simple. They have a bunch of classes that you inherit from and the editor will automatically discover and wire them up for you.</p>
+
+<p>A couple of days ago I started looking into extending the editor with a custom window for some behavior tree work I am doing. I wanted to create a simple tree designer.</p>
+
+<p>The initial spike went well and I managed to open up a new window, with very little code and no problems, but then I fell into the rabbit hole...</p>
+
+<!--excerpt-->
+
+<h2>Creating a simple editor window</h2>
+
+<p>To create a custom window, in the Unity editor, all you have to do is inherit from a class called <code>EditorWindow</code> and provide a static <code>Init</code>-method.</p>
+
+<p>The purpose of the <code>Init</code>-method is to provide a "factory"-like method that Unity can use to create an instance of your editor window. </p>
+
+<p>The code below created a blank editor window and tells Unity to add a menu item, called <em>MyEditorWindow</em> in the <em>Window</em> menu.</p>
+
+<pre><code>public class MyEditorWindow : EditorWindow
+{
+    [MenuItem("Window/MyEditorWindow")]
+    public static void Init()
+    {
+        var window =
+            EditorWindow.GetWindow&lt;MyEditorWindow&gt;();
+
+        // Prevent the window from being destroyed when a new
+        // scene is loaded into the editor.
+        Object.DontDestroyOnLoad(window);
+    }
+
+    private void OnGUI()
+    {
+        // Put your code here
+    }
+}
+</code></pre>
+
+<p>Looks simple right? The <code>OnGUI</code> method has a dark secret. It does not really communicate its full intent and it violates the <a href="http://en.wikipedia.org/wiki/Single_responsibility_principle">Single Responsibility Principle</a> <em>*gasp*</em></p>
+
+<h2>More than meets the eye</h2>
+
+<p>As you saw, in our previous code sample, we are supposed to put our editor GUI code in the <code>OnGUI</code>-method. If we check the documentation for <a href="http://docs.unity3d.com/ScriptReference/EditorWindow.OnGUI.html">EditorWindow.OnGUI method</a></p>
+
+<blockquote>
+  <p>Implement your own editor GUI here.<br />
+  <strong>Use OnGUI to draw all the controls of your window.</strong></p>
+</blockquote>
+
+<p>Then we see that we have reason not to believe that this is all there is to it, right? It turns out, that when I started to implement my custom editor window I sometimes got random <code>ArgumentNullException</code> errors.<br />
+While searching for the cause, I came across something that caught me by surprise; the <code>OnGUI</code>-method can be called several times, with different intents, by the Unity editor.</p>
+
+<p>In reality you have to take a look at the <a href="http://docs.unity3d.com/ScriptReference/Event-type.html">Event.type</a> property (in reality you are also going to want to make sure that the event was intended for your control and not someone else), to know what kind of pass that the editor is doing when it is calling into your method. The type property return one of the <a href="http://docs.unity3d.com/ScriptReference/EventType.html">EventType</a> enum values and, as you can see, you are supposed to handle everything from <em>repaint</em>, <em>layout</em>, <em>mouse-events</em>, <em>keyboard-events</em> and so on, from inside a single <code>OnGUI</code>-method.</p>
+
+<p>Even if you are careful, this is likely to lead to you writing horrible spaghetti code that is riddled with <em>if/else</em> selections. So not only does the <code>OnGUI</code>-method (or its associated documentation) express its intent clearly, but it will also write code that quickly will become hard to maintain as the complexity of your editor increase.</p>
+
+<h2>A stab at a better approach</h2>
+
+<p>I come from a strong background in software engineering so code structure and quality are two things that are very close to my heart. </p>
+
+<p>To make it easier for myself to write my editor, I started looking into alternative designs to decrease the complexity of my code and to help increase the maintainability. I also wanted to solve the problem of having code that did not clearly express its intent. I want to run the right code, at the right time, and still have readable code.</p>
+
+<p>My solution was to inherit from <code>EditorWindow</code> and provide my own abstraction. The class is very simple. It overrides the <code>OnGUI</code>-method and use an event map to delegate the call to more appropriate methods. It effectively intercepts calls to <code>OnGUI</code> and split them up into finer grained, more intent driven` methods, by using an event map.</p>
+
+<pre><code>Using System;
+using System. Collections;
+using System.Collections.Generic;
+using UnityEditor;
+using UnityEngine;
+
+public abstract class ExtendedEditorWindow : EditorWindow
+{
+    public Dictionary&lt;EventType, Action&gt; EventMap { get; set; }
+
+    public ExtendedEditorWindow()
+    {
+        this.EventMap = new Dictionary&lt;EventType, Action&gt;
+        {
+            { EventType.ContextClick, this.OnContext },
+            { EventType.Layout, this.OnLayout },
+            { EventType.Repaint, this.OnRepaint },
+
+            { EventType.KeyDown, () =&gt; {
+                this.OnKeyDown(new Keyboard(Event.current));
+            }},
+
+            { EventType.KeyUp, () =&gt; {
+                this.OnKeyUp(new Keyboard(Event.current));
+            }},
+
+            { EventType.MouseDown, () =&gt; {
+                this.OnMouseDown((MouseButton)Event.current.button, Event.current.mousePosition);
+            }},
+
+            { EventType.MouseDrag, () =&gt; {
+                this.OnMouseDrag((MouseButton)Event.current.button, Event.current.mousePosition,
+                    Event.current.delta);
+            }},
+
+            { EventType.MouseMove, () =&gt; {
+                this.OnMouseMove(Event.current.mousePosition, Event.current.delta);
+            }},
+
+            { EventType.ScrollWheel, () =&gt; {
+                this.OnScrollWheel(Event.current.delta);
+            }}
+        };
+    }
+
+    protected virtual void OnGUI()
+    {
+        var controlId =
+            GUIUtility.GetControlID(FocusType.Passive);
+
+        var controlEvent =
+            Event.current.GetTypeForControl(controlId);
+
+        if(this.EventMap.ContainsKey(controlEvent))
+        {
+            this.EventMap[controlEvent].Invoke();
+        }
+    }
+
+    protected void OnKeyDown(Keyboard keyboard)
+    {
+    }
+
+    protected void OnKeyUp(Keyboard keyboard)
+    {
+    }
+
+    protected virtual void OnMouseDown(MouseButton button, Vector2 position)
+    {
+    }
+
+    protected virtual void OnMouseDrag(MouseButton button, Vector2 position, Vector2 delta)
+    {
+    }
+
+    protected virtual void OnMouseMove(Vector2 position, Vector2 delta)
+    {
+    }
+
+    protected virtual void OnContext()
+    {
+    }
+
+    protected virtual void OnLayout()
+    {
+    }
+
+    protected virtual void OnRepaint()
+    {
+    }
+
+    protected virtual void OnScrollWheel(Vector2 delta)
+    {
+    }
+}
+</code></pre>
+
+<p>The class contains a method for each of the <a href="http://docs.unity3d.com/ScriptReference/Event-type.html">Event.type</a> values, that I am interested in managing. The mapping between the event type and method is stored in a simple dictionary. The event map is made public so when you inherit from the class, you can add more or override existing mappings.</p>
+
+<p>The event map also performs a bit of mapping between the raw event and the method that is called to handle it. For instance the various mouse &amp; keyboard related events are all passed to methods along with parameters that have been transformed into easy to use formats, instead of having to read it from the event.</p>
+
+<p>Also, by making the methods <em>virtual</em>, instead of <em>abstract</em>, we only have to override the ones that are interesting to us and ignore the else.</p>
+
+<p>For the sake of completeness, here is the <code>MouseButton</code> class</p>
+
+<pre><code>public enum MouseButton
+{
+    Left = 0,
+    Right = 1,
+    Middle = 2
+}
+</code></pre>
+
+<p>and the <code>Keyboard</code> class</p>
+
+<pre><code>public class Keyboard
+{
+
+    public Keyboard()
+    {   
+    }
+
+    public Keyboard(Event evt)
+    {
+        this.Code = evt.keyCode;
+        this.IsAlt = evt.alt;
+        this.IsCapsLock = evt.capsLock;
+        this.IsControl = evt.control;
+        this.IsFunctionKey = evt.functionKey;
+        this.IsNumeric = evt.numeric;
+        this.IsShift = evt.shift;
+        this.Modifiers = evt.modifiers;
+    }
+
+    public KeyCode Code { get; set; }
+
+    public bool IsAlt { get; set; }
+
+    public bool IsCapsLock { get; set; }
+
+    public bool IsControl { get; set; }
+
+    public bool IsFunctionKey { get; set; }
+
+    public bool IsNumeric { get; set; }
+
+    public bool IsShift { get; set; }
+
+    public EventModifiers Modifiers { get; set; }
+}
+</code></pre>
+
+<p>These are used by <code>ExtendedEditorWindow</code> to pass in nicely formatted parameters, to the mouse &amp; keyboard related methods.</p>
+
+<h2>Taking it for a spin</h2>
+
+<p>Let us revisit the <code>MyEditorWindow</code> implementation and make it use the new <code>ExtendedEditorWindow</code>class instead</p>
+
+<pre><code>public class MyEditorWindow : ExtendedEditorWindow
+{
+    [MenuItem("Window/MyEditorWindow")]
+    public static void Init()
+    {
+        var window =
+            EditorWindow.GetWindow&lt;MyEditorWindow&gt;();
+
+        // Prevent the window from being destroyed when a new
+        // scene is loaded into the editor.
+        Object.DontDestroyOnLoad(window);
+    }
+
+    protected override void OnMouseDrag(MouseButton button, Vector2 position, Vector2 delta)
+    {
+        // Code to handle mouse drag events
+    }
+
+    protected override void OnRepaint()
+    {
+        // Code to handle repaint events
+    }
+
+    // Override other methods that you need
+}
+</code></pre>
+
+<p>As you can see, the intent of the code is now a lot clearer. You simply put your code in the right kind of methods and all of a sudden you are no longer violating the Single Responsibility Principle and your code will be a lot easier to maintain.</p>
+
+<p>The source code for <code>ExtendedEditorWindow</code>, <code>Keyboard</code> and <code>MouseButton</code> are made available, under a <a href="http://opensource.org/licenses/MIT">MIT license</a>, in the <a href="https://github.com/thecodejunkie/unity.resources">unity.resources</a> repository on my <a href="http://github.com/thecodejunkie">github account</a>.</p>
+
+<p>I accept pull-requests! :P</p>
+
+	</div>
+
+	<a href="#comments"></a>
+	<div class="comments">
+		<div id="disqus_thread"></div>
+<script>
+    var reset_disqus = function(){
+        DISQUS.reset({
+            reload: true,
+            config: function () {
+                //this.page.identifier = '';
+                this.page.url = 'http://thecodejunkie.com/2014/10/15/improving-the-editorwindow-class-in-unity/';
+                //this.page.title = '';
+            }
+        });
+    };
+
+    var disqus_shortname = 'thecodejunkie';
+    var disqus_url = 'http://thecodejunkie.com/2014/10/15/improving-the-editorwindow-class-in-unity/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    window.addEventListener('orientationchange', reset_disqus);
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+	</div>
+
+	<footer>
+		<small>&copy; Copyright 2013, Andreas H&#229;kansson</small>
+	</footer>
+</article>
+		</main>
+
+		
+
+	</div>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="/js/jquery-1.10.2.min.js"><\/script>')</script>
+	<script src="/js/highlight.js"></script>
+	<script src="/js/require.js" data-main="/js/app"></script>
+
+	<script>
+
+		$(function () {
+			hljs.tabReplace = '  ';
+			hljs.initHighlightingOnLoad();
+
+			window.scrollTo(0, 1);
+		});
+
+	</script>
+
+	<script type="text/javascript">
+var _gaq = _gaq || [];
+
+_gaq.push(['_setAccount', 'UA-21346449-1']);
+_gaq.push(['_trackPageview']);
+        
+(function () {
+    var ga = document.createElement('script');
+    ga.type = 'text/javascript';
+    ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+</body>
+</html>

@@ -1,4 +1,262 @@
-<rss xmlns:a10="http://www.w3.org/2005/Atom" version="2.0"><channel><title>TheCodeJunkie</title><link>http://thecodejunkie.com/rss.xml</link><description>TheCodeJunkie</description><item><guid isPermaLink="true">http://thecodejunkie.com/2014/09/27/indie-team-up/</guid><link>http://thecodejunkie.com/2014/09/27/indie-team-up/</link><author>andreas@selfinflicted.org</author><category>Gamedev</category><category>Indie</category><title>Indie Team Up</title><description>&lt;p&gt;We have all been there. We have had one or more awesome project ideas but we knew that it was either too big to tackle on our own, or we were lacking experience in some key areas to make it happen.&lt;/p&gt;
+<rss xmlns:a10="http://www.w3.org/2005/Atom" version="2.0"><channel><title>TheCodeJunkie</title><link>http://thecodejunkie.com/rss.xml</link><description>TheCodeJunkie</description><item><guid isPermaLink="true">http://thecodejunkie.com/2014/10/15/improving-the-editorwindow-class-in-unity/</guid><link>http://thecodejunkie.com/2014/10/15/improving-the-editorwindow-class-in-unity/</link><author>andreas@selfinflicted.org</author><category>Gamedev</category><category>Unity</category><title>Improving the EditorWindow class in Unity</title><description>&lt;p&gt;Extending the Unity editor UI is pretty simple. They have a bunch of classes that you inherit from and the editor will automatically discover and wire them up for you.&lt;/p&gt;
+
+&lt;p&gt;A couple of days ago I started looking into extending the editor with a custom window for some behavior tree work I am doing. I wanted to create a simple tree designer.&lt;/p&gt;
+
+&lt;p&gt;The initial spike went well and I managed to open up a new window, with very little code and no problems, but then I fell into the rabbit hole...&lt;/p&gt;
+
+</description><pubDate>Tue, 14 Oct 2014 22:00:00 Z</pubDate><a10:updated>2014-10-14T22:00:00Z</a10:updated><a10:content type="html">&lt;p&gt;Extending the Unity editor UI is pretty simple. They have a bunch of classes that you inherit from and the editor will automatically discover and wire them up for you.&lt;/p&gt;
+
+&lt;p&gt;A couple of days ago I started looking into extending the editor with a custom window for some behavior tree work I am doing. I wanted to create a simple tree designer.&lt;/p&gt;
+
+&lt;p&gt;The initial spike went well and I managed to open up a new window, with very little code and no problems, but then I fell into the rabbit hole...&lt;/p&gt;
+
+&lt;!--excerpt--&gt;
+
+&lt;h2&gt;Creating a simple editor window&lt;/h2&gt;
+
+&lt;p&gt;To create a custom window, in the Unity editor, all you have to do is inherit from a class called &lt;code&gt;EditorWindow&lt;/code&gt; and provide a static &lt;code&gt;Init&lt;/code&gt;-method.&lt;/p&gt;
+
+&lt;p&gt;The purpose of the &lt;code&gt;Init&lt;/code&gt;-method is to provide a "factory"-like method that Unity can use to create an instance of your editor window. &lt;/p&gt;
+
+&lt;p&gt;The code below created a blank editor window and tells Unity to add a menu item, called &lt;em&gt;MyEditorWindow&lt;/em&gt; in the &lt;em&gt;Window&lt;/em&gt; menu.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;public class MyEditorWindow : EditorWindow
+{
+    [MenuItem("Window/MyEditorWindow")]
+    public static void Init()
+    {
+        var window =
+            EditorWindow.GetWindow&amp;lt;MyEditorWindow&amp;gt;();
+
+        // Prevent the window from being destroyed when a new
+        // scene is loaded into the editor.
+        Object.DontDestroyOnLoad(window);
+    }
+
+    private void OnGUI()
+    {
+        // Put your code here
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Looks simple right? The &lt;code&gt;OnGUI&lt;/code&gt; method has a dark secret. It does not really communicate its full intent and it violates the &lt;a href="http://en.wikipedia.org/wiki/Single_responsibility_principle"&gt;Single Responsibility Principle&lt;/a&gt; &lt;em&gt;*gasp*&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2&gt;More than meets the eye&lt;/h2&gt;
+
+&lt;p&gt;As you saw, in our previous code sample, we are supposed to put our editor GUI code in the &lt;code&gt;OnGUI&lt;/code&gt;-method. If we check the documentation for &lt;a href="http://docs.unity3d.com/ScriptReference/EditorWindow.OnGUI.html"&gt;EditorWindow.OnGUI method&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Implement your own editor GUI here.&lt;br /&gt;
+  &lt;strong&gt;Use OnGUI to draw all the controls of your window.&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Then we see that we have reason not to believe that this is all there is to it, right? It turns out, that when I started to implement my custom editor window I sometimes got random &lt;code&gt;ArgumentNullException&lt;/code&gt; errors.&lt;br /&gt;
+While searching for the cause, I came across something that caught me by surprise; the &lt;code&gt;OnGUI&lt;/code&gt;-method can be called several times, with different intents, by the Unity editor.&lt;/p&gt;
+
+&lt;p&gt;In reality you have to take a look at the &lt;a href="http://docs.unity3d.com/ScriptReference/Event-type.html"&gt;Event.type&lt;/a&gt; property (in reality you are also going to want to make sure that the event was intended for your control and not someone else), to know what kind of pass that the editor is doing when it is calling into your method. The type property return one of the &lt;a href="http://docs.unity3d.com/ScriptReference/EventType.html"&gt;EventType&lt;/a&gt; enum values and, as you can see, you are supposed to handle everything from &lt;em&gt;repaint&lt;/em&gt;, &lt;em&gt;layout&lt;/em&gt;, &lt;em&gt;mouse-events&lt;/em&gt;, &lt;em&gt;keyboard-events&lt;/em&gt; and so on, from inside a single &lt;code&gt;OnGUI&lt;/code&gt;-method.&lt;/p&gt;
+
+&lt;p&gt;Even if you are careful, this is likely to lead to you writing horrible spaghetti code that is riddled with &lt;em&gt;if/else&lt;/em&gt; selections. So not only does the &lt;code&gt;OnGUI&lt;/code&gt;-method (or its associated documentation) express its intent clearly, but it will also write code that quickly will become hard to maintain as the complexity of your editor increase.&lt;/p&gt;
+
+&lt;h2&gt;A stab at a better approach&lt;/h2&gt;
+
+&lt;p&gt;I come from a strong background in software engineering so code structure and quality are two things that are very close to my heart. &lt;/p&gt;
+
+&lt;p&gt;To make it easier for myself to write my editor, I started looking into alternative designs to decrease the complexity of my code and to help increase the maintainability. I also wanted to solve the problem of having code that did not clearly express its intent. I want to run the right code, at the right time, and still have readable code.&lt;/p&gt;
+
+&lt;p&gt;My solution was to inherit from &lt;code&gt;EditorWindow&lt;/code&gt; and provide my own abstraction. The class is very simple. It overrides the &lt;code&gt;OnGUI&lt;/code&gt;-method and use an event map to delegate the call to more appropriate methods. It effectively intercepts calls to &lt;code&gt;OnGUI&lt;/code&gt; and split them up into finer grained, more intent driven` methods, by using an event map.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Using System;
+using System. Collections;
+using System.Collections.Generic;
+using UnityEditor;
+using UnityEngine;
+
+public abstract class ExtendedEditorWindow : EditorWindow
+{
+    public Dictionary&amp;lt;EventType, Action&amp;gt; EventMap { get; set; }
+
+    public ExtendedEditorWindow()
+    {
+        this.EventMap = new Dictionary&amp;lt;EventType, Action&amp;gt;
+        {
+            { EventType.ContextClick, this.OnContext },
+            { EventType.Layout, this.OnLayout },
+            { EventType.Repaint, this.OnRepaint },
+
+            { EventType.KeyDown, () =&amp;gt; {
+                this.OnKeyDown(new Keyboard(Event.current));
+            }},
+
+            { EventType.KeyUp, () =&amp;gt; {
+                this.OnKeyUp(new Keyboard(Event.current));
+            }},
+
+            { EventType.MouseDown, () =&amp;gt; {
+                this.OnMouseDown((MouseButton)Event.current.button, Event.current.mousePosition);
+            }},
+
+            { EventType.MouseDrag, () =&amp;gt; {
+                this.OnMouseDrag((MouseButton)Event.current.button, Event.current.mousePosition,
+                    Event.current.delta);
+            }},
+
+            { EventType.MouseMove, () =&amp;gt; {
+                this.OnMouseMove(Event.current.mousePosition, Event.current.delta);
+            }},
+
+            { EventType.ScrollWheel, () =&amp;gt; {
+                this.OnScrollWheel(Event.current.delta);
+            }}
+        };
+    }
+
+    protected virtual void OnGUI()
+    {
+        var controlId =
+            GUIUtility.GetControlID(FocusType.Passive);
+
+        var controlEvent =
+            Event.current.GetTypeForControl(controlId);
+
+        if(this.EventMap.ContainsKey(controlEvent))
+        {
+            this.EventMap[controlEvent].Invoke();
+        }
+    }
+
+    protected void OnKeyDown(Keyboard keyboard)
+    {
+    }
+
+    protected void OnKeyUp(Keyboard keyboard)
+    {
+    }
+
+    protected virtual void OnMouseDown(MouseButton button, Vector2 position)
+    {
+    }
+
+    protected virtual void OnMouseDrag(MouseButton button, Vector2 position, Vector2 delta)
+    {
+    }
+
+    protected virtual void OnMouseMove(Vector2 position, Vector2 delta)
+    {
+    }
+
+    protected virtual void OnContext()
+    {
+    }
+
+    protected virtual void OnLayout()
+    {
+    }
+
+    protected virtual void OnRepaint()
+    {
+    }
+
+    protected virtual void OnScrollWheel(Vector2 delta)
+    {
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The class contains a method for each of the &lt;a href="http://docs.unity3d.com/ScriptReference/Event-type.html"&gt;Event.type&lt;/a&gt; values, that I am interested in managing. The mapping between the event type and method is stored in a simple dictionary. The event map is made public so when you inherit from the class, you can add more or override existing mappings.&lt;/p&gt;
+
+&lt;p&gt;The event map also performs a bit of mapping between the raw event and the method that is called to handle it. For instance the various mouse &amp;amp; keyboard related events are all passed to methods along with parameters that have been transformed into easy to use formats, instead of having to read it from the event.&lt;/p&gt;
+
+&lt;p&gt;Also, by making the methods &lt;em&gt;virtual&lt;/em&gt;, instead of &lt;em&gt;abstract&lt;/em&gt;, we only have to override the ones that are interesting to us and ignore the else.&lt;/p&gt;
+
+&lt;p&gt;For the sake of completeness, here is the &lt;code&gt;MouseButton&lt;/code&gt; class&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;public enum MouseButton
+{
+    Left = 0,
+    Right = 1,
+    Middle = 2
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;and the &lt;code&gt;Keyboard&lt;/code&gt; class&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;public class Keyboard
+{
+
+    public Keyboard()
+    {   
+    }
+
+    public Keyboard(Event evt)
+    {
+        this.Code = evt.keyCode;
+        this.IsAlt = evt.alt;
+        this.IsCapsLock = evt.capsLock;
+        this.IsControl = evt.control;
+        this.IsFunctionKey = evt.functionKey;
+        this.IsNumeric = evt.numeric;
+        this.IsShift = evt.shift;
+        this.Modifiers = evt.modifiers;
+    }
+
+    public KeyCode Code { get; set; }
+
+    public bool IsAlt { get; set; }
+
+    public bool IsCapsLock { get; set; }
+
+    public bool IsControl { get; set; }
+
+    public bool IsFunctionKey { get; set; }
+
+    public bool IsNumeric { get; set; }
+
+    public bool IsShift { get; set; }
+
+    public EventModifiers Modifiers { get; set; }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;These are used by &lt;code&gt;ExtendedEditorWindow&lt;/code&gt; to pass in nicely formatted parameters, to the mouse &amp;amp; keyboard related methods.&lt;/p&gt;
+
+&lt;h2&gt;Taking it for a spin&lt;/h2&gt;
+
+&lt;p&gt;Let us revisit the &lt;code&gt;MyEditorWindow&lt;/code&gt; implementation and make it use the new &lt;code&gt;ExtendedEditorWindow&lt;/code&gt;class instead&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;public class MyEditorWindow : ExtendedEditorWindow
+{
+    [MenuItem("Window/MyEditorWindow")]
+    public static void Init()
+    {
+        var window =
+            EditorWindow.GetWindow&amp;lt;MyEditorWindow&amp;gt;();
+
+        // Prevent the window from being destroyed when a new
+        // scene is loaded into the editor.
+        Object.DontDestroyOnLoad(window);
+    }
+
+    protected override void OnMouseDrag(MouseButton button, Vector2 position, Vector2 delta)
+    {
+        // Code to handle mouse drag events
+    }
+
+    protected override void OnRepaint()
+    {
+        // Code to handle repaint events
+    }
+
+    // Override other methods that you need
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;As you can see, the intent of the code is now a lot clearer. You simply put your code in the right kind of methods and all of a sudden you are no longer violating the Single Responsibility Principle and your code will be a lot easier to maintain.&lt;/p&gt;
+
+&lt;p&gt;The source code for &lt;code&gt;ExtendedEditorWindow&lt;/code&gt;, &lt;code&gt;Keyboard&lt;/code&gt; and &lt;code&gt;MouseButton&lt;/code&gt; are made available, under a &lt;a href="http://opensource.org/licenses/MIT"&gt;MIT license&lt;/a&gt;, in the &lt;a href="https://github.com/thecodejunkie/unity.resources"&gt;unity.resources&lt;/a&gt; repository on my &lt;a href="http://github.com/thecodejunkie"&gt;github account&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I accept pull-requests! :P&lt;/p&gt;
+</a10:content></item><item><guid isPermaLink="true">http://thecodejunkie.com/2014/09/27/indie-team-up/</guid><link>http://thecodejunkie.com/2014/09/27/indie-team-up/</link><author>andreas@selfinflicted.org</author><category>Gamedev</category><category>Indie</category><title>Indie Team Up</title><description>&lt;p&gt;We have all been there. We have had one or more awesome project ideas but we knew that it was either too big to tackle on our own, or we were lacking experience in some key areas to make it happen.&lt;/p&gt;
 
 &lt;p&gt;Instinctively we start shopping around for help amonst friends and contacts, but it is still hard to find someone that shares your vision, have the time to help out and that has the skills that are required to pull it off.&lt;/p&gt;
 
