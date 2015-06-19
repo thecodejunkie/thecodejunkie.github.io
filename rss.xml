@@ -1,4 +1,75 @@
-<rss xmlns:a10="http://www.w3.org/2005/Atom" version="2.0"><channel><title>TheCodeJunkie</title><link>http://thecodejunkie.com/rss.xml</link><description>TheCodeJunkie</description><item><guid isPermaLink="true">http://thecodejunkie.com/2014/10/15/improving-the-editorwindow-class-in-unity/</guid><link>http://thecodejunkie.com/2014/10/15/improving-the-editorwindow-class-in-unity/</link><author>andreas@selfinflicted.org</author><category>Gamedev</category><category>Unity</category><title>Improving the EditorWindow class in Unity</title><description>&lt;p&gt;Extending the Unity editor UI is pretty simple. They have a bunch of classes that you inherit from and the editor will automatically discover and wire them up for you.&lt;/p&gt;
+<rss xmlns:a10="http://www.w3.org/2005/Atom" version="2.0"><channel><title>TheCodeJunkie</title><link>http://thecodejunkie.com/rss.xml</link><description>TheCodeJunkie</description><item><guid isPermaLink="true">http://thecodejunkie.com/2015/06/19/github-expandinizr-1-7-1-release-notes/</guid><link>http://thecodejunkie.com/2015/06/19/github-expandinizr-1-7-1-release-notes/</link><author>andreas@selfinflicted.org</author><category>Chrome</category><title>Github.ExpandinizR v1.7.1 release notes</title><description>&lt;p&gt;All of the stylesheet definitions have been rewritten in in &lt;a href="http://lesscss.org/"&gt;{LESS}&lt;/a&gt; to help make it more maintainable. Additional enhancements have been made to be able to collapse file displays and modify the size of comment forms&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="http://thecodejunkie.com/img/github.expandinizer.logo.png" alt="" /&gt;&lt;/p&gt;
+
+&lt;h2&gt;Get the goodies&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href="https://chrome.google.com/webstore/detail/cbehdjjcilgnejbpnjhobkiiggkedfib"&gt;&lt;img src="https://developer.chrome.com/webstore/images/ChromeWebStore_Badge_v2_340x96.png" alt="Github.ExpandinizR" /&gt;&lt;/a&gt;&lt;/p&gt;
+
+</description><pubDate>Thu, 18 Jun 2015 22:00:00 Z</pubDate><a10:updated>2015-06-18T22:00:00Z</a10:updated><a10:content type="html">&lt;p&gt;All of the stylesheet definitions have been rewritten in in &lt;a href="http://lesscss.org/"&gt;{LESS}&lt;/a&gt; to help make it more maintainable. Additional enhancements have been made to be able to collapse file displays and modify the size of comment forms&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="http://thecodejunkie.com/img/github.expandinizer.logo.png" alt="" /&gt;&lt;/p&gt;
+
+&lt;h2&gt;Get the goodies&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href="https://chrome.google.com/webstore/detail/cbehdjjcilgnejbpnjhobkiiggkedfib"&gt;&lt;img src="https://developer.chrome.com/webstore/images/ChromeWebStore_Badge_v2_340x96.png" alt="Github.ExpandinizR" /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;!--excerpt--&gt;
+
+&lt;h2&gt;Currently enhances the following&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Removes the truncating of file and directory names in the repository browser&lt;/li&gt;
+&lt;li&gt;Really long file and directory names will word-wrap&lt;/li&gt;
+&lt;li&gt;Fully expands the website, with breakpoints at 1400px, 1600px and 1800px&lt;/li&gt;
+&lt;li&gt;Removes truncation in notifications&lt;/li&gt;
+&lt;li&gt;Adds shrink/expand button for comment form&lt;/li&gt;
+&lt;li&gt;Adds possibility to collapse code previews&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;New feature highlights&lt;/h2&gt;
+
+&lt;p&gt;It is now possible to collapse/expand file displays. This is useful when reviewing large amounts of code since you can simply collapse the files that you are done with&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="http://thecodejunkie.com/img/github.expandinizr.file.collapse.gif" alt="" /&gt;&lt;/p&gt;
+
+&lt;p&gt;There is a new option to shrink/expand the comment form to enable to you to write commens in the format that you prefer&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="http://thecodejunkie.com/img/github.expandinizr.comments.shrink.gif" alt="" /&gt;&lt;/p&gt;
+
+&lt;h2&gt;Contributors&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/bjarki"&gt;Bjarki Heiðar Ingason&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/frankradocaj"&gt;Frank Radocaj&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/khellang"&gt;Kristian Hellang&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/phillip-haydon"&gt;Phillip Haydon&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Changelog&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;v1.7.1 - Removed ugly aria-labels&lt;/li&gt;
+&lt;li&gt;v1.7.0
+&lt;ul&gt;
+&lt;li&gt;Removed truncation in notifications&lt;/li&gt;
+&lt;li&gt;Fixed commit comment width&lt;/li&gt;
+&lt;li&gt;Fixed collapse code file button&lt;/li&gt;
+&lt;li&gt;Added shrink/expand button for comment form&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;v1.6.0 - Complete rewrite, added build with gulp&lt;/li&gt;
+&lt;li&gt;v1.5.1 - Removed side-bar expansion, it broke too much stuff&lt;/li&gt;
+&lt;li&gt;v1.5.0 - Added possibility to collapse code previews&lt;/li&gt;
+&lt;li&gt;v1.4.0 - Expands side-bar for 1400, 1600 and 1800 break points&lt;/li&gt;
+&lt;li&gt;v1.3.2 - Improved expanding of activity stream&lt;/li&gt;
+&lt;li&gt;v1.3.1 - Fixed a couple of small layout bugs&lt;/li&gt;
+&lt;li&gt;v1.3.0 - Changed to a responsive approach&lt;/li&gt;
+&lt;li&gt;v1.2.0 - Improved the un-truncting to word-wrap&lt;/li&gt;
+&lt;li&gt;v1.1.1 - Fix for labels on the expanded issue form&lt;/li&gt;
+&lt;li&gt;v1.1.0 - Expands the issue form to full width&lt;/li&gt;
+&lt;li&gt;v1.0.0 - First release of the extension&lt;/li&gt;
+&lt;/ul&gt;
+</a10:content></item><item><guid isPermaLink="true">http://thecodejunkie.com/2014/10/15/improving-the-editorwindow-class-in-unity/</guid><link>http://thecodejunkie.com/2014/10/15/improving-the-editorwindow-class-in-unity/</link><author>andreas@selfinflicted.org</author><category>Gamedev</category><category>Unity</category><title>Improving the EditorWindow class in Unity</title><description>&lt;p&gt;Extending the Unity editor UI is pretty simple. They have a bunch of classes that you inherit from and the editor will automatically discover and wire them up for you.&lt;/p&gt;
 
 &lt;p&gt;A couple of days ago I started looking into extending the editor with a custom window for some behavior tree work I am doing. I wanted to create a simple tree designer.&lt;/p&gt;
 
