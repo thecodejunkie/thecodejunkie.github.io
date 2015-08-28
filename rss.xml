@@ -1,4 +1,27 @@
-<rss xmlns:a10="http://www.w3.org/2005/Atom" version="2.0"><channel><title>TheCodeJunkie</title><link>http://thecodejunkie.com/rss.xml</link><description>TheCodeJunkie</description><item><guid isPermaLink="true">http://thecodejunkie.com/2015/06/19/github-expandinizr-1-7-1-release-notes/</guid><link>http://thecodejunkie.com/2015/06/19/github-expandinizr-1-7-1-release-notes/</link><author>andreas@selfinflicted.org</author><category>Chrome</category><title>Github.ExpandinizR v1.7.1 release notes</title><description>&lt;p&gt;All of the stylesheet definitions have been rewritten in in &lt;a href="http://lesscss.org/"&gt;{LESS}&lt;/a&gt; to help make it more maintainable. Additional enhancements have been made to be able to collapse file displays and modify the size of comment forms&lt;/p&gt;
+<rss xmlns:a10="http://www.w3.org/2005/Atom" version="2.0"><channel><title>TheCodeJunkie</title><link>http://thecodejunkie.com/rss.xml</link><description>TheCodeJunkie</description><item><guid isPermaLink="true">http://thecodejunkie.com/2015/08/28/i-am-now-taking-contract-work-for-nancy/</guid><link>http://thecodejunkie.com/2015/08/28/i-am-now-taking-contract-work-for-nancy/</link><author>andreas@selfinflicted.org</author><category>Nancy</category><category>Open-Source</category><category>tretton37</category><title>I am now taking contract work for Nancy.</title><description>&lt;p&gt;I am pleased to be able to announce that I am now able to accept Nancy based contract work (world wide).&lt;/p&gt;
+
+&lt;p&gt;If you are building products based on Nancy and you are looking for help with (but not limited to) code reviews, training / workshops, team coaching / mentoring, project implementations or problem solving, then you should drop me a line. I am based in Sweden so ideally looking for clients that are comfortable with remote workers, although I will also be available to occasionally work on-site.&lt;/p&gt;
+
+&lt;p&gt;On the legal side, all contracts will go through my employer, &lt;a href="http://tretton37.com"&gt;tretton37&lt;/a&gt;, which is one of the top consultancy agencies in Sweden, so you won't be dealing directly with a "one man band". Another benefit of this is that I am not the only one capable of a providing this kind of expertise at tretton37, so even if I am unavailable at the time, chances are good that we will still be able to provide you with the help you need.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="http://thecodejunkie.com/img/nancy.tretton37.png" alt="" /&gt;&lt;/p&gt;
+
+</description><pubDate>Thu, 27 Aug 2015 22:00:00 Z</pubDate><a10:updated>2015-08-27T22:00:00Z</a10:updated><a10:content type="html">&lt;p&gt;I am pleased to be able to announce that I am now able to accept Nancy based contract work (world wide).&lt;/p&gt;
+
+&lt;p&gt;If you are building products based on Nancy and you are looking for help with (but not limited to) code reviews, training / workshops, team coaching / mentoring, project implementations or problem solving, then you should drop me a line. I am based in Sweden so ideally looking for clients that are comfortable with remote workers, although I will also be available to occasionally work on-site.&lt;/p&gt;
+
+&lt;p&gt;On the legal side, all contracts will go through my employer, &lt;a href="http://tretton37.com"&gt;tretton37&lt;/a&gt;, which is one of the top consultancy agencies in Sweden, so you won't be dealing directly with a "one man band". Another benefit of this is that I am not the only one capable of a providing this kind of expertise at tretton37, so even if I am unavailable at the time, chances are good that we will still be able to provide you with the help you need.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="http://thecodejunkie.com/img/nancy.tretton37.png" alt="" /&gt;&lt;/p&gt;
+
+&lt;!--excerpt--&gt;
+
+&lt;p&gt;If you are looking for specific features or improvements to Nancy itself, that would be fine as long as it fits in with the general roadmap for Nancy, and does not require changes to core that otherwise would not be be implemented. For any changes or enhancements to Nancy that aren't "domain specific", it would be preferred if the code that's produced is given back to the Nancy project and open sourced.&lt;/p&gt;
+
+&lt;p&gt;For more information, please contact me at &lt;strong&gt;andreas.hakansson (at) tretton37.com&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;I look forward to hearing from you!&lt;/p&gt;
+</a10:content></item><item><guid isPermaLink="true">http://thecodejunkie.com/2015/06/19/github-expandinizr-1-7-1-release-notes/</guid><link>http://thecodejunkie.com/2015/06/19/github-expandinizr-1-7-1-release-notes/</link><author>andreas@selfinflicted.org</author><category>Chrome</category><title>Github.ExpandinizR v1.7.1 release notes</title><description>&lt;p&gt;All of the stylesheet definitions have been rewritten in in &lt;a href="http://lesscss.org/"&gt;{LESS}&lt;/a&gt; to help make it more maintainable. Additional enhancements have been made to be able to collapse file displays and modify the size of comment forms&lt;/p&gt;
 
 &lt;p&gt;&lt;img src="http://thecodejunkie.com/img/github.expandinizer.logo.png" alt="" /&gt;&lt;/p&gt;
 
