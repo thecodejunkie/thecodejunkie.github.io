@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="description" content="The blog of TheCodeJunkie" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<meta http-equiv="last-modified" content="2015-11-08T23:08:18.3425351+01:00" />
+	<meta http-equiv="last-modified" content="2015-11-08T23:13:38.3358639+01:00" />
 
 	    <title>thecodejunkie.com - 
 	Our plans for Nancy 1.x and beyond
@@ -92,7 +92,7 @@ So are we going to pull an Angular 2 on you? Not quite. Yes, there will be some 
 A couple of the changes that will make it into <code>v2.0</code> are</p>
 
 <ul>
-<li>A new <a href="https://github.com/NancyFx/Nancy/pull/2003">unified configuration API</a> where we will <a href="https://github.com/NancyFx/Nancy/issues/2000">migrate a lot of the existing configurations</a>. Right now there are too many different places and ways to configure things in Nancy</li>
+<li>A new <a href="https://github.com/NancyFx/Nancy/issues/1999">unified configuration API</a> where we will <a href="https://github.com/NancyFx/Nancy/issues/2000">migrate a lot of the existing configurations</a>. Right now there are too many different places and ways to configure things in Nancy</li>
 <li>Rewrite our internal code to handle <code>async</code>. Right now we have some custom TPL code in there to make us compatible with <code>.NET v4.0</code> while still supporting <code>async/await</code>. We will be ripping out this code and make it all based on <code>async/await</code></li>
 <li>So where does that leave <code>.NET v4.0</code> support? Glad you asked! It will be left behind in the <code>v1.x</code> world. From <code>v2.0</code> and forward we will be targeting <code>.NET v4.5</code> and make full use of the goodies it can offer us</li>
 <li>We will be making OWIN a first class citizen, meaning that the core of Nancy will be using OWIN to communicate with the outside world and the hosting packages will bridge the various worlds together, just like they've always done. All details on this are not settled so keep an eye out for discussions on GitHub</li>
