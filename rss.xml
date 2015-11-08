@@ -1,4 +1,63 @@
-<rss xmlns:a10="http://www.w3.org/2005/Atom" version="2.0"><channel><title>TheCodeJunkie</title><link>http://thecodejunkie.com/rss.xml</link><description>TheCodeJunkie</description><item><guid isPermaLink="true">http://thecodejunkie.com/2015/08/28/i-am-now-taking-contract-work-for-nancy/</guid><link>http://thecodejunkie.com/2015/08/28/i-am-now-taking-contract-work-for-nancy/</link><author>andreas@selfinflicted.org</author><category>Nancy</category><category>Open-Source</category><category>tretton37</category><title>I am now taking contract work for Nancy.</title><description>&lt;p&gt;I am pleased to be able to announce that I am now able to accept Nancy based contract work (world wide).&lt;/p&gt;
+<rss xmlns:a10="http://www.w3.org/2005/Atom" version="2.0"><channel><title>TheCodeJunkie</title><link>http://thecodejunkie.com/rss.xml</link><description>TheCodeJunkie</description><item><guid isPermaLink="true">http://thecodejunkie.com/2015/11/08/our-plans-for-nancy-1-x-and-beyond/</guid><link>http://thecodejunkie.com/2015/11/08/our-plans-for-nancy-1-x-and-beyond/</link><author>andreas@selfinflicted.org</author><category>Nancy</category><category>Open-Source</category><title>Our plans for Nancy 1.x and beyond</title><description>&lt;p&gt;At the time that I write this, Nancy is less than two weeks (the 20th!) shy of turning 5 years old. For any open-source project that is quite an achievement and I dare to say that for one that is based on .NET it is amazing.&lt;/p&gt;
+
+&lt;p&gt;If we turn it into numbers, we put out 37 releases (a bit more than 7 per year), had 228 unique (only counting the main repository) contributors and 1237 closed pull-requests. We have had the pleasure of seeing the community embrace it, job ads pop up and people traveling to conferences, all over the world, to deliver sessions on our framework. Amazing!&lt;/p&gt;
+
+&lt;p&gt;In February, of this year, we put out the &lt;code&gt;v1.0&lt;/code&gt; release and just the other day we released &lt;code&gt;v1.4.1&lt;/code&gt; into the wild. Needless to say, it has been a very rewarding and humbling experience.
+Now, it might sound like I am about to drop the bomb and tell you all that we have decided to discontinue working on Nancy. In fact, that is the exact opposite of what I am going to tell you!&lt;/p&gt;
+
+</description><pubDate>Sat, 07 Nov 2015 23:00:00 Z</pubDate><a10:updated>2015-11-07T23:00:00Z</a10:updated><a10:content type="html">&lt;p&gt;At the time that I write this, Nancy is less than two weeks (the 20th!) shy of turning 5 years old. For any open-source project that is quite an achievement and I dare to say that for one that is based on .NET it is amazing.&lt;/p&gt;
+
+&lt;p&gt;If we turn it into numbers, we put out 37 releases (a bit more than 7 per year), had 228 unique (only counting the main repository) contributors and 1237 closed pull-requests. We have had the pleasure of seeing the community embrace it, job ads pop up and people traveling to conferences, all over the world, to deliver sessions on our framework. Amazing!&lt;/p&gt;
+
+&lt;p&gt;In February, of this year, we put out the &lt;code&gt;v1.0&lt;/code&gt; release and just the other day we released &lt;code&gt;v1.4.1&lt;/code&gt; into the wild. Needless to say, it has been a very rewarding and humbling experience.
+Now, it might sound like I am about to drop the bomb and tell you all that we have decided to discontinue working on Nancy. In fact, that is the exact opposite of what I am going to tell you!&lt;/p&gt;
+
+&lt;!--excerpt--&gt;
+
+&lt;h2&gt;TL;DR&lt;/h2&gt;
+
+&lt;p&gt;Nancy &lt;code&gt;v1.4&lt;/code&gt; will be the last minor version that we put out in the &lt;code&gt;v1.x&lt;/code&gt; space. From now on, our releases will target the &lt;code&gt;v2.x&lt;/code&gt; space and we will be making some changes, such as dropping support for &lt;code&gt;.NET v4.0&lt;/code&gt;. Looking beyond &lt;code&gt;v2.x&lt;/code&gt;, we are also making plans for bigger changes to Nancy to ensure we keep delivering the most innovative framework around in the .NET space!&lt;/p&gt;
+
+&lt;h2&gt;The state of the 1.x releases&lt;/h2&gt;
+
+&lt;p&gt;A while back we decided that, short of bug fix releases, the &lt;code&gt;v1.4.0&lt;/code&gt; release would be the last minor version that we put out for the v1.x major. Yes, this means that there will be no 1.5 coming out in the future.&lt;/p&gt;
+
+&lt;p&gt;Countless man hours have gone into the 37 releases that have lead up to &lt;code&gt;v1.4.1&lt;/code&gt; and during that time a lot has changed, both in our community, the platform and to our understanding on what works well and what does not.&lt;/p&gt;
+
+&lt;p&gt;In order for us to keep building Nancy and keep it as a competitive force, we need to modernize our stack and also shed some dead weight and remove obstacles that we have not previously been able to tackle because the impact would have been too great.&lt;/p&gt;
+
+&lt;p&gt;For those reasons, we have decided that the next release that comes out will will be in the &lt;code&gt;v2.x&lt;/code&gt; version space. The last couple of months we have worked very hard on pruning down our list of open pull-requests, before we make the transition. We feel that we are now in a place where we are comfortable to do it.&lt;/p&gt;
+
+&lt;h2&gt;The introduction of the 2.x releases&lt;/h2&gt;
+
+&lt;p&gt;Although we have not talked too much about it, it has never been a secret that we have been working on bumping the major version of our releases. We have had a &lt;code&gt;v2&lt;/code&gt; branch and milestone on GitHub for quite some time and there has been some activity going on every now and then.
+So are we going to pull an Angular 2 on you? Not quite. Yes, there will be some breaking changes, without them there would be no need to bump the major version. However, we will try and limit them as much as possible, but at the same time we will show no mercy in the areas we feel major changes need to happen.&lt;/p&gt;
+
+&lt;p&gt;I would like to urge anyone that is interested in this work, and/or that would like to impact on what happens to keep an eye on the &lt;a href="https://github.com/NancyFx/Nancy/milestones/2.0"&gt;2.0 milestone&lt;/a&gt;. This is also your chance to let us know about any pain points you have been having with the &lt;code&gt;v1.x&lt;/code&gt; series of releases.
+A couple of the changes that will make it into &lt;code&gt;v2.0&lt;/code&gt; are&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;A new &lt;a href="https://github.com/NancyFx/Nancy/pull/2003"&gt;unified configuration API&lt;/a&gt; where we will &lt;a href="https://github.com/NancyFx/Nancy/issues/2000"&gt;migrate a lot of the existing configurations&lt;/a&gt;. Right now there are too many different places and ways to configure things in Nancy&lt;/li&gt;
+&lt;li&gt;Rewrite our internal code to handle &lt;code&gt;async&lt;/code&gt;. Right now we have some custom TPL code in there to make us compatible with &lt;code&gt;.NET v4.0&lt;/code&gt; while still supporting &lt;code&gt;async/await&lt;/code&gt;. We will be ripping out this code and make it all based on &lt;code&gt;async/await&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;So where does that leave &lt;code&gt;.NET v4.0&lt;/code&gt; support? Glad you asked! It will be left behind in the &lt;code&gt;v1.x&lt;/code&gt; world. From &lt;code&gt;v2.0&lt;/code&gt; and forward we will be targeting &lt;code&gt;.NET v4.5&lt;/code&gt; and make full use of the goodies it can offer us&lt;/li&gt;
+&lt;li&gt;We will be making OWIN a first class citizen, meaning that the core of Nancy will be using OWIN to communicate with the outside world and the hosting packages will bridge the various worlds together, just like they've always done. All details on this are not settled so keep an eye out for discussions on GitHub&lt;/li&gt;
+&lt;li&gt;Some hosting options, like the &lt;code&gt;Nancy.Hosting.Wcf&lt;/code&gt; will no longer be supported out of the box. It does not mean that Nancy will not work with &lt;code&gt;WCF&lt;/code&gt; anymore, it just means that the hosting option will no longer be provided by us but that does not prevent the community from bridging that gap, if needed, and you can even base it of our old &lt;code&gt;Nancy.Hosting.Wcf&lt;/code&gt; source code.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;That is just to mention some of the things we have been talking about and already decided upon, others are still being discussed (like if we should adopt C#6, what our CoreCLR/DNX story will look like and so on).&lt;/p&gt;
+
+&lt;p&gt;For the most part it will still resemble the same Nancy you are used to from &lt;code&gt;v1.x&lt;/code&gt; and we will try and document as many of the breaking changes as possible and provide documentation of the new features, on our &lt;a href="https://github.com/NancyFx/Nancy/wiki/Documentation"&gt;wiki&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I will also try to start blogging a bit more about the things that are happening for the &lt;code&gt;v2.x&lt;/code&gt; releases, so keep an eye out on this space for more insights.&lt;/p&gt;
+
+&lt;h2&gt;Peeking beyond 2.x&lt;/h2&gt;
+
+&lt;p&gt;Beyond &lt;code&gt;v2.x&lt;/code&gt;? We have not even put out the first release for &lt;code&gt;v2.x&lt;/code&gt; yet! Like I mentioned before, a lot has changed since we first started working on Nancy. While &lt;code&gt;v2.x&lt;/code&gt; is going to help us implement some changes that we want, we need to look quite a bit further into the future if we still want to stay around.&lt;/p&gt;
+
+&lt;p&gt;Microsoft will soon introduce &lt;code&gt;ASP.NET 5&lt;/code&gt;, &lt;code&gt;CoreCLR/DNX&lt;/code&gt; and open up a whole world of cross-platform possibilities that have not even been possible despite the existence of Mono and our support for it.&lt;/p&gt;
+
+&lt;p&gt;For quite some time now (over a year), we have been talking about our own &lt;code&gt;vNext&lt;/code&gt; internally and we have some pretty damn exciting ideas. It is still too early to say exactly what will be happening, but hopefully I can start blogging a bit about the core principles and ideas that are guiding us, all with a huge &lt;strong&gt;NOT SET IN STONE&lt;/strong&gt; disclaimer on them.&lt;/p&gt;
+</a10:content></item><item><guid isPermaLink="true">http://thecodejunkie.com/2015/08/28/i-am-now-taking-contract-work-for-nancy/</guid><link>http://thecodejunkie.com/2015/08/28/i-am-now-taking-contract-work-for-nancy/</link><author>andreas@selfinflicted.org</author><category>Nancy</category><category>Open-Source</category><category>tretton37</category><title>I am now taking contract work for Nancy.</title><description>&lt;p&gt;I am pleased to be able to announce that I am now able to accept Nancy based contract work (world wide).&lt;/p&gt;
 
 &lt;p&gt;If you are building products based on Nancy and you are looking for help with (but not limited to) code reviews, training / workshops, team coaching / mentoring, project implementations or problem solving, then you should drop me a line. I am based in Sweden so ideally looking for clients that are comfortable with remote workers, although I will also be available to occasionally work on-site.&lt;/p&gt;
 

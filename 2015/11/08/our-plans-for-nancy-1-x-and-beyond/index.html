@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="description" content="The blog of TheCodeJunkie" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta http-equiv="last-modified" content="2015-11-08T23:08:18.3425351+01:00" />
+
+	    <title>thecodejunkie.com - 
+	Our plans for Nancy 1.x and beyond
+</title>
+
+	<link rel="canonical" href="http://thecodejunkie.com/2015/11/08/our-plans-for-nancy-1-x-and-beyond/" />
+	<link rel="alternate" type="application/rss+xml" title="TheCodeJunkie" href="http://thecodejunkie.com/rss.xml" />
+	<link rel="stylesheet" href="/css/app.css" />
+	
+</head>
+<body>
+
+	<div class="content">
+		<header>
+			<h1>thecodejunkie</h1>
+			<nav>
+				<ul>
+					<li><a href="/" title="Back to the main page">Home</a></li>
+					<li><a href="/categories" title="List of all the available blog categories">Categories</a></li>
+					<li><a href="/archive" title="Archive of all the posts onthe blog">Archive</a></li>
+					<li><a href="/about" title="About me, contact details and so on">About</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main role="main">
+			
+
+
+
+<article>
+	<div class="gravatar">
+		<img src="http://www.gravatar.com/avatar/0bf4194335195c9225f8f22e4e70b192.jpg?s=128" title="TheCodeJunkie" />
+	</div>
+
+	<header>
+		<h1><a href="/2015/11/08/our-plans-for-nancy-1-x-and-beyond/">Our plans for Nancy 1.x and beyond</a></h1>
+
+		<div class="post-info">
+	      	<time pubdate datetime='2015-11-08' title='den 8 november 2015'>2015-11-08</time>
+			
+			<address class="author">
+				<a rel="author" href="http://twitter.com/TheCodeJunkie">TheCodeJunkie</a>
+			</address>
+
+			in 
+
+			<a href='/category/nancy' title='Nancy'>Nancy</a>, <a href='/category/open-source' title='Open-Source'>Open-Source</a>
+		</div>
+	</header>
+
+	
+	<div class="body post">
+		<p>At the time that I write this, Nancy is less than two weeks (the 20th!) shy of turning 5 years old. For any open-source project that is quite an achievement and I dare to say that for one that is based on .NET it is amazing.</p>
+
+<p>If we turn it into numbers, we put out 37 releases (a bit more than 7 per year), had 228 unique (only counting the main repository) contributors and 1237 closed pull-requests. We have had the pleasure of seeing the community embrace it, job ads pop up and people traveling to conferences, all over the world, to deliver sessions on our framework. Amazing!</p>
+
+<p>In February, of this year, we put out the <code>v1.0</code> release and just the other day we released <code>v1.4.1</code> into the wild. Needless to say, it has been a very rewarding and humbling experience.
+Now, it might sound like I am about to drop the bomb and tell you all that we have decided to discontinue working on Nancy. In fact, that is the exact opposite of what I am going to tell you!</p>
+
+<!--excerpt-->
+
+<h2>TL;DR</h2>
+
+<p>Nancy <code>v1.4</code> will be the last minor version that we put out in the <code>v1.x</code> space. From now on, our releases will target the <code>v2.x</code> space and we will be making some changes, such as dropping support for <code>.NET v4.0</code>. Looking beyond <code>v2.x</code>, we are also making plans for bigger changes to Nancy to ensure we keep delivering the most innovative framework around in the .NET space!</p>
+
+<h2>The state of the 1.x releases</h2>
+
+<p>A while back we decided that, short of bug fix releases, the <code>v1.4.0</code> release would be the last minor version that we put out for the v1.x major. Yes, this means that there will be no 1.5 coming out in the future.</p>
+
+<p>Countless man hours have gone into the 37 releases that have lead up to <code>v1.4.1</code> and during that time a lot has changed, both in our community, the platform and to our understanding on what works well and what does not.</p>
+
+<p>In order for us to keep building Nancy and keep it as a competitive force, we need to modernize our stack and also shed some dead weight and remove obstacles that we have not previously been able to tackle because the impact would have been too great.</p>
+
+<p>For those reasons, we have decided that the next release that comes out will will be in the <code>v2.x</code> version space. The last couple of months we have worked very hard on pruning down our list of open pull-requests, before we make the transition. We feel that we are now in a place where we are comfortable to do it.</p>
+
+<h2>The introduction of the 2.x releases</h2>
+
+<p>Although we have not talked too much about it, it has never been a secret that we have been working on bumping the major version of our releases. We have had a <code>v2</code> branch and milestone on GitHub for quite some time and there has been some activity going on every now and then.
+So are we going to pull an Angular 2 on you? Not quite. Yes, there will be some breaking changes, without them there would be no need to bump the major version. However, we will try and limit them as much as possible, but at the same time we will show no mercy in the areas we feel major changes need to happen.</p>
+
+<p>I would like to urge anyone that is interested in this work, and/or that would like to impact on what happens to keep an eye on the <a href="https://github.com/NancyFx/Nancy/milestones/2.0">2.0 milestone</a>. This is also your chance to let us know about any pain points you have been having with the <code>v1.x</code> series of releases.
+A couple of the changes that will make it into <code>v2.0</code> are</p>
+
+<ul>
+<li>A new <a href="https://github.com/NancyFx/Nancy/pull/2003">unified configuration API</a> where we will <a href="https://github.com/NancyFx/Nancy/issues/2000">migrate a lot of the existing configurations</a>. Right now there are too many different places and ways to configure things in Nancy</li>
+<li>Rewrite our internal code to handle <code>async</code>. Right now we have some custom TPL code in there to make us compatible with <code>.NET v4.0</code> while still supporting <code>async/await</code>. We will be ripping out this code and make it all based on <code>async/await</code></li>
+<li>So where does that leave <code>.NET v4.0</code> support? Glad you asked! It will be left behind in the <code>v1.x</code> world. From <code>v2.0</code> and forward we will be targeting <code>.NET v4.5</code> and make full use of the goodies it can offer us</li>
+<li>We will be making OWIN a first class citizen, meaning that the core of Nancy will be using OWIN to communicate with the outside world and the hosting packages will bridge the various worlds together, just like they've always done. All details on this are not settled so keep an eye out for discussions on GitHub</li>
+<li>Some hosting options, like the <code>Nancy.Hosting.Wcf</code> will no longer be supported out of the box. It does not mean that Nancy will not work with <code>WCF</code> anymore, it just means that the hosting option will no longer be provided by us but that does not prevent the community from bridging that gap, if needed, and you can even base it of our old <code>Nancy.Hosting.Wcf</code> source code.</li>
+</ul>
+
+<p>That is just to mention some of the things we have been talking about and already decided upon, others are still being discussed (like if we should adopt C#6, what our CoreCLR/DNX story will look like and so on).</p>
+
+<p>For the most part it will still resemble the same Nancy you are used to from <code>v1.x</code> and we will try and document as many of the breaking changes as possible and provide documentation of the new features, on our <a href="https://github.com/NancyFx/Nancy/wiki/Documentation">wiki</a>.</p>
+
+<p>I will also try to start blogging a bit more about the things that are happening for the <code>v2.x</code> releases, so keep an eye out on this space for more insights.</p>
+
+<h2>Peeking beyond 2.x</h2>
+
+<p>Beyond <code>v2.x</code>? We have not even put out the first release for <code>v2.x</code> yet! Like I mentioned before, a lot has changed since we first started working on Nancy. While <code>v2.x</code> is going to help us implement some changes that we want, we need to look quite a bit further into the future if we still want to stay around.</p>
+
+<p>Microsoft will soon introduce <code>ASP.NET 5</code>, <code>CoreCLR/DNX</code> and open up a whole world of cross-platform possibilities that have not even been possible despite the existence of Mono and our support for it.</p>
+
+<p>For quite some time now (over a year), we have been talking about our own <code>vNext</code> internally and we have some pretty damn exciting ideas. It is still too early to say exactly what will be happening, but hopefully I can start blogging a bit about the core principles and ideas that are guiding us, all with a huge <strong>NOT SET IN STONE</strong> disclaimer on them.</p>
+
+	</div>
+
+	<a href="#comments"></a>
+	<div class="comments">
+		<div id="disqus_thread"></div>
+<script>
+    var reset_disqus = function(){
+        DISQUS.reset({
+            reload: true,
+            config: function () {
+                //this.page.identifier = '';
+                this.page.url = 'http://thecodejunkie.com/2015/11/08/our-plans-for-nancy-1-x-and-beyond/';
+                //this.page.title = '';
+            }
+        });
+    };
+
+    var disqus_shortname = 'thecodejunkie';
+    var disqus_url = 'http://thecodejunkie.com/2015/11/08/our-plans-for-nancy-1-x-and-beyond/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    window.addEventListener('orientationchange', reset_disqus);
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+	</div>
+
+	<footer>
+		<small>&copy; Copyright 2013, Andreas H&#229;kansson</small>
+	</footer>
+</article>
+		</main>
+
+		
+
+	</div>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="/js/jquery-1.10.2.min.js"><\/script>')</script>
+	<script src="/js/highlight.js"></script>
+	<script src="/js/require.js" data-main="/js/app"></script>
+
+	<script>
+
+		$(function () {
+			hljs.tabReplace = '  ';
+			hljs.initHighlightingOnLoad();
+
+			window.scrollTo(0, 1);
+		});
+
+	</script>
+
+	<script type="text/javascript">
+var _gaq = _gaq || [];
+
+_gaq.push(['_setAccount', 'UA-21346449-1']);
+_gaq.push(['_trackPageview']);
+        
+(function () {
+    var ga = document.createElement('script');
+    ga.type = 'text/javascript';
+    ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+</body>
+</html>
