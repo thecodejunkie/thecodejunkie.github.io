@@ -9,10 +9,10 @@
 	<meta http-equiv="last-modified" content="2015-11-16T22:14:07.4265749+01:00" />
 
 	    <title>thecodejunkie.com - 
-	Open-Source day aftermath
+	Nancy v1.4.2 will break the versioning schema
 </title>
 
-	<link rel="canonical" href="http://thecodejunkie.com/2014/02/03/open-source-day-aftermath/" />
+	<link rel="canonical" href="http://thecodejunkie.com/2015/11/16/nancy-1-4-2-will-break-the-versioning-schema/" />
 	<link rel="alternate" type="application/rss+xml" title="TheCodeJunkie" href="http://thecodejunkie.com/rss.xml" />
 	<link rel="stylesheet" href="/css/app.css" />
 	
@@ -43,10 +43,10 @@
 	</div>
 
 	<header>
-		<h1><a href="/2014/02/03/open-source-day-aftermath/">Open-Source day aftermath</a></h1>
+		<h1><a href="/2015/11/16/nancy-1-4-2-will-break-the-versioning-schema/">Nancy v1.4.2 will break the versioning schema</a></h1>
 
 		<div class="post-info">
-	      	<time pubdate datetime='2014-02-03' title='den 3 februari 2014'>2014-02-03</time>
+	      	<time pubdate datetime='2015-11-16' title='den 16 november 2015'>2015-11-16</time>
 			
 			<address class="author">
 				<a rel="author" href="http://twitter.com/TheCodeJunkie">TheCodeJunkie</a>
@@ -54,43 +54,27 @@
 
 			in 
 
-			<a href='/category/open-source' title='Open-Source'>Open-Source</a>
+			<a href='/category/nancy' title='Nancy'>Nancy</a>, <a href='/category/open-source' title='Open-Source'>Open-Source</a>
 		</div>
 	</header>
 
 	
 	<div class="body post">
-		<p>I recently blogged about <a href="/2014/01/27/a-full-day-of-open-source-at-tretton37">A full day of open-source at tretton37</a> and on Friday 31st January 2014 we all gathered at our <a href="http://www.flickr.com/photos/tretton37/sets/72157634906411089/">awesome offices in Lund and Stockholm</a> to spend the day working with open-source software.</p>
+		<p>Usually when we put out a new version of Nancy, we also bump the version number of all other Nancy packages, even if they have not had any changes.</p>
 
-<p><img src="/img/tretton37.open.source.day.mission.jpg" alt="" /></p>
+<p>This approach has made it easy to know that you are using a version that is guaranteed to be compatible with the current Nancy version. It has made upgrading easy since you just update the Nancy package and it will update all other packages that has a dependency on the Nancy package.</p>
 
-<p>Our mission for the day was simple; create value for both the team and the open-source community!</p>
+<p>However, now that the <code>v1.x</code> releases have officially entered <a href="/2015/11/08/our-plans-for-nancy-1-x-and-beyond">maintenance mode</a>, we have decided that the <code>v1.4.2</code> release will break this tradition. For the <code>v1.4.2</code> release we will <em>only</em> update the Nancy package it self and leave the remaining packages at <code>v1.4.1</code>.</p>
 
-<!--excerpt--> 
+<!--excerpt-->
 
-<p>The first half of the day was spent getting to know the project your teams would be working with. The had set time aside to "Take it for a spin", where we grabbed the project and played around with the code and got a basic sample working on our local machines. </p>
+<h2>Maintenance mode?</h2>
 
-<p>Next up was "Take it apart" and this is where the real fun started taking place. We dove into the code and tried to figure out how the code was glued together and what made it tick. We had allocated two hours for this, but most teams got excited and started working on pull-requests as soon as they had figured out the mechanics of their projects :)</p>
+<p>We will only release <code>v1.4.x</code> updates from now on, the next major update will be <code>v2.x</code>. To make it perfectly clear what have been updated, we will only be bumping the revision of the affected package(s).</p>
 
-<p><img src="/img/tretton37.open.source.day.contributing.jpg" alt="" /></p>
+<h2>What about package versions for v2.x?</h2>
 
-<p>After lunch we had two short presentations. I held one on the subject of "The 1-2-3 of Open-Source Contributing", which was a short introduction on a couple of things that it worth knowing up-front before sending any project code. Things like the project licence, contributor licence agreements, copyrights and general DO's and DON'Ts where brought up.</p>
-
-<p><img src="/img/tretton37.open.source.day.hacking.jpg" alt="" /></p>
-
-<p>The the real hacking started! Everybody was in such an awesome mood and the atmosphere was really great. People where breaking out of their teams to offer help where they could, all for the purpose of making sure that we delivered as much value to the projects as we possibly could. </p>
-
-<p>It's always fun when we all get to meet up and code together, something we unfortunately don't get to do as much as we want because we're a consultant company and spend a lot of time at clients, but it was especially fun this time because we got to work on some really cool projects and contribute back.</p>
-
-<p><img src="/img/tretton37.open.source.day.results.jpg" alt="" /></p>
-
-<p>At the end of the day we took toll and it turned out that we had managed to send in a total of <strong>23 pull-requests</strong>, which is quite an achievement! I feel to proud of our entire company. Not only for taking the initiative of the day itself, but also for being able to create some tangible value to the open-source community.</p>
-
-<p>Throughout the day, one of the reoccurring discussions were; "Is the cake a lie?"</p>
-
-<p><img src="/img/tretton37.open.source.day.cake.jpg" alt="" /></p>
-
-<p>Turns out it wasn't! We finished the day by celebrating out awesome day and also the fact that <a href="http://tretton37.com">tretton37</a> turned 4 years old! What a day...</p>
+<p>It is still undecided how we will treat package versioning for the <code>v2.x</code> releases, but, until anything else is announced, just assume it will be <em>business as usual</em>. Honestly, we have not talked about this - at all, yet.</p>
 
 	</div>
 
@@ -103,14 +87,14 @@
             reload: true,
             config: function () {
                 //this.page.identifier = '';
-                this.page.url = 'http://thecodejunkie.com/2014/02/03/open-source-day-aftermath/';
+                this.page.url = 'http://thecodejunkie.com/2015/11/16/nancy-1-4-2-will-break-the-versioning-schema/';
                 //this.page.title = '';
             }
         });
     };
 
     var disqus_shortname = 'thecodejunkie';
-    var disqus_url = 'http://thecodejunkie.com/2014/02/03/open-source-day-aftermath/';
+    var disqus_url = 'http://thecodejunkie.com/2015/11/16/nancy-1-4-2-will-break-the-versioning-schema/';
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

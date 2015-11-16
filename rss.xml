@@ -1,4 +1,25 @@
-<rss xmlns:a10="http://www.w3.org/2005/Atom" version="2.0"><channel><title>TheCodeJunkie</title><link>http://thecodejunkie.com/rss.xml</link><description>TheCodeJunkie</description><item><guid isPermaLink="true">http://thecodejunkie.com/2015/11/08/our-plans-for-nancy-1-x-and-beyond/</guid><link>http://thecodejunkie.com/2015/11/08/our-plans-for-nancy-1-x-and-beyond/</link><author>andreas@selfinflicted.org</author><category>Nancy</category><category>Open-Source</category><title>Our plans for Nancy 1.x and beyond</title><description>&lt;p&gt;At the time that I write this, Nancy is less than two weeks (the 20th!) shy of turning 5 years old. For any open-source project that is quite an achievement and I dare to say that for one that is based on .NET it is amazing.&lt;/p&gt;
+<rss xmlns:a10="http://www.w3.org/2005/Atom" version="2.0"><channel><title>TheCodeJunkie</title><link>http://thecodejunkie.com/rss.xml</link><description>TheCodeJunkie</description><item><guid isPermaLink="true">http://thecodejunkie.com/2015/11/16/nancy-1-4-2-will-break-the-versioning-schema/</guid><link>http://thecodejunkie.com/2015/11/16/nancy-1-4-2-will-break-the-versioning-schema/</link><author>andreas@selfinflicted.org</author><category>Nancy</category><category>Open-Source</category><title>Nancy v1.4.2 will break the versioning schema</title><description>&lt;p&gt;Usually when we put out a new version of Nancy, we also bump the version number of all other Nancy packages, even if they have not had any changes.&lt;/p&gt;
+
+&lt;p&gt;This approach has made it easy to know that you are using a version that is guaranteed to be compatible with the current Nancy version. It has made upgrading easy since you just update the Nancy package and it will update all other packages that has a dependency on the Nancy package.&lt;/p&gt;
+
+&lt;p&gt;However, now that the &lt;code&gt;v1.x&lt;/code&gt; releases have officially entered &lt;a href="http://thecodejunkie.com/2015/11/08/our-plans-for-nancy-1-x-and-beyond"&gt;maintenance mode&lt;/a&gt;, we have decided that the &lt;code&gt;v1.4.2&lt;/code&gt; release will break this tradition. For the &lt;code&gt;v1.4.2&lt;/code&gt; release we will &lt;em&gt;only&lt;/em&gt; update the Nancy package it self and leave the remaining packages at &lt;code&gt;v1.4.1&lt;/code&gt;.&lt;/p&gt;
+
+</description><pubDate>Sun, 15 Nov 2015 23:00:00 Z</pubDate><a10:updated>2015-11-15T23:00:00Z</a10:updated><a10:content type="html">&lt;p&gt;Usually when we put out a new version of Nancy, we also bump the version number of all other Nancy packages, even if they have not had any changes.&lt;/p&gt;
+
+&lt;p&gt;This approach has made it easy to know that you are using a version that is guaranteed to be compatible with the current Nancy version. It has made upgrading easy since you just update the Nancy package and it will update all other packages that has a dependency on the Nancy package.&lt;/p&gt;
+
+&lt;p&gt;However, now that the &lt;code&gt;v1.x&lt;/code&gt; releases have officially entered &lt;a href="http://thecodejunkie.com/2015/11/08/our-plans-for-nancy-1-x-and-beyond"&gt;maintenance mode&lt;/a&gt;, we have decided that the &lt;code&gt;v1.4.2&lt;/code&gt; release will break this tradition. For the &lt;code&gt;v1.4.2&lt;/code&gt; release we will &lt;em&gt;only&lt;/em&gt; update the Nancy package it self and leave the remaining packages at &lt;code&gt;v1.4.1&lt;/code&gt;.&lt;/p&gt;
+
+&lt;!--excerpt--&gt;
+
+&lt;h2&gt;Maintenance mode?&lt;/h2&gt;
+
+&lt;p&gt;We will only release &lt;code&gt;v1.4.x&lt;/code&gt; updates from now on, the next major update will be &lt;code&gt;v2.x&lt;/code&gt;. To make it perfectly clear what have been updated, we will only be bumping the revision of the affected package(s).&lt;/p&gt;
+
+&lt;h2&gt;What about package versions for v2.x?&lt;/h2&gt;
+
+&lt;p&gt;It is still undecided how we will treat package versioning for the &lt;code&gt;v2.x&lt;/code&gt; releases, but, until anything else is announced, just assume it will be &lt;em&gt;business as usual&lt;/em&gt;. Honestly, we have not talked about this - at all, yet.&lt;/p&gt;
+</a10:content></item><item><guid isPermaLink="true">http://thecodejunkie.com/2015/11/08/our-plans-for-nancy-1-x-and-beyond/</guid><link>http://thecodejunkie.com/2015/11/08/our-plans-for-nancy-1-x-and-beyond/</link><author>andreas@selfinflicted.org</author><category>Nancy</category><category>Open-Source</category><title>Our plans for Nancy 1.x and beyond</title><description>&lt;p&gt;At the time that I write this, Nancy is less than two weeks (the 20th!) shy of turning 5 years old. For any open-source project that is quite an achievement and I dare to say that for one that is based on .NET it is amazing.&lt;/p&gt;
 
 &lt;p&gt;If we turn it into numbers, we put out 37 releases (a bit more than 7 per year), had 228 unique (only counting the main repository) contributors and 1237 closed pull-requests. We have had the pleasure of seeing the community embrace it, job ads pop up and people traveling to conferences, all over the world, to deliver sessions on our framework. Amazing!&lt;/p&gt;
 
