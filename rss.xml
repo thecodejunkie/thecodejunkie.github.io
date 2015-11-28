@@ -1,4 +1,67 @@
-<rss xmlns:a10="http://www.w3.org/2005/Atom" version="2.0"><channel><title>TheCodeJunkie</title><link>http://thecodejunkie.com/rss.xml</link><description>TheCodeJunkie</description><item><guid isPermaLink="true">http://thecodejunkie.com/2015/11/16/nancy-1-4-2-will-break-the-versioning-schema/</guid><link>http://thecodejunkie.com/2015/11/16/nancy-1-4-2-will-break-the-versioning-schema/</link><author>andreas@selfinflicted.org</author><category>Nancy</category><category>Open-Source</category><title>Nancy v1.4.2 will break the versioning schema</title><description>&lt;p&gt;Usually when we put out a new version of Nancy, we also bump the version number of all other Nancy packages, even if they have not had any changes.&lt;/p&gt;
+<rss xmlns:a10="http://www.w3.org/2005/Atom" version="2.0"><channel><title>TheCodeJunkie</title><link>http://thecodejunkie.com/rss.xml</link><description>TheCodeJunkie</description><item><guid isPermaLink="true">http://thecodejunkie.com/2015/11/27/support-the-development-of-nancy-financially/</guid><link>http://thecodejunkie.com/2015/11/27/support-the-development-of-nancy-financially/</link><author>andreas@selfinflicted.org</author><category>Nancy</category><category>Open-Source</category><title>Support the development of Nancy financially</title><description>&lt;p&gt;Working on Nancy has always been a labor of love. We have never thought about charging for commercial use or in any other put up a pay wall that restricts your use of the framework. During the past five years, thousands of hours have been put into making Nancy what is it today and it makes us extremely proud that it is being used in production, all over the world and in a wide range of products.&lt;/p&gt;
+
+&lt;p&gt;That said, even though Nancy itself is free to use, the development of it is not. Each hour we spend working on Nancy is an hour less we could have spent working on other personal projects or spending time with friends and family.&lt;/p&gt;
+
+&lt;p&gt;As with most project, time is the most valuable commodity we have (apart from domain knowledge!) and its availability varies over time. Our ambition for Nancy is far greater than the time we have at our disposal. Even as little as a couple of hours of extra time, each week, would have a tremendous impact.&lt;/p&gt;
+
+&lt;p&gt;It is for this reason we are now turning toward you, our community of existing users, that put Nancy into production and help you ship software. If Nancy adds value to your organization then we would ask for your attention for a couple of minutes and read on about how you can help us keep delivering awesome stuff.&lt;/p&gt;
+
+&lt;p&gt;Either way we are going to keep working on Nancy, but together we can take it to another level. We won't be able to do it without your help!&lt;/p&gt;
+
+</description><pubDate>Thu, 26 Nov 2015 23:00:00 Z</pubDate><a10:updated>2015-11-26T23:00:00Z</a10:updated><a10:content type="html">&lt;p&gt;Working on Nancy has always been a labor of love. We have never thought about charging for commercial use or in any other put up a pay wall that restricts your use of the framework. During the past five years, thousands of hours have been put into making Nancy what is it today and it makes us extremely proud that it is being used in production, all over the world and in a wide range of products.&lt;/p&gt;
+
+&lt;p&gt;That said, even though Nancy itself is free to use, the development of it is not. Each hour we spend working on Nancy is an hour less we could have spent working on other personal projects or spending time with friends and family.&lt;/p&gt;
+
+&lt;p&gt;As with most project, time is the most valuable commodity we have (apart from domain knowledge!) and its availability varies over time. Our ambition for Nancy is far greater than the time we have at our disposal. Even as little as a couple of hours of extra time, each week, would have a tremendous impact.&lt;/p&gt;
+
+&lt;p&gt;It is for this reason we are now turning toward you, our community of existing users, that put Nancy into production and help you ship software. If Nancy adds value to your organization then we would ask for your attention for a couple of minutes and read on about how you can help us keep delivering awesome stuff.&lt;/p&gt;
+
+&lt;p&gt;Either way we are going to keep working on Nancy, but together we can take it to another level. We won't be able to do it without your help!&lt;/p&gt;
+
+&lt;!--excerpt--&gt;
+
+&lt;p&gt;There are several ways that you can support us financially&lt;/p&gt;
+
+&lt;h2&gt;1 - Bountysource&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Bountysource is the funding platform for open-source software. Users can improve the open-source projects they love by creating/collecting bounties and pledging to fundraisers.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href="https://www.bountysource.com/teams/nancyfx"&gt;Bountysource&lt;/a&gt; is a service that enables you attach cash rewards to issues or feature requests. A bounty is a way to create a bit of an incentive for us to priorities working on a specific issue.&lt;/p&gt;
+
+&lt;p&gt;If you work for an organization that uses Nancy, in your stack, and you find yourself in a position where it would be favorable for you to have us prioritize certain issues or feature requests then putting a bounty on it would be the way to go.&lt;/p&gt;
+
+&lt;p&gt;However, please note that there will never be a guarantee that a bounty will lead to immediate work on said issue / feature request. We will also never guarantee that a a certain feature request will ever be brought into the core (though it is quite possible that it could be developed as its own package that uses the Nancy extension point) at all, we need to feel that it is inline with what our vision of Nancy is.&lt;/p&gt;
+
+&lt;p&gt;Let's be honest for a second. If having something specific fixed / added is important for you organization then it should be important enough pay for it. Open-source does not necessarily mean free, ultimately time is going to be spent working on it. You could of course choose to pay your own team to do the same work and submit a pull-request, or you could have them work on domain specific code whilst we do what we do best - work on Nancy.&lt;/p&gt;
+
+&lt;p&gt;If you are unsure what a reasonable bounty would be for a certain task (without domain knowledge, it is not always easy to know if something is going to require 2 hour or 20 hours), then please feel free to contact us and we will be more than happy to have a discussion with you about the amount of work we thing is needed.&lt;/p&gt;
+
+&lt;h2&gt;2 - Patreon&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;We want to help every creator in the world achieve sustainable income.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;If Bountysource is the way to support the development of specific things, then  &lt;a href="https://www.patreon.com/nancyfx"&gt;Patreon&lt;/a&gt; is the way you can show your support for Nancy as a project. It is a platform that allows us to accept monthly donations from individuals and organizations that use Nancy.&lt;/p&gt;
+
+&lt;p&gt;Each donation will help us balance out the, age old, &lt;code&gt;time == money&lt;/code&gt; equation and, in effect, add towards making it possible for us to work on Nancy during business hours and not only during our spare time.&lt;/p&gt;
+
+&lt;p&gt;On Patreon, donations are attached to a deliverable. Donations are not claimed until the content creator reaches a new deliverable. You get to decide what your deliverable is (from a predefined list). For example if you are a YouTube content creator then it would make sense to have your deliverable as &lt;code&gt;video&lt;/code&gt; or a musician might choose &lt;code&gt;song&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;For Nancy we have chosen &lt;code&gt;monthly&lt;/code&gt; as our deliverable, this means that donations will be claimed once a month.&lt;/p&gt;
+
+&lt;h2&gt;3 - Contract work&lt;/h2&gt;
+
+&lt;p&gt;A small reminder that I am also available for &lt;a href="http://thecodejunkie.com/2015/08/28/I-am-now-taking-contract-work-for-Nancy/"&gt;contract work&lt;/a&gt;. In its simplest form this is a more personal alternative to Bountysource, but where Bountysource is all about issues and feature requests, contract work gives you a lot more flexibility.&lt;/p&gt;
+
+&lt;p&gt;If you feel that your organization needs help with (but not limited to) building Nancy based applications, training (onsite and remote), workshops or help with code reviews then this is probably the option for you.&lt;/p&gt;
+
+&lt;p&gt;This option is restricted to my availability, but with enough notice then I am sure we can work something out.&lt;/p&gt;
+
+&lt;p&gt;Thank you from the entire team that works on Nancy! &lt;i class="icon-heart"&gt;&lt;/i&gt;&lt;/p&gt;
+</a10:content></item><item><guid isPermaLink="true">http://thecodejunkie.com/2015/11/16/nancy-1-4-2-will-break-the-versioning-schema/</guid><link>http://thecodejunkie.com/2015/11/16/nancy-1-4-2-will-break-the-versioning-schema/</link><author>andreas@selfinflicted.org</author><category>Nancy</category><category>Open-Source</category><title>Nancy v1.4.2 will break the versioning schema</title><description>&lt;p&gt;Usually when we put out a new version of Nancy, we also bump the version number of all other Nancy packages, even if they have not had any changes.&lt;/p&gt;
 
 &lt;p&gt;This approach has made it easy to know that you are using a version that is guaranteed to be compatible with the current Nancy version. It has made upgrading easy since you just update the Nancy package and it will update all other packages that has a dependency on the Nancy package.&lt;/p&gt;
 
