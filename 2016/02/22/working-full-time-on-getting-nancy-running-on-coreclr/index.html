@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="description" content="The blog of TheCodeJunkie" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta http-equiv="last-modified" content="2016-02-22T21:21:06.3027766+01:00" />
+
+	    <title>thecodejunkie.com - 
+	Working full-time with getting Nancy running on CoreCLR
+</title>
+
+	<link rel="canonical" href="http://thecodejunkie.com/2016/02/22/working-full-time-on-getting-nancy-running-on-coreclr/" />
+	<link rel="alternate" type="application/rss+xml" title="TheCodeJunkie" href="http://thecodejunkie.com/rss.xml" />
+	<link rel="stylesheet" href="/css/app.css" />
+	
+</head>
+<body>
+
+	<div class="content">
+		<header>
+			<h1>thecodejunkie</h1>
+			<nav>
+				<ul>
+					<li><a href="/" title="Back to the main page">Home</a></li>
+					<li><a href="/categories" title="List of all the available blog categories">Categories</a></li>
+					<li><a href="/archive" title="Archive of all the posts onthe blog">Archive</a></li>
+					<li><a href="/about" title="About me, contact details and so on">About</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main role="main">
+			
+
+
+
+<article>
+	<div class="gravatar">
+		<img src="http://www.gravatar.com/avatar/0bf4194335195c9225f8f22e4e70b192.jpg?s=128" title="TheCodeJunkie" />
+	</div>
+
+	<header>
+		<h1><a href="/2016/02/22/working-full-time-on-getting-nancy-running-on-coreclr/">Working full-time with getting Nancy running on CoreCLR</a></h1>
+
+		<div class="post-info">
+	      	<time pubdate datetime='2016-02-22' title='den 22 februari 2016'>2016-02-22</time>
+			
+			<address class="author">
+				<a rel="author" href="http://twitter.com/TheCodeJunkie">TheCodeJunkie</a>
+			</address>
+
+			in 
+
+			<a href='/category/nancy' title='Nancy'>Nancy</a>, <a href='/category/open-source' title='Open-Source'>Open-Source</a>
+		</div>
+	</header>
+
+	
+	<div class="body post">
+		<p>For the past three weeks I have been living the dream - full-time development of Nancy, while still picking up a salary. Not long after I wrote my blog post about "<a href="/2015/11/27/support-the-development-of-nancy-financially/">Support the development of Nancy financially</a>" I was contacted by a company, that are invested in Nancy and wanted to discuss a potential win-win scenario.</p>
+
+<p>A couple of conference calls later and the deal was signed for me to work, full-time, on fast-tracking our plans to make Nancy run on the CoreCLR. This has always been a goal of ours, but we have been holding back on it because it has been a very moving target and there have been plenty of other fish in the sea to focus on.</p>
+
+<!--excerpt-->
+
+<h1>Building Nancy on a contract</h1>
+
+<p>So what does this mean? In the bigger picture, very little has changed. Everything is still happening in the open, following the same procedures as we have always done.</p>
+
+<p>What this means is:</p>
+
+<ul>
+<li>They are not making any claims to the code that is produced during the contract</li>
+<li>We are not obligated to make any modifications to Nancy, that we otherwise would not have made, to facilitate their business requirements. If we feel something does not align with the Nancy ethos then it simply will not happen</li>
+<li>All produced code is sent in as pull-requests and will go through the same scrutiny as always</li>
+</ul>
+
+<p>In short, nothing has changed other than the fact that a lot more time is being put towards working on Nancy.</p>
+
+<h1>Making Nancy run on the CoreCLR</h1>
+
+<p>Work is already well on the way and it is happening on a separate <a href="https://github.com/NancyFx/Nancy/tree/coreclr">coreclr branch</a> (if you try and access this branch and it does no longer exist, chances are that enough time has passed that the work is done and we've merged it back into <code>master</code>) and we will happily accept pull-requests as usual.</p>
+
+<p>From an API point of view we are quite compatible with the CoreCLR and we have been using very few APIs which are no longer available on the new CLR. Most of the removed APIs have established migration paths which are backwards compatible with the full-framework.</p>
+
+<p>We are also taking the opportunity to change some concepts in Nancy and they will be part of the upcoming <code>2.0-alpha</code> release that we are planning. Part of this has also been to make use of the new <code>project.json</code> based project system and on <code>master</code> we now support both <code>project.json</code> and the old  <code>csproj</code>-based formats.</p>
+
+<h1>What kind of impact has full-time work had?</h1>
+
+<p>Massive! Take a look for yourself</p>
+
+<p><img src="/img/nancy.oss.fulltime.progress.png" alt="" /></p>
+
+<p>This is screenshot of the <a href="https://github.com/NancyFx/Nancy/pulse/monthly">monthly pulse</a> of the Nancy GitHub repository, at the time of writing. Even though we have closed nearly 1400 pull-requests, through out the lifetime of the project, closing 65 in a month is phenomenal.</p>
+
+<p>I want to point out that the majority of these pull-requests are not old ones that we have finally gotten around to closing. It is, for the most part, new code that has been produced during this time.</p>
+
+<p>Had this been done under normal circumstances we would have been looking at several months worth of work so, yes, financially supporting open-source project that you use can have a tremendous impact. Moving these projects forward means you get to reap the rewards, it is a win-win situation. Plain and simple.</p>
+
+	</div>
+
+	<a href="#comments"></a>
+	<div class="comments">
+		<div id="disqus_thread"></div>
+<script>
+    var reset_disqus = function(){
+        DISQUS.reset({
+            reload: true,
+            config: function () {
+                //this.page.identifier = '';
+                this.page.url = 'http://thecodejunkie.com/2016/02/22/working-full-time-on-getting-nancy-running-on-coreclr/';
+                //this.page.title = '';
+            }
+        });
+    };
+
+    var disqus_shortname = 'thecodejunkie';
+    var disqus_url = 'http://thecodejunkie.com/2016/02/22/working-full-time-on-getting-nancy-running-on-coreclr/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    window.addEventListener('orientationchange', reset_disqus);
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+	</div>
+
+	<footer>
+		<small>&copy; Copyright 2013, Andreas H&#229;kansson</small>
+	</footer>
+</article>
+		</main>
+
+		
+
+	</div>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="/js/jquery-1.10.2.min.js"><\/script>')</script>
+	<script src="/js/highlight.js"></script>
+	<script src="/js/require.js" data-main="/js/app"></script>
+
+	<script>
+
+		$(function () {
+			hljs.tabReplace = '  ';
+			hljs.initHighlightingOnLoad();
+
+			window.scrollTo(0, 1);
+		});
+
+	</script>
+
+	<script type="text/javascript">
+var _gaq = _gaq || [];
+
+_gaq.push(['_setAccount', 'UA-21346449-1']);
+_gaq.push(['_trackPageview']);
+        
+(function () {
+    var ga = document.createElement('script');
+    ga.type = 'text/javascript';
+    ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+</body>
+</html>

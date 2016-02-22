@@ -1,4 +1,47 @@
-<rss xmlns:a10="http://www.w3.org/2005/Atom" version="2.0"><channel><title>TheCodeJunkie</title><link>http://thecodejunkie.com/rss.xml</link><description>TheCodeJunkie</description><item><guid isPermaLink="true">http://thecodejunkie.com/2015/11/27/support-the-development-of-nancy-financially/</guid><link>http://thecodejunkie.com/2015/11/27/support-the-development-of-nancy-financially/</link><author>andreas@selfinflicted.org</author><category>Nancy</category><category>Open-Source</category><title>Support the development of Nancy financially</title><description>&lt;p&gt;Working on &lt;a href="https://github.com/nancyfx/nancy"&gt;Nancy&lt;/a&gt; has always been a labor of love. We have never thought about charging for commercial use or in any other put up a pay wall that restricts your use of the framework. During the past five years, thousands of hours have been put into making Nancy what is it today and it makes us extremely proud that it is being used in production, all over the world and in a wide range of products.&lt;/p&gt;
+<rss xmlns:a10="http://www.w3.org/2005/Atom" version="2.0"><channel><title>TheCodeJunkie</title><link>http://thecodejunkie.com/rss.xml</link><description>TheCodeJunkie</description><item><guid isPermaLink="true">http://thecodejunkie.com/2016/02/22/working-full-time-on-getting-nancy-running-on-coreclr/</guid><link>http://thecodejunkie.com/2016/02/22/working-full-time-on-getting-nancy-running-on-coreclr/</link><author>andreas@selfinflicted.org</author><category>Nancy</category><category>Open-Source</category><title>Working full-time with getting Nancy running on CoreCLR</title><description>&lt;p&gt;For the past three weeks I have been living the dream - full-time development of Nancy, while still picking up a salary. Not long after I wrote my blog post about "&lt;a href="http://thecodejunkie.com/2015/11/27/support-the-development-of-nancy-financially/"&gt;Support the development of Nancy financially&lt;/a&gt;" I was contacted by a company, that are invested in Nancy and wanted to discuss a potential win-win scenario.&lt;/p&gt;
+
+&lt;p&gt;A couple of conference calls later and the deal was signed for me to work, full-time, on fast-tracking our plans to make Nancy run on the CoreCLR. This has always been a goal of ours, but we have been holding back on it because it has been a very moving target and there have been plenty of other fish in the sea to focus on.&lt;/p&gt;
+
+</description><pubDate>Sun, 21 Feb 2016 23:00:00 Z</pubDate><a10:updated>2016-02-21T23:00:00Z</a10:updated><a10:content type="html">&lt;p&gt;For the past three weeks I have been living the dream - full-time development of Nancy, while still picking up a salary. Not long after I wrote my blog post about "&lt;a href="http://thecodejunkie.com/2015/11/27/support-the-development-of-nancy-financially/"&gt;Support the development of Nancy financially&lt;/a&gt;" I was contacted by a company, that are invested in Nancy and wanted to discuss a potential win-win scenario.&lt;/p&gt;
+
+&lt;p&gt;A couple of conference calls later and the deal was signed for me to work, full-time, on fast-tracking our plans to make Nancy run on the CoreCLR. This has always been a goal of ours, but we have been holding back on it because it has been a very moving target and there have been plenty of other fish in the sea to focus on.&lt;/p&gt;
+
+&lt;!--excerpt--&gt;
+
+&lt;h1&gt;Building Nancy on a contract&lt;/h1&gt;
+
+&lt;p&gt;So what does this mean? In the bigger picture, very little has changed. Everything is still happening in the open, following the same procedures as we have always done.&lt;/p&gt;
+
+&lt;p&gt;What this means is:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;They are not making any claims to the code that is produced during the contract&lt;/li&gt;
+&lt;li&gt;We are not obligated to make any modifications to Nancy, that we otherwise would not have made, to facilitate their business requirements. If we feel something does not align with the Nancy ethos then it simply will not happen&lt;/li&gt;
+&lt;li&gt;All produced code is sent in as pull-requests and will go through the same scrutiny as always&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In short, nothing has changed other than the fact that a lot more time is being put towards working on Nancy.&lt;/p&gt;
+
+&lt;h1&gt;Making Nancy run on the CoreCLR&lt;/h1&gt;
+
+&lt;p&gt;Work is already well on the way and it is happening on a separate &lt;a href="https://github.com/NancyFx/Nancy/tree/coreclr"&gt;coreclr branch&lt;/a&gt; (if you try and access this branch and it does no longer exist, chances are that enough time has passed that the work is done and we've merged it back into &lt;code&gt;master&lt;/code&gt;) and we will happily accept pull-requests as usual.&lt;/p&gt;
+
+&lt;p&gt;From an API point of view we are quite compatible with the CoreCLR and we have been using very few APIs which are no longer available on the new CLR. Most of the removed APIs have established migration paths which are backwards compatible with the full-framework.&lt;/p&gt;
+
+&lt;p&gt;We are also taking the opportunity to change some concepts in Nancy and they will be part of the upcoming &lt;code&gt;2.0-alpha&lt;/code&gt; release that we are planning. Part of this has also been to make use of the new &lt;code&gt;project.json&lt;/code&gt; based project system and on &lt;code&gt;master&lt;/code&gt; we now support both &lt;code&gt;project.json&lt;/code&gt; and the old  &lt;code&gt;csproj&lt;/code&gt;-based formats.&lt;/p&gt;
+
+&lt;h1&gt;What kind of impact has full-time work had?&lt;/h1&gt;
+
+&lt;p&gt;Massive! Take a look for yourself&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="http://thecodejunkie.com/img/nancy.oss.fulltime.progress.png" alt="" /&gt;&lt;/p&gt;
+
+&lt;p&gt;This is screenshot of the &lt;a href="https://github.com/NancyFx/Nancy/pulse/monthly"&gt;monthly pulse&lt;/a&gt; of the Nancy GitHub repository, at the time of writing. Even though we have closed nearly 1400 pull-requests, through out the lifetime of the project, closing 65 in a month is phenomenal.&lt;/p&gt;
+
+&lt;p&gt;I want to point out that the majority of these pull-requests are not old ones that we have finally gotten around to closing. It is, for the most part, new code that has been produced during this time.&lt;/p&gt;
+
+&lt;p&gt;Had this been done under normal circumstances we would have been looking at several months worth of work so, yes, financially supporting open-source project that you use can have a tremendous impact. Moving these projects forward means you get to reap the rewards, it is a win-win situation. Plain and simple.&lt;/p&gt;
+</a10:content></item><item><guid isPermaLink="true">http://thecodejunkie.com/2015/11/27/support-the-development-of-nancy-financially/</guid><link>http://thecodejunkie.com/2015/11/27/support-the-development-of-nancy-financially/</link><author>andreas@selfinflicted.org</author><category>Nancy</category><category>Open-Source</category><title>Support the development of Nancy financially</title><description>&lt;p&gt;Working on &lt;a href="https://github.com/nancyfx/nancy"&gt;Nancy&lt;/a&gt; has always been a labor of love. We have never thought about charging for commercial use or in any other put up a pay wall that restricts your use of the framework. During the past five years, thousands of hours have been put into making Nancy what is it today and it makes us extremely proud that it is being used in production, all over the world and in a wide range of products.&lt;/p&gt;
 
 &lt;p&gt;That said, even though Nancy itself is free to use, the development of it is not. Each hour we spend working on Nancy is an hour less we could have spent working on other personal projects or spending time with friends and family.&lt;/p&gt;
 
